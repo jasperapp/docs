@@ -2,7 +2,7 @@
 description: A flexible and powerful issue reader for GitHub
 ---
 
-# Jasperについて
+# Jasperとは
 
 ![](.gitbook/assets/01_top.png)
 
