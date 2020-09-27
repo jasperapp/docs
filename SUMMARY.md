@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Jasperについて](README.md)
+* [What is Jasper](README.md)
 * [Jasperを使う](getting-start/README.md)
   * [新しく始める](getting-start/new-setup.md)
   * [基本的な使い方](getting-start/basic-usage.md)
