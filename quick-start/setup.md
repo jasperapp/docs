@@ -1,12 +1,12 @@
 ---
-description: Jasperをダウンロードして、GitHubのアクセストークンを設定するだけですぐに使用できます。
+description: Just download Jasper and set up a GitHub access token and you're ready to go.
 ---
 
 # Setup
 
-## インストール <a id="install"></a>
+## Install <a id="install"></a>
 
-[jasperapp.io](https://jasperapp.io/) から最新のJasperをダウンロードし、zipファイルを展開してください。Jasperを起動すると、Mac/Windowsでは以下の確認が表示されます。説明に従い起動を完了してください。
+Download the latest version of Jasper from [jasperapp.io](https://jasperapp.io/) and extract the zip file. Follow the instructions to complete the launch.
 
 {% tabs %}
 {% tab title="Mac" %}
@@ -20,7 +20,7 @@ description: Jasperをダウンロードして、GitHubのアクセストーク�
 {% endtab %}
 {% endtabs %}
 
-## GitHubの設定 <a id="github"></a>
+## Setting up an access token <a id="github"></a>
 
 Jasperを起動するとGitHub, GHE\(GitHub Enterprise\)の選択が表示されます。GHEの場合はホスト名`例 ghe.example.com`を入力してください。
 
