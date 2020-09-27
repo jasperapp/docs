@@ -15,7 +15,6 @@ description: Jasperの基本的な使い方を紹介します。基本の使い�
     <tr>
       <th style="text-align:left">Stream</th>
       <th style="text-align:left">&#x6761;&#x4EF6;</th>
-      <th style="text-align:left">&#x7A2E;&#x985E;</th>
     </tr>
   </thead>
   <tbody>
@@ -23,51 +22,25 @@ description: Jasperの基本的な使い方を紹介します。基本の使い�
       <td style="text-align:left"><code>Me</code>
       </td>
       <td style="text-align:left">
-        <p>&#x81EA;&#x5206;&#x306B;&#x95A2;&#x4FC2;&#x3059;&#x308B;issue/pull request&#x3092;&#x898B;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
-        <p>&#x57FA;&#x672C;&#x7684;&#x306B;&#x306F;&#x3053;&#x306E;Stream&#x3092;&#x898B;&#x308C;&#x3070;&#x898B;&#x843D;&#x3068;&#x3057;&#x306F;&#x3042;&#x308A;&#x307E;&#x305B;&#x3093;&#x3002;</p>
-      </td>
-      <td style="text-align:left"><a href="../reference/stream.md">Stream</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>My Issues</code>
-      </td>
-      <td style="text-align:left">&#x81EA;&#x5206;&#x304C;&#x4F5C;&#x6210;&#x3057;&#x305F;issue&#x3067;&#x3059;&#x3002;</td>
-      <td
-      style="text-align:left"><a href="../reference/filter-stream.md">Filter Stream</a>
-        </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>My PRs</code>
-      </td>
-      <td style="text-align:left">&#x81EA;&#x5206;&#x304C;&#x4F5C;&#x6210;&#x3057;&#x305F;pull request&#x3067;&#x3059;&#x3002;</td>
-      <td
-      style="text-align:left"><a href="../reference/filter-stream.md">Filter Stream</a>
-        </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>Assign</code>
-      </td>
-      <td style="text-align:left">&#x81EA;&#x5206;&#x304C;&#x30A2;&#x30B5;&#x30A4;&#x30F3;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;issue/pull
-        request&#x3067;&#x3059;&#x3002;</td>
-      <td style="text-align:left"><a href="../reference/filter-stream.md">Filter Stream</a>
+        <p>&#x81EA;&#x5206;&#x306B;&#x95A2;&#x4FC2;&#x3059;&#x308B;issue/pull request&#x3092;&#x898B;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;&#x57FA;&#x672C;&#x7684;&#x306B;&#x306F;&#x3053;&#x306E;Stream&#x3092;&#x898B;&#x308C;&#x3070;&#x898B;&#x843D;&#x3068;&#x3057;&#x306F;&#x3042;&#x308A;&#x307E;&#x305B;&#x3093;&#x3002;</p>
+        <p>&#x307E;&#x305F;&#x3001;&#x300C;My Issues&#x300D;&#x300C;My PRs&#x300D;&#x300C;Assign&#x300D;&#x3067;&#x30D5;&#x30A3;&#x30EB;&#x30BF;&#x30FC;&#x3055;&#x308C;&#x305F;Stream&#x3082;&#x898B;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
       </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>Team</code>
       </td>
-      <td style="text-align:left">&#x6240;&#x5C5E;&#x3057;&#x3066;&#x3044;&#x308B;&#x30C1;&#x30FC;&#x30E0;&#x306B;&#x30E1;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x3055;&#x308C;&#x305F;issue&#x3067;&#x3059;&#x3002;</td>
-      <td
-      style="text-align:left"><a href="../reference/stream.md">Stream</a>
-        </td>
+      <td style="text-align:left">
+        <p>&#x6240;&#x5C5E;&#x3057;&#x3066;&#x3044;&#x308B;&#x30C1;&#x30FC;&#x30E0;&#x306B;&#x30E1;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x3055;&#x308C;&#x305F;issue&#x3067;&#x3059;&#x3002;</p>
+        <p>&#x307E;&#x305F;&#x3001;&#x30C1;&#x30FC;&#x30E0;&#x3054;&#x3068;(Organization)&#x306B;&#x30D5;&#x30A3;&#x30EB;&#x30BF;&#x30FC;&#x3055;&#x308C;&#x305F;Stream&#x3082;&#x898B;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>Repo</code>
       </td>
-      <td style="text-align:left">&#x6700;&#x8FD1;&#x6D3B;&#x52D5;&#x3057;&#x305F;&#x30EA;&#x30DD;&#x30B8;&#x30C8;&#x30EA;&#x306E;issue&#x3067;&#x3059;&#x3002;</td>
-      <td
-      style="text-align:left"><a href="../reference/stream.md">Stream</a>
-        </td>
+      <td style="text-align:left">
+        <p>&#x6700;&#x8FD1;&#x6D3B;&#x52D5;&#x3057;&#x305F;&#x30EA;&#x30DD;&#x30B8;&#x30C8;&#x30EA;&#x306E;issue&#x3067;&#x3059;&#x3002;</p>
+        <p>&#x307E;&#x305F;&#x3001;&#x30EA;&#x30DD;&#x30B8;&#x30C8;&#x30EA;&#x3054;&#x3068;&#x306B;&#x30D5;&#x30A3;&#x30EB;&#x30BF;&#x30FC;&#x3055;&#x308C;&#x305F;Stream&#x3082;&#x898B;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+      </td>
     </tr>
   </tbody>
 </table>
