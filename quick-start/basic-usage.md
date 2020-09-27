@@ -1,124 +1,49 @@
 ---
-description: Jasperの基本的な使い方を紹介します。基本の使い方を覚えるだけで、十分に効率的にissueを閲覧できるようになります。
+description: >-
+  Here's a basic guide to using Jasper. Just the basics are enough to help you
+  learn how to use it, and then you will be able to browse issues efficiently.
 ---
 
-# 基本的な使い方
+# Basic usage
 
 ## Stream
 
-セットアップ後に自動的に次のようなStreamが作成されます。
+After setup, it will automatically create Streams.
 
 ![](../.gitbook/assets/03_streams.png)
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Stream</th>
-      <th style="text-align:left">&#x6761;&#x4EF6;</th>
-      <th style="text-align:left">&#x7A2E;&#x985E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><code>Me</code>
-      </td>
-      <td style="text-align:left">
-        <p>&#x81EA;&#x5206;&#x306B;&#x95A2;&#x4FC2;&#x3059;&#x308B;issue/pull request&#x3092;&#x898B;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
-        <p>&#x57FA;&#x672C;&#x7684;&#x306B;&#x306F;&#x3053;&#x306E;Stream&#x3092;&#x898B;&#x308C;&#x3070;&#x898B;&#x843D;&#x3068;&#x3057;&#x306F;&#x3042;&#x308A;&#x307E;&#x305B;&#x3093;&#x3002;</p>
-      </td>
-      <td style="text-align:left"><a href="../reference/stream.md">Stream</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>My Issues</code>
-      </td>
-      <td style="text-align:left">&#x81EA;&#x5206;&#x304C;&#x4F5C;&#x6210;&#x3057;&#x305F;issue&#x3067;&#x3059;&#x3002;</td>
-      <td
-      style="text-align:left"><a href="../reference/filter-stream.md">Filter Stream</a>
-        </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>My PRs</code>
-      </td>
-      <td style="text-align:left">&#x81EA;&#x5206;&#x304C;&#x4F5C;&#x6210;&#x3057;&#x305F;pull request&#x3067;&#x3059;&#x3002;</td>
-      <td
-      style="text-align:left"><a href="../reference/filter-stream.md">Filter Stream</a>
-        </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>Assign</code>
-      </td>
-      <td style="text-align:left">&#x81EA;&#x5206;&#x304C;&#x30A2;&#x30B5;&#x30A4;&#x30F3;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;issue/pull
-        request&#x3067;&#x3059;&#x3002;</td>
-      <td style="text-align:left"><a href="../reference/filter-stream.md">Filter Stream</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>Team</code>
-      </td>
-      <td style="text-align:left">&#x6240;&#x5C5E;&#x3057;&#x3066;&#x3044;&#x308B;&#x30C1;&#x30FC;&#x30E0;&#x306B;&#x30E1;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x3055;&#x308C;&#x305F;issue&#x3067;&#x3059;&#x3002;</td>
-      <td
-      style="text-align:left"><a href="../reference/stream.md">Stream</a>
-        </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>Repo</code>
-      </td>
-      <td style="text-align:left">&#x6700;&#x8FD1;&#x6D3B;&#x52D5;&#x3057;&#x305F;&#x30EA;&#x30DD;&#x30B8;&#x30C8;&#x30EA;&#x306E;issue&#x3067;&#x3059;&#x3002;</td>
-      <td
-      style="text-align:left"><a href="../reference/stream.md">Stream</a>
-        </td>
-    </tr>
-  </tbody>
-</table>
+| Stream | conditions |
+| :--- | :--- |
+| `Me` | You can see the issues/pull requests that are relevant to you. Basically, you can look at this stream and you won't miss anything.  You will also see the Streams filtered by "My Issues", "My PRs" and "Assign". |
+| `Team` | Issues that are maintained by the team you are on. You will also see a Stream filtered by team \(Organization\). |
+| `Repo` | Issues from the repositories you have recently been active in. You can also see a filtered Stream for each repository. |
 
-## issue
+## issues
 
 ![](../.gitbook/assets/03_issues.png)
 
-次の操作はissueの閲覧に特に役立ちます。
+The following operations are particularly useful for viewing issues
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">&#x52D5;&#x4F5C;</th>
-      <th style="text-align:left">&#x64CD;&#x4F5C;&#x65B9;&#x6CD5;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">&#x672A;&#x8AAD;issue&#x3060;&#x3051;&#x3092;&#x8868;&#x793A;&#x3059;&#x308B;</td>
-      <td
-      style="text-align:left">
-        <p>&#x30D5;&#x30A3;&#x30EB;&#x30BF;&#x30FC;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x306E;<code>Filter by unread</code>&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#x3002;</p>
-        <p>&#x3082;&#x3057;&#x304F;&#x306F;&#x30AD;&#x30FC;&#x30DC;&#x30FC;&#x30C9;&#x306E;<code> U </code>&#x3092;&#x62BC;&#x3059;&#x3002;</p>
-        </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">issue&#x3092;&#x672A;&#x8AAD;&#x306B;&#x623B;&#x3059;</td>
-      <td style="text-align:left">
-        <p>&#x30D5;&#x30ED;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x306E;&#x672A;&#x8AAD;&#x30A2;&#x30A4;&#x30B3;&#x30F3;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;</p>
-        <p>&#x3082;&#x3057;&#x304F;&#x306F;&#x30AD;&#x30FC;&#x30DC;&#x30FC;&#x30C9;&#x306E;<code> I </code>&#x3092;&#x62BC;&#x3059;&#x3002;</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| action | How to operate |
+| :--- | :--- |
+| Show only unread issues | Select `Filter by unread` in the filter menu. Or press  `U`  on the keyboard. |
+| Set the issue back to unread | Click the unread icon on the floating menu. Or press  `I`  on the keyboard. |
 
 {% tabs %}
-{% tab title="フィルターメニュー" %}
+{% tab title="Filter menu" %}
 ![](../.gitbook/assets/03_filter_menu.png)
 {% endtab %}
 
-{% tab title="フローティングメニュー" %}
+{% tab title="Floating menu" %}
 ![](../.gitbook/assets/03_hover_menu.png)
 {% endtab %}
 {% endtabs %}
 
-## ブラウザ
+## Browser
 
 ![](../.gitbook/assets/03_browser.png)
 
-前回閲覧時から追加、更新されたコメントはハイライトされて表示されます。
+Comments that have been added or updated since the last time you viewed the site will be highlighted.
 
 ![](../.gitbook/assets/03_highlight_comment.png)
 
@@ -127,6 +52,6 @@ description: Jasperの基本的な使い方を紹介します。基本の使い�
 
 
 {% hint style="info" %}
-さらに詳しい使い方は「[ユースケースごとの使い方](../usecase/)」「[リファレンス](../reference/)」を参照してください。
+For more information on how to use it, please refer to "[Use cases](../usecase/)" and "[Reference](../reference/)".
 {% endhint %}
 

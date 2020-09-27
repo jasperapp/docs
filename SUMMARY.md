@@ -3,7 +3,7 @@
 * [What is Jasper](README.md)
 * [Quick start](quick-start/README.md)
   * [Setup](quick-start/setup.md)
-  * [基本的な使い方](quick-start/basic-usage.md)
+  * [Basic usage](quick-start/basic-usage.md)
   * [データ移行](quick-start/data-transfer.md)
 * [ユースケースごとの使い方](usecase/README.md)
   * [Streamのクエリ](usecase/stream-query.md)
