@@ -22,19 +22,19 @@ Download the latest version of Jasper from [jasperapp.io](https://jasperapp.io/)
 
 ## Setting up an access token <a id="github"></a>
 
-Jasperを起動するとGitHub, GHE\(GitHub Enterprise\)の選択が表示されます。GHEの場合はホスト名`例 ghe.example.com`を入力してください。
+When Jasper is launched, you will be presented with a choice of GitHub or GHE \(GitHub Enterprise\), for GHE enter the hostname `example ghe.example.com`.
 
-つぎにアクセストークンの入力が必要になります。GitHubの場合は[Personal access token](https://github.com/settings/tokens)の画面から作成できます。GHEの場合は管理者にお問い合わせください。必要なスコープは`repo`, `read:org`, `notifications`, `user`です。 
+Next, you will need to enter an access token, which can be created from the [Personal access token](https://github.com/settings/tokens) screen on GitHub or by contacting the GHE administrator for assistance. The required scopes are `repo`, `read:org`, `notifications` and `user`.
 
 ![](../.gitbook/assets/02_token.png)
 
-最後に設定内容を確認してOKを押してください。ユーザ名が表示されれば完了です🎉
+Finally, please check your settings and press OK. If your user name appears, you're done 🎉
 
 ![](../.gitbook/assets/02_complete.png)
 
-## 初回読み込み <a id="initial-loading"></a>
+## Initial loading <a id="initial-loading"></a>
 
-設定が完了すると、自動的にissueの読み込みが開始されます。この初回の読み込みには数分ほどかかります。Jasperを終了せず、お使いください。
+Once the setup is complete, the system will automatically start loading the issue. This initial loading takes a few minutes or so - do not exit Jasper and use it.
 
-初回読み込み中に「[基本的な使い方](basic-usage.md)」をお読みいただくことで、Jasperをスムーズに使い始めることができます。
+To help you get started with Jasper, please read the "[Basic Usage](basic-usage.md)" section during the initial loading process.
 
