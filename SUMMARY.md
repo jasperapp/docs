@@ -1,10 +1,10 @@
 # Table of contents
 
 * [What is Jasper](README.md)
-* [Jasperを使う](getting-start/README.md)
-  * [新しく始める](getting-start/new-setup.md)
-  * [基本的な使い方](getting-start/basic-usage.md)
-  * [データ移行](getting-start/data-transfer.md)
+* [Quick start](quick-start/README.md)
+  * [新しく始める](quick-start/getting-started.md)
+  * [基本的な使い方](quick-start/basic-usage.md)
+  * [データ移行](quick-start/data-transfer.md)
 * [ユースケースごとの使い方](usecase/README.md)
   * [Streamのクエリ](usecase/stream-query.md)
   * [Streamの見た目と通知設定](usecase/stream-detail.md)
