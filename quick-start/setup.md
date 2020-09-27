@@ -20,7 +20,7 @@ description: Jasperをダウンロードして、GitHubのアクセストーク�
 {% endtab %}
 {% endtabs %}
 
-## GitHubの設定 <a id="github"></a>
+## アクセストークンの設定 <a id="github"></a>
 
 Jasperを起動するとGitHub, GHE\(GitHub Enterprise\)の選択が表示されます。GHEの場合はホスト名`例 ghe.example.com`を入力してください。
 
