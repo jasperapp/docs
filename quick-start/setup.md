@@ -2,7 +2,7 @@
 description: Jasperをダウンロードして、GitHubのアクセストークンを設定するだけですぐに使用できます。
 ---
 
-# 新しく始める
+# Setup
 
 ## インストール <a id="install"></a>
 
