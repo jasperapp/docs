@@ -10,7 +10,7 @@
   * [Stream appearance and notifications](usecase/stream-detail.md)
   * [Advanced Stream](usecase/stream-advanced.md)
   * [Browse Issues](usecase/issue-browse.md)
-  * [キーボード操作](usecase/keyboard.md)
+  * [Keyboard operation](usecase/keyboard.md)
 * [リファレンス](reference/README.md)
   * [Stream](reference/stream.md)
   * [Filter Stream / Filter](reference/filter-stream.md)
