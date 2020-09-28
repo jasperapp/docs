@@ -20,7 +20,7 @@ Jasperは「簡単さ」よりも「柔軟性」を重視し、様々なユー�
 
 JasperはMac/Window/Linuxに対応していますが、Android/iOSのスマートフォンアプリには対応していません。しかし、GitHub NotificationsとJasperを連携させることで、スマートフォンのブラウザから閲覧したissueをJasperでも既読にすることができます。詳しくは「[スマートフォンと連携](usecase/advanced.md#mobile)」を参照してください。
 
-## 複数マシンの同期 <a id="multi-machine"></a>
+## 複数マシンの同期 <a id="multi-machines"></a>
 
 Jasperは複数マシンでのissue同期には対応していません。Dropboxなどのファイル同期サービスを使って独自に実現しているユーザはいますが、現在は公式サポートしておりません。もしご利用になりたい場合は`メニュー → Dev → Open Data Directory`から開くディレクトリを同期してお試しください。
 
@@ -28,13 +28,13 @@ Jasperは複数マシンでのissue同期には対応していません。Dropbo
 
 Jasperの組み込みブラウザはタブブラウザには非対応です。複数のissueを同時に閲覧する場合は外部ブラウザをご利用ください。
 
-## issueの表示速度 <a id="issue-loading"></a>
+## issueの表示速度 <a id="ttfb"></a>
 
 Jasperの内部ブラウザでissueを表示したときに、表示速度が遅い場合があります。しかしこれはGitHub側のTTFB\(time to first byte\)が遅いためです。Jasper側で改善する目処は今の所たっていません。
 
 ![](.gitbook/assets/17_ttfb.png)
 
-## Jasperが表示されなくなった
+## Jasperが表示されなくなった <a id="blank-screen"></a>
 
  Jasperを起動しても真っ白な画面になってしまう場合、データが破損した可能性があります。次の手順でJasperのデータを削除して初期化ください。
 
@@ -50,7 +50,7 @@ Jasperの内部ブラウザでissueを表示したときに、表示速度が遅
 Jasperのコア機能であるStreamは[GitHub Search API](https://docs.github.com/en/rest/reference/search)を定期的にポーリングすることで実現しています。ポーリングは短い間隔にするとGitHub側に負荷がかかり、長い間隔にするとユーザ側の使い勝手\(issueの更新\)が悪くなります。そこで、Jasperでは以下のようなポーリング設計とすることで、両者のバランスをとっています。
 
 * Streamごとにポーリングするのではなく、Jasper全体で1つのポーリングとする
-  * このため、Streamが増えすぎると1つのStreamあたりの更新間隔が伸びる。 この問題を緩和するには「[更新間隔を最適化する](usecase/advanced.md#polling)」を参照してください。
+  * このため、Streamが増えすぎると1つのStreamあたりの更新間隔が伸びる。 この問題を緩和するには「[更新間隔を最適化する](usecase/advanced.md#optimize)」を参照してください。
 * GitHub APIのrate limitに達した場合、ポーリング間隔を自動的に伸ばす
   * GitHub Search APIのrate limitは60秒間に10リクエストです。デフォルトのポーリング間隔では60秒間に6リクエストであるため、rate limitに達することはありません
   * GHE\(GitHub Enterprise\)ではrate limitが独自に設定されている場合があります。詳しくはGHEの管理者にお問い合わせください。
@@ -59,7 +59,7 @@ Jasperのコア機能であるStreamは[GitHub Search API](https://docs.github.c
 
 開発者\([@h13i32maru](https://twitter.com/h13i32maru)\)を支援してくださる方は「[Support Subscription](https://h13i32maru.jp/supporter/)」から少額サブスクリプションをしていただけると大変うれしいです。
 
-## フィードバック <a id="competitor"></a>
+## フィードバック <a id="feedback"></a>
 
 フィードバックはお気軽にお寄せください。Twitterの[\#jasperapp](https://twitter.com/hashtag/jasperapp)やJasperについてのブログ記事などを書いてもらえると非常に嬉しいです。不具合や機能要望は[jasperapp/jasper](https://github.com/jasperapp/jasper)にお願いします。可能な範囲で対応していきます。
 
@@ -83,7 +83,7 @@ Jasperと同様にissueの閲覧や通知を管理するツールは現時点\(2
 | [DeckHub](https://getdeckhub.com/) |  | 2016.02 ~ 2016.04 |
 | [BugHub](http://www.bughubapp.com/) |  | 2013.04 ~ 2015.11 |
 
-## 記事
+## 記事 <a id="article"></a>
 
 開発者の記事
 
