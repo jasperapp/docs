@@ -52,7 +52,7 @@ The filters available in the Filter Stream are pretty much the same as in the St
 | `assignee:defunkt` | User assigned issues |
 
 {% hint style="info" %}
-Multiple filters of the same type can be specified as OR conditions. For example, `involves:defunkt involves:jlord` is an issue involving `defunkt` or `jlord`.
+Multiple filters of the same type can be specified as OR conditions. For example, `involves:defunkt involves:jlord` is issues involving `defunkt` or `jlord`.
 {% endhint %}
 
 {% hint style="info" %}
@@ -74,26 +74,26 @@ Specifying multiple queries of the same type is an OR condition. For example, `r
 
 | Filter | Condition |
 | :--- | :--- |
-| `repo:nodejs/node repo:electron/electron` | リポジトリのissue |
-| `org:nodejs org:electron` | Organizationのissue |
-| `user:defunkt user:jlord` | ユーザ下のissue |
+| `repo:nodejs/node` | Repository issues |
+| `org:nodejs` | Organization issues |
+| `user:defunkt` | User issues |
 
 {% hint style="info" %}
-同じ種類のクエリを複数指定するとOR条件になります。‌例えば、`repo:nodejs/node repo:electron/electron`は`nodejs/node`もしくは`electron/electron`のissueです。
+Specifying multiple queries of the same type is an OR condition. For example, `repo:nodejs/node repo:electron/electron` is issues of `nodejs/node` or `electron/electron`.
 {% endhint %}
 
-## ラベルやマイルストーンなど <a id="label-filter"></a>
+## Label, milestone, etc <a id="label-filter"></a>
 
-| フィルター | 条件 |
+| Filter | Condition |
 | :--- | :--- |
-| `label:bug label:important` | ラベルがついたissue |
-| `milestone:v1.0.0 milestone:v2.0.0` | マイルストーンがついたissue |
-| `project-name:hello-pj` | プロジェクトに紐付いたissue |
-| `project-column:now-doing` | プロジェクトカラムに紐付いたissue |
-| `number:123` | 特定のissue番号 |
+| `label:bug` | Labeled issues |
+| `milestone:v1.0.0` | Milestone issues |
+| `project-name:hello-pj` | Project issues |
+| `project-column:now-doing` | Project column issues |
+| `number:123` | Issue number |
 
 {% hint style="info" %}
-同じ種類のクエリを複数指定するとOR条件になります。例えば、`milestone:v1.0.0 milestone:v2.0.0`は`v1.0.0`もしくは`v2.0.0`のマイルストーンがついたissueです。ただし、ラベルについてはAND条件となります。
+Specifying multiple queries of the same type is an OR condition. For example, `milestone:v1.0.0.0 milestone:v2.0.0` is issues with a `v1.0.0` or `v2.0.0.0` milestone. However, this is an AND condition for labels.
 {% endhint %}
 
 {% hint style="info" %}
