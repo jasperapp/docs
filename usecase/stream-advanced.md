@@ -1,48 +1,48 @@
 ---
-description: GitHubの機能と連携させることで、より高度な使い方が可能になります。
+description: Integration with GitHub's features allows for more advanced usage.
 ---
 
-# Streamの高度な使い方
+# Advanced Stream
 
-## スマートフォンと連携 <a id="mobile"></a>
+## Smartphone integration <a id="mobile"></a>
 
-スマートフォンや通常のブラウザで閲覧したissueを、Jasperでも既読にするためにはGitHub Notification Syncを有効にします。
+You must enable GitHub Notification Sync in order for Jasper to read issues viewed on a smartphone or normal browser.
 
 ![](../.gitbook/assets/07_notification_sync.png)
 
-この設定を有効にすると定期的\(通常は60秒間隔\)に[GitHub Notification](https://github.com/notifications)からJasper側に反映させます。
+By enabling this setting, [GitHub Notifications](https://github.com/notifications) will periodically \(usually at 60-second intervals\) reflect this to Jasper.
 
 {% hint style="warning" %}
-JasperからGitHub Notificationへの反映は「issueを閲覧して既読にした」場合のみ行われます。次の操作はGitHub Notificationへは反映されません。
+Jasper will only reflect the issue in GitHub Notifications if you have "Viewed and marked the issue as read". The following operations will not be reflected in GitHub Notifications
 
-* Jasperで未読にしたissue
-* Japserでメニューやキーボードショートカットにより既読にしたissue
+* Unread issues in Jasper
+* Issues read using a menu or keyboard shortcut in Jasper
 {% endhint %}
 
-## GitHub Projectsと連携 <a id="project"></a>
+## Integration with GitHub Projects <a id="project"></a>
 
-特定のGithub Projectsに関連するissueを見るにはProject Streamを作成します。
+To view issues related to a specific Github Project, create a Project Stream.
 
 {% tabs %}
-{% tab title="Project Streamの作成" %}
+{% tab title="Creating a Project Stream" %}
 ![](../.gitbook/assets/07_project_stream1.png)
 {% endtab %}
 
-{% tab title="Project Streamの表示" %}
+{% tab title="View Project Stream" %}
 ![](../.gitbook/assets/07_project_stream2.png)
 {% endtab %}
 {% endtabs %}
 
 {% hint style="info" %}
-`project:REPOSITORY/PROJECT_BOARD`クエリを使い、通常のStreamを作成しGitHub Projects に関連するissueを見ることはできます。しかしProject Streamを使うことでProject Board\(カンバン\)との連携が可能になるので、Project Streamを使うことをおすすめします。
+With the `project:REPOSITORY/PROJECT_BOARD` query, you can still create a regular Stream to view issues related to GitHub Projects. However, we recommend using Project Stream as it allows you to work with the Project Board \(Kanban\).
 {% endhint %}
 
-## GitHub Teamと連携 <a id="team"></a>
+## Integration with GitHub Team
 
-自分が所属するGitHub Teamへメンションされたissueを見るにはTeam Streamを使います。Team Streamは設定画面から有効にします。
+Use the Team Stream to view issues that have been mentioned to your GitHub Team.
 
 {% tabs %}
-{% tab title="Team Streamの有効にする" %}
+{% tab title="Enable Team Stream" %}
 ![](../.gitbook/assets/07_team_stream1.png)
 {% endtab %}
 
@@ -50,21 +50,19 @@ JasperからGitHub Notificationへの反映は「issueを閲覧して既読に�
 ![](../.gitbook/assets/07_team_stream3.png)
 {% endtab %}
 
-{% tab title="Team Streamの内容" %}
-自分が所属するTeamからクエリが自動的に作成されます。
+{% tab title="Team Stream queries" %}
+Queries are automatically created from the Team you belong to.
 
 ![](../.gitbook/assets/07_team_stream2%20%281%29.png)
 {% endtab %}
 {% endtabs %}
 
+## Integrating with GitHub Watching
 
-
-## GitHub Watchingと連携する <a id="watching"></a>
-
-自分がGitHub上でwatchしたリポジトリのissueを見るにはWatching Streamを使います。Watching Streamは設定画面から有効にします。
+You can use the Watching Stream to view issues in repositories that you have watched on GitHub.
 
 {% tabs %}
-{% tab title="Watching Streamの有効にする" %}
+{% tab title="Enable Watching Stream" %}
 ![](../.gitbook/assets/07_watchiing_stream1.png)
 {% endtab %}
 
@@ -72,19 +70,19 @@ JasperからGitHub Notificationへの反映は「issueを閲覧して既読に�
 ![](../.gitbook/assets/07_watching_stream2.png)
 {% endtab %}
 
-{% tab title="Watching Streamの内容" %}
-自分がwatchするリポジトリからクエリが自動的に作成されます。
+{% tab title="Watching Stream queries" %}
+Queries are automatically created from the repositories you watch.
 
 ![](../.gitbook/assets/07_watching_stream3.png)
 {% endtab %}
 {% endtabs %}
 
-## 任意のissueを登録する <a id="subscription"></a>
+## Register any issues
 
-リポジトリやorganizationではなく、issue単独でStreamにしたい場合はSubscription Streamを使います。Subscription Streamは設定画面から有効にします。
+If you want the issue to be a Stream on its own, rather than a repository or organization, use the Subscription Stream, which you enable from the configuration screen.
 
 {% tabs %}
-{% tab title="Subscription Streamを有効にする" %}
+{% tab title="Enable Subscription Stream" %}
 ![](../.gitbook/assets/07_subscription_stream1.png)
 {% endtab %}
 
@@ -92,31 +90,31 @@ JasperからGitHub Notificationへの反映は「issueを閲覧して既読に�
 ![](../.gitbook/assets/07_subscription_stream2.png)
 {% endtab %}
 
-{% tab title="issueを登録する" %}
-Subscription Streamを右クリックして、メニューからissueのURLを登録します。
+{% tab title="Register issue" %}
+Right-click on the Subscription Stream and register the URL of the issue in the menu.
 
 ![](../.gitbook/assets/07_subscription_stream3.png)
 {% endtab %}
 {% endtabs %}
 
-## 更新間隔を最適化する <a id="polling"></a>
+## Optimizing the update interval
 
-Jasperは通常10秒ごとにissueを検索して更新を取得しています。この更新間隔はStreamごとではなく、Jasper全体の更新間隔です。つまり、Streamをたくさん作れば作るほど、Stream1個あたりの更新は遅くなります。例えばStreamを3つ作っていた場合、1つのStreamが更新されるのは30秒ごとになります。
-
-{% hint style="info" %}
-このような動作になっているのは、Streamが増えてもGitHub側に負荷をかけないようにするためです。
-{% endhint %}
-
-このため、たくさんStreamを作ると更新が遅くなってしまいます。そこで、通常のStreamを少なくしてFilter Streamを積極的に使うことで、更新が遅くならないようにします。
+Jasper typically looks for an issue every 10 seconds to get an update. This update interval is not per Stream, but rather for the entire Jasper. This means that the more Streams you create, the slower the update per Stream will be. For example, if you are creating three Streams, a Stream will only be updated every 30 seconds.
 
 {% hint style="info" %}
-Filter StreamはGitHubの検索を行わず、ローカルのissueをフィルターするため更新間隔に影響を与えません。Filter Streamについての詳細は「[Filter Stream / Filter](../reference/filter-stream.md)」を参照してください。
+The reason it works this way is so that more Streams don't overload GitHub.
 {% endhint %}
 
-例えば次のような2つのStreamを作るのではなく、1つのStreamと2つのFilter Streamを作ります。こうすることで前者では1つのStreamあたり20秒間隔の更新だったものが、後者では1つのStreamあたり10秒間隔になります。
+This is why creating a lot of Streams can slow down updates. So we use fewer regular Streams and more Filter Streams, so that updates are not slowed down.
+
+{% hint style="info" %}
+Filter Stream does not search GitHub and filters local issues, so it does not affect the update interval. For more information on Filter Stream, see "[Filter Stream / Filter](../reference/filter-stream.md)".
+{% endhint %}
+
+For example, instead of creating two Streams, create a Stream and two Filter Streams, like this This will allow you to update at 10 second intervals per stream, instead of 20 seconds per stream in the former.
 
 {% tabs %}
-{% tab title="2つのStream" %}
+{% tab title="Two Streams" %}
 ```text
 org:nodejs
 ```
@@ -128,7 +126,7 @@ org:electron
 ![](../.gitbook/assets/07_optimize_interval1.png)
 {% endtab %}
 
-{% tab title="1つのStreamと2つのFilter Stream" %}
+{% tab title="A Stream and two Filter Streams" %}
 ```text
 org:nodejs org:electron
 ```
@@ -145,5 +143,5 @@ org:electron
 {% endtab %}
 {% endtabs %}
 
-JasperではこのようにFilter Streamを積極的に利用することを推奨しています。
+Jasper recommends using Filter Stream actively in this way.
 

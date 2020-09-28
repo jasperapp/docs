@@ -1,26 +1,28 @@
 ---
-description: Streamを使いやすくするために表示や通知をStreamごとに設定することができます。
+description: >-
+  You can configure appearance and notifications of each Stream to make it
+  easier to use.
 ---
 
-# Streamの見た目と通知設定
+# Stream appearance and notifications
 
-## Streamの色や通知を設定する <a id="color"></a>
+## Stream colors and notification settings <a id="color"></a>
 
-Streamは詳細設定から色とアイコンを設定できます。これによりグルーピングをしたり、重要なStreamを目立つようにできます。
+Streams can be configured with colors and icons in the detail settings. This allows for grouping and allows you to make important Streams stand out from the crowd.
 
-また、通知はStreamごとにオン/オフを設定することができます。通知されるほどではないStreamについては通知をオフにすることで重要な通知を見逃さなくなります。
+Notifications can also be turned on or off per Stream. For lesser Streams, you can turn off notifications so you don't miss important notifications.
 
 ![](../.gitbook/assets/06_detail.png)
 
 {% hint style="info" %}
-アイコンは[Material Design Icons](https://materialdesignicons.com/)に登録されている全種類のアイコンを使用できます。
+Icons are available for all types of icons registered in [Material Design Icons](https://materialdesignicons.com/).
 {% endhint %}
 
-## Streamをまとめて設定する <a id="disable"></a>
+## Stream collective settings <a id="disable"></a>
 
-Streamの通知はJasper全体の設定画面からもまとめて変更できます。
+Stream notifications can also be changed in batches from the Jasper-wide configuration screen.
 
-また、不要なStreamを非表示にすることができます。例えば`Inbox`や`Archive`を使わない場合は、非表示にすることでJasperを見やすくすることができます。
+You can also hide unwanted Streams. For example, if you don't use `Inbox` or `Archive`, you can hide them to make Jasper easier to see.
 
 ![](../.gitbook/assets/06_notification_all.png)
 
