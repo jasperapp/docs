@@ -111,7 +111,7 @@ Filter Streamで使用できるフィルターはStreamとほとんど同じ条�
 
 | フィルター | 条件 |
 | :--- | :--- |
-| `review-requested:defunkt` | ユーザがレビューリクエストされたpull request |
+| `review-requested:defunkt` | ユーザ/チームがレビューリクエストされたpull request |
 | `reviewed-by:defunkt` | ユーザがレビューしたpull request |
 
 {% hint style="info" %}
@@ -122,9 +122,9 @@ Filter Streamで使用できるフィルターはStreamとほとんど同じ条�
 
 | フィルター | 条件 |
 | :--- | :--- |
-| `repo:nodejs/node repo:electron/electron` | リポジトリのissue |
-| `org:nodejs org:electron` | Organizationのissue |
-| `user:defunkt user:jlord` | ユーザ下のissue |
+| `repo:nodejs/node` | リポジトリのissue |
+| `org:nodejs` | Organizationのissue |
+| `user:defunkt` | ユーザ下のissue |
 
 {% hint style="info" %}
 同じ種類のクエリを複数指定するとOR条件になります。‌例えば、`repo:nodejs/node repo:electron/electron`は`nodejs/node`もしくは`electron/electron`のissueです。
@@ -134,8 +134,8 @@ Filter Streamで使用できるフィルターはStreamとほとんど同じ条�
 
 | フィルター | 条件 |
 | :--- | :--- |
-| `label:bug label:important` | ラベルがついたissue |
-| `milestone:v1.0.0 milestone:v2.0.0` | マイルストーンがついたissue |
+| `label:bug` | ラベルがついたissue |
+| `milestone:v1.0.0` | マイルストーンがついたissue |
 | `project-name:hello-pj` | プロジェクトに紐付いたissue |
 | `project-column:now-doing` | プロジェクトカラムに紐付いたissue |
 | `number:123` | 特定のissue番号 |
