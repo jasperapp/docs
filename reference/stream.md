@@ -63,7 +63,7 @@ Streamに使用できるクエリはGitHub Searchのクエリと完全に互換�
 </table>
 
 {% hint style="warning" %}
-オープン状態、マージ状態、ドラフト状態のクエリは非推奨です。これらのクエリを使用する場合はFilter Streamをお使いください。詳しくは[こちら](../usecase/stream-query.md#open-issue)を参照してください。
+オープン状態、マージ状態、ドラフト状態のクエリは非推奨です。これらのクエリを使用する場合はFilter Streamをお使いください。詳しくは[こちら](../usecase/query.md#open-issue)を参照してください。
 {% endhint %}
 
 ## ユーザやチーム <a id="involves"></a>

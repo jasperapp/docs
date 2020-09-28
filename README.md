@@ -58,7 +58,7 @@ Streamは[GitHub Search API](https://docs.github.com/en/rest/reference/search)�
 ![](.gitbook/assets/01_stream.png)
 
 {% hint style="info" %}
-Streamで使用できるクエリは「[Streamのクエリ](usecase/stream-query.md)」や「[Stream](reference/stream.md)」を参照してください。
+Streamで使用できるクエリは「[Streamのクエリ](usecase/query.md)」や「[Stream](reference/stream.md)」を参照してください。
 {% endhint %}
 
 ## 高い柔軟性 <a id="flexible"></a>
