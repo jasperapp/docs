@@ -97,32 +97,71 @@ Specifying multiple queries of the same type is an OR condition. For example, `m
 {% endhint %}
 
 {% hint style="info" %}
-スペースを含むラベルやマイルストーンの場合は`label:"`hello `world"`のようにダブルクオーテーションで囲んでください。‌
+A label or milestone containing spaces should be enclosed in double quotation marks, such as `label: "hello world"`.
 {% endhint %}
 
-## 任意のキーワード <a id="keyword-filter"></a>
+## Any keywords <a id="keyword-filter"></a>
 
-| フィルター | 条件 |
+| Filter | Condition |
 | :--- | :--- |
-| `github octocat` | キーワード\(AND条件\)が含まれるissue |
+| `github octocat` | Issues containing the keywords \(AND conditions\) |
 
 {% hint style="info" %}
-スペースを含む場合は`"hello world"`のようにダブルクオーテーションで囲んでください。
+To include spaces, use double quotation marks, such as `"hello world"`.
 {% endhint %}
 
 {% hint style="info" %}
-キーワードはissue本文, author, assignee, label, milestone, repository, org, involves, review-requested, review, project-name, project-columnsを対象とします。
+Search keywords in issue body, author, assignee, label, milestone, repository, org, involves, review-requested, review, project-name and project-columns.
 {% endhint %}
 
 {% hint style="warning" %}
-OR, NOTには対応していません。
+OR and NOT are not supported.
 {% endhint %}
 
-## 除外・欠如 <a id="exclude-filter"></a>
+## Exclusion and missing <a id="exclude-filter"></a>
 
-| フィルター | 条件 |
-| :--- | :--- |
-| `-label:bug`, `-milestone:v0.0.1`, `-repo:nodejs/node` `-involves:defunk`... | 指定した条件が含まれないissue |
-| `no:label`, `no:milestone`, `no:assignee`, `no:project`, `no:dueon` | ラベル、マイルストーン、アサイン、 プロジェクト、締切が設定されていないissue |
-| `have:label`, `have:milestone`, `have:assignee`, `have:project`, `have:dueon` | ラベル、マイルストーン、アサイン、 プロジェクト、締切が設定されているissue |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Filter</th>
+      <th style="text-align:left">Condition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <p><code>-label:bug</code>,
+          <br /><code>-milestone:v0.0.1</code>,
+          <br /><code>-repo:nodejs/node</code> ,
+          <br /><code>-involves:defunk</code> ,</p>
+        <p>and more</p>
+      </td>
+      <td style="text-align:left">Issues that do not contain the specified conditions</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>no:label</code>,
+        <br /><code>no:milestone</code>,
+        <br /><code>no:assignee</code>,
+        <br /><code>no:project</code>,
+        <br /><code>no:dueon</code>
+      </td>
+      <td style="text-align:left">
+        <p>Labels, Milestones, Assignments,</p>
+        <p>and An issue with no project set up</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>have:label</code>,
+        <br /><code>have:milestone</code>,
+        <br /><code>have:assignee</code>,
+        <br /><code>have:project</code>,
+        <br /><code>have:dueon</code>
+      </td>
+      <td style="text-align:left">
+        <p>Labels, Milestones, Assignments,</p>
+        <p>and An issue with project set up</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
