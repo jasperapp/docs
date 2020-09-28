@@ -132,9 +132,9 @@ octocat NOT github
 
 GitHub Docs: [Limitations on query length](https://docs.github.com/en/github/searching-for-information-on-github/troubleshooting-search-queries#limitations-on-query-length),  [Exclude certain results](https://docs.github.com/en/github/searching-for-information-on-github/understanding-the-search-syntax#exclude-certain-results)
 
-## 含まない指定 <a id="exclude-issue"></a>
+## 除外指定 <a id="exclude-issue"></a>
 
-特定のリポジトリやラベルを含まないように指定するには-QUALIFIERを使います。例えばnodejs organizatonでnodejs/nodeリポジトリとbugラベルを含まいないissueを見るには次のようなクエリでStreamを作成します。
+特定のリポジトリやラベルを含まないように指定するには`-QUALIFIER`を使います。例えば`nodejs` organizatonで`nodejs/node`リポジトリと`bug`ラベルを含まいないissueを見るには次のようなクエリでStreamを作成します。
 
 ```text
 org:nodejs -repo:nodejs/node -label:bug
