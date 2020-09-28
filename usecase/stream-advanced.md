@@ -16,7 +16,7 @@ description: GitHubの機能と連携させることで、より高度な使い�
 JasperからGitHub Notificationへの反映は「issueを閲覧して既読にした」場合のみ行われます。次の操作はGitHub Notificationへは反映されません。
 
 * Jasperで未読にしたissue
-* Japserでメニューやキーボードショートカットにより既読にしたissue
+* Jasperでメニューやキーボードショートカットにより既読にしたissue
 {% endhint %}
 
 ## GitHub Projectsと連携 <a id="project"></a>
