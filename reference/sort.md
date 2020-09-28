@@ -20,19 +20,19 @@ description: issueの並び順についてのリファレンスです。
 
 | sort | 並び順 |
 | :--- | :--- |
-| `sort:updated` | issue更新順 |
-| `sort:created` | issueの作成順 |
-| `sort:closed` | issueのクローズ順 |
-| `sort:merged` | issueのマージ順 |
-| `sort:read` | issueの閲覧順 |
-| `sort:archived` | issueがアーカイブされた順 |
-| `sort:bookmark` | issueがブックマークされた順 |
-| `sort:author` | issueの作者名順 |
-| `sort:user` | issueのユーザ名、organization名順 |
-| `sort:repo` | issueのリポジトリ名順 |
-| `sort:milestone` | issueのマイルストーン名順 |
-| `sort:dueon` | issueのマイルストーンに設定されている締切日順 |
-| `sort:title` | issueのタイトル順 |
+| `sort:updated` | 更新順 |
+| `sort:created` | 作成順 |
+| `sort:closed` | クローズ順 |
+| `sort:merged` | マージ順 |
+| `sort:read` | 閲覧順 |
+| `sort:archived` | アーカイブされた順 |
+| `sort:bookmark` | ブックマークされた順 |
+| `sort:author` | 作者名順 |
+| `sort:user` | ユーザ名、organization名順 |
+| `sort:repo` | リポジトリ名順 |
+| `sort:milestone` | マイルストーン名順 |
+| `sort:dueon` | マイルストーンに設定されている締切日順 |
+| `sort:title` | タイトル順 |
 | `sort:number` | issueの番号順 |
 | `sort:type` | issueの種類（Issue or Pull Request） |
 
