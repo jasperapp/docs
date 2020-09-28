@@ -12,7 +12,7 @@ Project StreamにはGitHub ProjectのURLを指定することができます。
 {% endtab %}
 
 {% tab title="Project Streamの設定" %}
-![](../.gitbook/assets/11_project_stream2.png)
+![](../.gitbook/assets/project_stream_editor.png)
 {% endtab %}
 {% endtabs %}
 
