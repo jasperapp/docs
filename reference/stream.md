@@ -17,7 +17,7 @@ Streamは`Add Stream`メニューから追加します。
 {% endtabs %}
 
 {% hint style="info" %}
-Streamに使用できるクエリはGitHub Searchのクエリと完全に互換性があります。全てのクエリ一覧とシンタックスについては「[Searching issues and pull requests - github.com](https://docs.github.com/en/github/searching-for-information-on-github/searching-issues-and-pull-requests)」と「[Understanding the search syntax - github.com](https://docs.github.com/en/github/searching-for-information-on-github/understanding-the-search-syntax)」を参照してください。
+Streamに使用できるクエリはGitHub Searchのクエリと完全に互換性があります。GitHub Searchの全クエリとシンタックスについては「[Searching issues and pull requests - github.com](https://docs.github.com/en/github/searching-for-information-on-github/searching-issues-and-pull-requests)」と「[Understanding the search syntax - github.com](https://docs.github.com/en/github/searching-for-information-on-github/understanding-the-search-syntax)」を参照してください。
 {% endhint %}
 
 ## issueの状態を指定するクエリ <a id="is-query"></a>
