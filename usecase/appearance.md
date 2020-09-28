@@ -12,7 +12,7 @@ Streamは詳細設定から色とアイコンを設定できます。これに�
 
 {% tabs %}
 {% tab title="Streamの詳細" %}
-![](../.gitbook/assets/06_detail.png)
+![](../.gitbook/assets/stream_editor_details.png)
 {% endtab %}
 
 {% tab title="まとめて設定" %}
