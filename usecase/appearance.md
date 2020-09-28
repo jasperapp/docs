@@ -26,17 +26,17 @@ Notifications can also be turned on or off per Stream. If you don't want to be n
 Icons are available for all types of icons registered in [Material Design Icons](https://materialdesignicons.com/).
 {% endhint %}
 
-## Hide the Stream
-
-You can also hide unwanted Streams. For example, if you don't use `Inbox` or `Archive`, you can hide them to make Jasper easier to see.
-
-![](../.gitbook/assets/06_notification_all.png)
-
 ## General notification settings
 
 You can also turn off notifications for the entire issue if you want to focus on viewing the issue. You can turn notifications on/off by clicking the 🔔 icon in the top left corner. Or you can press `⌘ + I`.
 
 ![](../.gitbook/assets/08_notification.png)
+
+## Hide the Stream
+
+You can also hide unwanted Streams. For example, if you don't use `Inbox` or `Archive`, you can hide them to make Jasper easier to see.
+
+![](../.gitbook/assets/06_notification_all.png)
 
 ## Change the layout
 
