@@ -27,7 +27,7 @@ See "[Searching issues and pull requests - github.com](https://docs.github.com/e
   <thead>
     <tr>
       <th style="text-align:left">Query</th>
-      <th style="text-align:left">&#x6761;&#x4EF6;</th>
+      <th style="text-align:left">Condition</th>
     </tr>
   </thead>
   <tbody>
@@ -72,17 +72,17 @@ Open, merge and draft state queries are not recommended. If you use these querie
 
 ## Specify issues that involve users and teams
 
-| クエリ | 条件 |
+| Query | Condition |
 | :--- | :--- |
-| `involves:defunkt involves:jlord` | ユーザが関連するissue |
-| `author:defunkt author:jlord` | ユーザが作成したissue |
-| `assignee:defunkt assignee:jlord` | ユーザがアサインされたissue |
-| `mentions:defunkt mentions:jlord` | ユーザがメンションされたissue |
-| `commenter:defunkt commenter:jlord` | ユーザがコメントしたissue |
-| `team:github/owners team:octocat/owners` | チームがメンションされたissue |
+| `involves:defunkt involves:jlord` | User involved issues |
+| `author:defunkt author:jlord` | User created issues |
+| `assignee:defunkt assignee:jlord` | User assigned issues |
+| `mentions:defunkt mentions:jlord` | User mentioned issues |
+| `commenter:defunkt commenter:jlord` | User commented issues |
+| `team:github/owners team:octocat/owners` | Team mentioned issues |
 
 {% hint style="info" %}
-同じ種類のクエリを複数指定するとOR条件になります。
+Multiple queries of the same type become OR conditions. `Involves:defunkt involves:jlord` is an issue involving `defunkt` or `jlord`.
 {% endhint %}
 
 {% hint style="info" %}
