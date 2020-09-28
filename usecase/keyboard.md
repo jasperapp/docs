@@ -6,7 +6,7 @@ description: >-
 
 # Keyboard operation
 
-## Commonly used keyboard shortcuts <a id="major"></a>
+## Commonly used keyboard shortcuts <a id="shortcuts"></a>
 
 <table>
   <thead>
