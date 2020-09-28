@@ -35,8 +35,6 @@ The following operations are particularly useful for viewing issues
 {% endtab %}
 
 {% tab title="Floating menu" %}
-![](../.gitbook/assets/03_hover_menu.png)
-{% endtab %}
 {% endtabs %}
 
 ## Browser
