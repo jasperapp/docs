@@ -31,8 +31,6 @@ The following operations are particularly useful for viewing issues
 
 {% tabs %}
 {% tab title="Filter menu" %}
-![](../.gitbook/assets/03_filter_menu.png)
-{% endtab %}
 
 {% tab title="Floating menu" %}
 {% endtabs %}

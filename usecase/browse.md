@@ -10,17 +10,31 @@ description: >-
 
 To quickly display just the unread issues, use the issue's filter function - select `Filter by unread` from the filters at the top of the issue list. Alternatively, you can also display just the unread issues by pressing `U` on your keyboard.
 
-![](../.gitbook/assets/03_filter_menu.png)
+![](../.gitbook/assets/filter_by_unread.png)
 
 ## Read it later.
 
-If you want to read it later, Jasper offers two ways to return an issue to unread: by selecting `Mark as Unread` from the issue's floating menu. Alternatively, you may choose to mark an issue as unread by pressing `I` on the keyboard while it is selected.
+If you want to read it later, there are two ways to do it in Jasper.
+
+The first is to return an issue to unread by selecting `Mark as Unread` from the issue's floating menu. Alternatively, you can press  `I`  on the keyboard on a selected issue to mark it back as unread.
 
 The second way to bookmark an issue is to add it to your bookmarks. Select `Add to Bookmark` from the issue's floating menu. Alternatively, you may bookmark a selected issue by pressing  `B`  on the keyboard.
+
+{% tabs %}
+{% tab title="Mark as unread" %}
+![](../.gitbook/assets/hover_unread.png)
+{% endtab %}
+
+{% tab title="Add to bookmark" %}
+![](../.gitbook/assets/hover_bookmark.png)
+{% endtab %}
+{% endtabs %}
 
 ## Exclude unwanted issues
 
 You can use the archive feature to exclude issues that you do not need to view in the future. To archive, select `Move to Archive` from the floating menu. Alternatively, you may archive an issue in the selected state by pressing the `E` key on your keyboard.
+
+![](../.gitbook/assets/hover_archive.png)
 
 ## Check for unread comments.
 
