@@ -19,7 +19,7 @@ Jasper will only reflect the issue in GitHub Notifications if you have "Viewed a
 * Issues read using a menu or keyboard shortcut in Jasper
 {% endhint %}
 
-## Integration with GitHub Projects <a id="project"></a>
+## GitHub Projects Integration <a id="project"></a>
 
 To view issues related to a specific Github Project, create a Project Stream.
 
@@ -37,7 +37,7 @@ To view issues related to a specific Github Project, create a Project Stream.
 With the `project:REPOSITORY/PROJECT_BOARD` query, you can still create a regular Stream to view issues related to GitHub Projects. However, we recommend using Project Stream as it allows you to work with the Project Board \(Kanban\).
 {% endhint %}
 
-## Integration with GitHub Team
+## GitHub Team Integration
 
 Use the Team Stream to view issues that have been mentioned to your GitHub Team.
 
@@ -57,7 +57,7 @@ Queries are automatically created from the Team you belong to.
 {% endtab %}
 {% endtabs %}
 
-## Integrating with GitHub Watching
+## GitHub Watching Integration
 
 You can use the Watching Stream to view issues in repositories that you have watched on GitHub.
 
