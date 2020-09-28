@@ -1,22 +1,22 @@
 ---
-description: Project Streamのリファレンスです。
+description: Project Stream reference.
 ---
 
 # Project Stream
 
-Project StreamにはGitHub ProjectのURLを指定することができます。
+You can specify the URL of the GitHub Project in the Project Stream.
 
 {% tabs %}
-{% tab title="Project Streamの追加" %}
+{% tab title="Add Project Stream" %}
 ![](../.gitbook/assets/11_project_stream1.png)
 {% endtab %}
 
-{% tab title="Project Streamの設定" %}
+{% tab title="Project Stream setting" %}
 ![](../.gitbook/assets/11_project_stream2.png)
 {% endtab %}
 {% endtabs %}
 
-Project Streamを選択すると、Project Boardが自動的に表示されます。Project Board上のissueはJasper内の未読・既読が反映されて表示されます。
+When you select Project Stream, the Project Board will automatically appear, and the issues on the Project Board will reflect the unread/read issues in Jasper.
 
 ![](../.gitbook/assets/07_project_stream2.png)
 
