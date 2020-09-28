@@ -20,7 +20,7 @@ Streamは`Add Stream`メニューから追加します。
 Streamに使用できるクエリはGitHub Searchのクエリと完全に互換性があります。GitHub Searchの全クエリとシンタックスについては「[Searching issues and pull requests - github.com](https://docs.github.com/en/github/searching-for-information-on-github/searching-issues-and-pull-requests)」と「[Understanding the search syntax - github.com](https://docs.github.com/en/github/searching-for-information-on-github/understanding-the-search-syntax)」を参照してください。
 {% endhint %}
 
-## issueの状態を指定するクエリ <a id="is-query"></a>
+## issueの状態 <a id="is-query"></a>
 
 <table>
   <thead>
@@ -66,7 +66,7 @@ Streamに使用できるクエリはGitHub Searchのクエリと完全に互換�
 オープン状態、マージ状態、ドラフト状態のクエリは非推奨です。これらのクエリを使用する場合はFilter Streamをお使いください。詳しくは[こちら](../usecase/stream-query.md#open-issue)を参照してください。
 {% endhint %}
 
-## ユーザやチームが関係するissueを指定するクエリ <a id="involves-query"></a>
+## ユーザやチーム <a id="involves-query"></a>
 
 | クエリ | 条件 |
 | :--- | :--- |
@@ -78,14 +78,14 @@ Streamに使用できるクエリはGitHub Searchのクエリと完全に互換�
 | `team:github/owners` | チームがメンションされたissue |
 
 {% hint style="info" %}
-同じ種類のクエリを複数指定するとOR条件になります。`involves:defunkt involves:jlord` は`defunkt`もしくは`jlord`が関係するissueです。
+同じ種類のクエリを複数指定するとOR条件になります。例えば、`involves:defunkt involves:jlord` は`defunkt`もしくは`jlord`が関係するissueです。
 {% endhint %}
 
 {% hint style="info" %}
 involvesはauthor, assignee, mentions, commenter, review-requestedをまとめて指定したものと同様になります。
 {% endhint %}
 
-## レビューに関係するpull requestを指定するクエリ <a id="review-query"></a>
+## Pull requestレビュー <a id="review-query"></a>
 
 <table>
   <thead>
@@ -125,10 +125,10 @@ involvesはauthor, assignee, mentions, commenter, review-requestedをまとめ�
 </table>
 
 {% hint style="info" %}
-同じ種類のクエリを複数指定するとOR条件になります。`review-requested:defunkt review-requested:jlord`は`defunkt`もしくは`jlord`がレビューリクエストされたpull requestです。
+同じ種類のクエリを複数指定するとOR条件になります。例えば、`review-requested:defunkt review-requested:jlord`は`defunkt`もしくは`jlord`がレビューリクエストされたpull requestです。
 {% endhint %}
 
-## issueのリポジトリやOrganizationを指定するクエリ <a id="repo-query"></a>
+## リポジトリやOrganization <a id="repo-query"></a>
 
 | クエリ | 条件 |
 | :--- | :--- |
@@ -137,20 +137,20 @@ involvesはauthor, assignee, mentions, commenter, review-requestedをまとめ�
 | `user:defunkt` | ユーザ下のissue |
 
 {% hint style="info" %}
-同じ種類のクエリを複数指定するとOR条件になります。`repo:nodejs/node repo:electron/electron`は`nodejs/node`もしくは`electron/electron`のissueです。
+同じ種類のクエリを複数指定するとOR条件になります。例えば、`repo:nodejs/node repo:electron/electron`は`nodejs/node`もしくは`electron/electron`のissueです。
 {% endhint %}
 
-## ラベルなどのissueの属性を指定するクエリ <a id="label-query"></a>
+## ラベルやマイルストーンなど <a id="label-query"></a>
 
 | クエリ | 条件 |
 | :--- | :--- |
 | `label:bug` | ラベルがついたissue |
 | `milestone:v1.0.0` | マイルストーンがついたissue |
-| `project:github/57` | Organizationレベルのプロジェクト に紐付いたissue |
-| `project:github/linguist/1` | リポジトリレベルのプロジェクト に紐付いたissue |
+| `project:github/57` | Organizationプロジェクトのissue |
+| `project:github/linguist/1` | リポジトリプロジェクトのissue |
 
 {% hint style="info" %}
-同じ種類のクエリを複数指定するとOR条件になります。`milestone:v1.0.0 milestone:v2.0.0`は`v1.0.0`もしくは`v2.0.0`のissueです。  
+同じ種類のクエリを複数指定するとOR条件になります。例えば、`milestone:v1.0.0 milestone:v2.0.0`は`v1.0.0`もしくは`v2.0.0`のissueです。  
 ただし、ラベルについてはAND条件となります。
 {% endhint %}
 
@@ -158,7 +158,7 @@ involvesはauthor, assignee, mentions, commenter, review-requestedをまとめ�
 スペースを含むラベルやマイルストーンの場合は`label:"foo bar"`のようにダブルクオーテーションで囲んでください。
 {% endhint %}
 
-## issueのキーワードを指定するクエリ <a id="keyword-query"></a>
+## 任意のキーワード <a id="keyword-query"></a>
 
 | クエリ | 条件 |
 | :--- | :--- |
@@ -174,7 +174,7 @@ involvesはauthor, assignee, mentions, commenter, review-requestedをまとめ�
 AND, OR, NOTについては5つまでしか含まれることはできません。詳しくは「[Limitations on query length - github.com](https://docs.github.com/en/github/searching-for-information-on-github/troubleshooting-search-queries#limitations-on-query-length)」を参照してください。
 {% endhint %}
 
-## 除外・欠如を指定するクエリ <a id="exclude-query"></a>
+## 除外・欠如 <a id="exclude-query"></a>
 
 | クエリ | 条件 |
 | :--- | :--- |
