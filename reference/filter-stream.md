@@ -30,7 +30,7 @@ Filter StreamはStreamのメニューにある`Add Filter Stream`から追加し
 Filter Streamで使用できるフィルターはStreamとほとんど同じ条件を指定できます。ただし、少し異なるものもあるので注意してください。
 {% endhint %}
 
-## issueの状態 <a id="is-filter"></a>
+## issueの状態 <a id="state"></a>
 
 <table>
   <thead>
@@ -91,7 +91,7 @@ Filter Streamで使用できるフィルターはStreamとほとんど同じ条�
   </tbody>
 </table>
 
-## ユーザやチーム <a id="involves-filter"></a>
+## ユーザやチーム <a id="involves"></a>
 
 | フィルター | 説明 |
 | :--- | :--- |
@@ -107,7 +107,7 @@ Filter Streamで使用できるフィルターはStreamとほとんど同じ条�
 `involves`は`author`, `assignee`, `commenter`, `review-requested`をまとめて指定したものと同様になります。‌
 {% endhint %}
 
-## Pull requestレビュー <a id="review-filter"></a>
+## Pull requestレビュー <a id="review"></a>
 
 | フィルター | 説明 |
 | :--- | :--- |
@@ -118,7 +118,7 @@ Filter Streamで使用できるフィルターはStreamとほとんど同じ条�
 同じ種類のクエリを複数指定するとOR条件になります。例えば、‌`review-requested:defunkt review-requested:jlord`は`defunkt`もしくは`jlord`がレビューリクエストされたpull requestです。
 {% endhint %}
 
-## リポジトリやOrganization <a id="repo-filter"></a>
+## リポジトリやOrganization <a id="repo"></a>
 
 | フィルター | 説明 |
 | :--- | :--- |
@@ -130,7 +130,7 @@ Filter Streamで使用できるフィルターはStreamとほとんど同じ条�
 同じ種類のクエリを複数指定するとOR条件になります。‌例えば、`repo:nodejs/node repo:electron/electron`は`nodejs/node`もしくは`electron/electron`のissueです。
 {% endhint %}
 
-## ラベルやマイルストーンなど <a id="label-filter"></a>
+## ラベルやマイルストーンなど <a id="label"></a>
 
 | フィルター | 説明 |
 | :--- | :--- |
@@ -148,7 +148,7 @@ Filter Streamで使用できるフィルターはStreamとほとんど同じ条�
 スペースを含むラベルやマイルストーンの場合は`label:"`hello `world"`のようにダブルクオーテーションで囲んでください。‌
 {% endhint %}
 
-## 任意のキーワード <a id="keyword-filter"></a>
+## 任意のキーワード <a id="keyword"></a>
 
 | フィルター | 説明 |
 | :--- | :--- |
@@ -166,7 +166,7 @@ Filter Streamで使用できるフィルターはStreamとほとんど同じ条�
 OR, NOTには対応していません。
 {% endhint %}
 
-## 除外・欠如 <a id="exclude-filter"></a>
+## 除外・欠如 <a id="exclude"></a>
 
 | フィルター | 説明 |
 | :--- | :--- |
