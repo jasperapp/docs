@@ -30,7 +30,7 @@ Stream is powered by the [GitHub Search API](https://docs.github.com/en/rest/ref
 
 And since Stream can use the exact same queries as the GitHub Search API, you have the flexibility to browse issues you are interested in.
 
-![](.gitbook/assets/01_stream.png)
+![](.gitbook/assets/stream_editor.png)
 
 {% hint style="info" %}
 See "[Stream queries](usecase/query.md)" and "[Stream](reference/stream.md)" for a list of queries that can be used with Stream.
