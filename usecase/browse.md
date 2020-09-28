@@ -4,7 +4,7 @@ description: >-
   efficiently. Here are some of the most commonly used features.
 ---
 
-# Browse Issues
+# Browse issues
 
 ## Unread issues
 

@@ -2,7 +2,7 @@
 description: Integration with GitHub's features allows for more advanced usage.
 ---
 
-# Advanced Settings
+# Advanced settings
 
 ## Smartphone integration <a id="mobile"></a>
 
