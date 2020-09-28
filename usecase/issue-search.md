@@ -4,7 +4,7 @@ description: Streamや全体からissueを検索することができます。
 
 # issueの検索
 
-## Streamから検索
+## Streamから検索 <a id="from-stream"></a>
 
 任意のStreamからissueを検索するには`Filter`機能を使います。Filterを使うにはissueリストの上部にあるフィルターアイコンをクリックしてください。
 
@@ -14,7 +14,7 @@ description: Streamや全体からissueを検索することができます。
 Filterでの検索にはFilter Streamと同じフィルターが使用できます。詳しくはリファレンスの「[Filter Stream](../reference/filter-stream.md)」を参照してください。
 {% endhint %}
 
-## 全体から検索
+## 全体から検索 <a id="from-all"></a>
 
 Jasperが保持している全issueの中から検索を行うには`Jump Navigation`機能を使います。Jump Navigationは左上の🔍アイコンから開始します。もしくは`⌘ + E (Mac)`, `Ctrl + E (Window/Linux)`を押すことでも開始できます。
 
