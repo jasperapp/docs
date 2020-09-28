@@ -5,7 +5,7 @@
   * [Setup](quick-start/setup.md)
   * [Basic usage](quick-start/basic-usage.md)
   * [Data migration](quick-start/data-migration.md)
-* [ユースケースごとの使い方](usecase/README.md)
+* [Use cases](usecase/README.md)
   * [Streamのクエリ](usecase/stream-query.md)
   * [Streamの見た目と通知設定](usecase/stream-detail.md)
   * [Streamの高度な使い方](usecase/stream-advanced.md)
