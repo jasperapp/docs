@@ -1,73 +1,73 @@
 # FAQ
 
-## コンセプト <a id="concept"></a>
+## Concept <a id="concept"></a>
 
-Jasperは「簡単さ」よりも「柔軟性」を重視し、様々なユースケースに合わせた使い方ができることを目指しています。そして、「柔軟ではあるが複雑」なツールにならないようにコア機能\(Stream\)から外れた機能はなるべく作らないようにしています。
+Jasper is more about flexibility than easily, and we aim to tailor the tool's use to a variety of use cases. We've tried to avoid deviating from the core functionality \(Stream\) of the tool to avoid becoming a "flexible but complex" tool.
 
-これにより、類似のツールにはない強みを実現しています。しかし、「柔軟性」を重視したことにより、次の点においては類似のツールに劣る場合があります。
+This gives us an advantage over other similar tools. However, our emphasis on flexibility means that we are sometimes inferior to similar tools in the following respects
 
-* 使いこなすためのハードル
-  * GitHub検索への理解を必要とする
-  * たまに使うにはオーバースペック
-* ユーザ設定のメンテナンス
-  * 状況に合わせた設定をユーザがメンテナンスしていく必要がある
-* GHE利用時のサーバ側への負荷
-  * GitHub Search APIをヘビーに使用している
+* Hurdles to master
+  * Requires an understanding of GitHub search
+  * Overspecified for occasional use.
+* Maintenance of user settings
+  * The user needs to maintain the Stream settings to suit the situation.
+* Load on the server when using GHE
+  * Jasper is a heavy user of the GitHub Search API
 
-そのため、柔軟性とこれらの欠点のバランスを考えながらJasperを開発しています。
+That's why we're developing Jasper, balancing flexibility with these shortcomings.
 
-## スマートフォンアプリ <a id="mobile"></a>
+## Smartphone App
 
-JasperはMac/Window/Linuxに対応していますが、Android/iOSのスマートフォンアプリには対応していません。しかし、GitHub NotificationsとJasperを連携させることで、スマートフォンのブラウザから閲覧したissueをJasperでも既読にすることができます。詳しくは「[スマートフォンと連携](usecase/stream-advanced.md#mobile)」を参照してください。
+Jasper is compatible with Mac/Window/Linux, but it does not support Android/iOS smartphone apps. However, by integrating GitHub Notifications with Jasper, issues viewed from your smartphone's browser can be marked as read in Jasper as well. See "[Smartphone integration](usecase/stream-advanced.md#mobile)" for more information.
 
-## 複数マシンの同期 <a id="multi-machine"></a>
+## Synchronization of Multiple Machines
 
-Jasperは複数マシンでのissue同期には対応していません。Dropboxなどのファイル同期サービスを使って独自に実現しているユーザはいますが、現在は公式サポートしておりません。もしご利用になりたい場合は`メニュー → Dev → Open Data Directory`から開くディレクトリを同期してお試しください。
+Jasper does not support multi-machine issue synchronization, although some users have used file synchronization services such as Dropbox to achieve this on their own. But we do not officially support this at this time. If you would like to use this service, try synchronizing the directories you open by going to `Menu → Dev → Open Data Directory`.
 
-## タブブラウザ <a id="tab-browser"></a>
+## Tabbed Browser <a id="tab-browser"></a>
 
-Jasperの組み込みブラウザはタブブラウザには非対応です。複数のissueを同時に閲覧する場合は外部ブラウザをご利用ください。
+Jasper's built-in browser does not support tabbed browsers. If you wish to view multiple issues at the same time, please use an external browser.
 
-## issueの表示速度 <a id="issue-loading"></a>
+## Issue display speed
 
-Jasperの内部ブラウザでissueを表示したときに、表示速度が遅い場合があります。しかしこれはGitHub側のTTFB\(time to first byte\)が遅いためです。Jasper側で改善する目処は今の所たっていません。
+When viewing an issue in Jasper's internal browser, it may be slow, but this is due to a slow TTFB \(time to first byte\) on the GitHub side. I haven't been able to work around this on the Jasper side at the moment.
 
 ![](.gitbook/assets/17_ttfb.png)
 
-## Jasperが表示されなくなった
+## Jasper no longer appears.
 
- Jasperを起動しても真っ白な画面になってしまう場合、データが破損した可能性があります。次の手順でJasperのデータを削除して初期化ください。
+ If you get a blank screen after starting Jasper, your data may have been corrupted. Follow these steps to delete and initialize the data in Jasper
 
-1. `メニュー → Dev → Open Data Directory`を選択してディレクトリを表示
-2. Jasperを終了
-3. 先程のディレクトリ内にある`config.json`, `main.db`を削除
-4. Jasperを起動して再セットアップ
+1. Select `Menu → Dev → Open Data Directory` to view the directory
+2. Quit Jasper
+3. Delete the `config.json` and `main.db` in the directory we just left.
+4. Launch Jasper and re-set up
 
-この操作を行うと作成済みのStreamやJasper内に保持していたissueは削除されますが、GitHub側のデータには一切影響ありません。
+This will delete the Stream you've created and any issues you've been holding in Jasper, but it will not affect any data on GitHub.
 
-## GitHub Search APIのポーリング <a id="polling"></a>
+## Polling the GitHub Search API
 
-Jasperのコア機能であるStreamは[GitHub Search API](https://docs.github.com/en/rest/reference/search)を定期的にポーリングすることで実現しています。ポーリングは短い間隔にするとGitHub側に負荷がかかり、長い間隔にするとユーザ側の使い勝手\(issueの更新\)が悪くなります。そこで、Jasperでは以下のようなポーリング設計とすることで、両者のバランスをとっています。
+Jasper's core functionality, Stream, is achieved by polling the [GitHub Search API](https://docs.github.com/en/free-pro-team@latest/rest/reference/search) on a regular basis. Short polling intervals place a heavy load on the GitHub side, while longer intervals result in poor user experience \(i.e., issue updates\). Jasper strikes a balance between these two by designing the polling as follows
 
-* Streamごとにポーリングするのではなく、Jasper全体で1つのポーリングとする
-  * このため、Streamが増えすぎると1つのStreamあたりの更新間隔が伸びる。 この問題を緩和するには「[更新間隔を最適化する](usecase/stream-advanced.md#polling)」を参照してください。
-* GitHub APIのrate limitに達した場合、ポーリング間隔を自動的に伸ばす
-  * GitHub Search APIのrate limitは60秒間に10リクエストです。そのため、デフォルトのポーリング間隔では60秒間に6リクエストであるため、rate limitに達することはありません
-  * GHE\(GitHub Enterprise\)ではrate limitが独自に設定されている場合があります。詳しくはGHEの管理者にお問い合わせください。
+* Instead of polling each Stream, poll the whole Jasper as one poll.
+  * Therefore, if there are too many Streams, the update interval per Stream will increase. To mitigate this problem, see "[Optimizing the update interval](usecase/stream-advanced.md#optimizing-the-update-interval)".
+* Automatically extend the polling interval when the GitHub API rate limit is reached
+  * The rate limit of the GitHub Search API is 10 requests per 60 seconds. The default polling interval is 6 requests per 60 seconds, so the rate limit will never be reached
+  * GHE\(GitHub Enterprise\) may have its own rate limit set. Please contact the GHE administrator for more information.
 
-## サポーター  サブスクリプション <a id="supporter"></a>
+## Supporter Subscriptions
 
-開発者\([@h13i32maru](https://twitter.com/h13i32maru)\)を支援してくださる方は「[Support Subscription](https://h13i32maru.jp/supporter/)」から少額サブスクリプションをしていただけると大変うれしいです。
+If you want to support the developer \([@h13i32maru](https://twitter.com/h13i32maru)\), it would be great if you could make a small subscription through "[Support Subscription](https://h13i32maru.jp/supporter/)".
 
-## フィードバック <a id="competitor"></a>
+## Feedback <a id="competitor"></a>
 
-フィードバックはお気軽にお寄せください。Twitterの[\#jasperapp](https://twitter.com/hashtag/jasperapp)やJasperについてのブログ記事などを書いてもらえると非常に嬉しいです。不具合や機能要望は[jasperapp/jasper](https://github.com/jasperapp/jasper)にお願いします。可能な範囲で対応していきます。
+Please feel free to give us your feedback, and we'd love it if you could write a blog post about Jasper and [\#jasperapp](https://twitter.com/hashtag/jasperapp) on Twitter. If you have a bug or feature request, please send it to [jasperapp/jasper](https://github.com/jasperapp/jasper). We'll do our best to address them as much as possible.
 
-## 競合 <a id="competitor"></a>
+## Competitor <a id="competitor"></a>
 
-Jasperと同様にissueの閲覧や通知を管理するツールは現時点\(2020.09\)で次のようなものがあります。
+Similar to Jasper, tools to manage issue viewing and notification are currently available \(2020.09\)
 
-| ツール | Active | 期間 |
+| Tool | Active | period |
 | :--- | :--- | :--- |
 | [Jasper](https://jasperapp.io/)  | ✅ | 2016.06 ~ 2020.07 |
 | [Trailer](http://ptsochantaris.github.io/trailer/) | ✅ | 2013.08 ~ 2020.09 |
@@ -83,9 +83,9 @@ Jasperと同様にissueの閲覧や通知を管理するツールは現時点\(2
 | [DeckHub](https://getdeckhub.com/) |  | 2016.02 ~ 2016.04 |
 | [BugHub](http://www.bughubapp.com/) |  | 2013.04 ~ 2015.11 |
 
-## 記事
+## Articles
 
-開発者の記事
+Developer articles
 
 * [JasperというGitHub Issue Readerを作りました -  blog.h13i32maru.jp](http://blog.h13i32maru.jp/entry/2016/06/08/090000)
 * [GitHub用のIssue Reader「Jasper」の開発を振り返ってみる - blog.h13i32maru.jp](http://blog.h13i32maru.jp/entry/2016/12/11/184433)
@@ -93,7 +93,7 @@ Jasperと同様にissueの閲覧や通知を管理するツールは現時点\(2
 * [ストレスフリーなGitHubのIssue生活 - techlife.cookpad.com](http://techlife.cookpad.com/entry/2017/03/14/100000)
 * [Project of the Week: Jasper - electronjs.o](https://www.electronjs.org/blog/jasper)
 
-ユーザの記事
+User articles
 
 * [GithubのISSUEでなにやらやるなら、Jasperが便利だぞ！の話 - uzulla.hateblo.jp](http://uzulla.hateblo.jp/entry/2016/07/13/021425)
 * [GitHub Issue Reader の Jasper を1週間使っての所感 - ohbarye.hatenablog.jp](http://ohbarye.hatenablog.jp/entry/2016/11/19/004719)
