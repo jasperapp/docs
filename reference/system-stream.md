@@ -1,22 +1,22 @@
 ---
-description: System Streamのリファレンスです。
+description: System Stream reference.
 ---
 
 # System Stream
 
-System Streamとは動的にクエリを生成するシステム組み込みのストリームです。System Streamを使用する場合は`メニュー → Preferences → Streams`から有効にしてください。
+System Stream is the system's built-in stream that generates queries dynamically; to use System Stream, go to `Menu → Preferences → Streams` and enable it.
 
 ![](../.gitbook/assets/13_system_stream.png)
 
-| System Stream | 内容 |
+| System Stream | description |
 | :--- | :--- |
-| `Team Stream` | 自身がGitHub上で所属するチームがメンションされたissue |
-| `Watching Stream` | 自身がGitHub上でwatchしているリポジトリのissue |
-| `Subscription Issue` | 個別に指定されたissue |
+| `Team Stream` | Issues on GitHub where your team mentioned |
+| `Watching Stream` | Issues in the repositories you're watching on GitHub |
+| `Subscription Issue` | Individually registered issues |
 
-Team Streamは自身がGitHub上で所属するチームを取得して、そのチームがメンションされたissueを扱うことができます。新しくチームに所属した場合、自動的にチームが追加されます。
+The `Team Stream` allows you to get the teams you belong to on GitHub and handle issues where they are mentioned. When you join a new team, the team will be added automatically.
 
-Watching Streamは自身がGitHub上でwatchしたリポジトリを取得して、そのリポジトリのissueを扱うことができます。新しくリポジトリをwatchした場合、自動的にリポジトリが追加されます。
+The `Watching Stream` can retrieve repositories that you have watched on GitHub and handle issues in those repositories. When you watch a new repository, it will automatically add it to your repository.
 
-Subscription Streamは個別に指定されたissueを扱うことができます。Subscription StreamのメニューからissueのURLを登録してください。
+The `Subscription Stream` provides the ability to handle individually registered issues. Register the URL of the issue from the `Subscription Stream` menu.
 
