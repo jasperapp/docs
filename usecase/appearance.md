@@ -6,7 +6,7 @@ description: >-
 
 # Appearance and notifications
 
-## Colors and notification settings <a id="color"></a>
+## Stream colors and notification settings <a id="color"></a>
 
 Streams can be configured with colors and icons in the detail settings. This allows for grouping and allows you to make important Streams stand out from the crowd.
 
@@ -32,12 +32,6 @@ You can also turn off notifications for the entire issue if you want to focus on
 
 ![](../.gitbook/assets/08_notification.png)
 
-## Hide the Stream
-
-You can also hide unwanted Streams. For example, if you don't use `Inbox` or `Archive`, you can hide them to make Jasper easier to see.
-
-![](../.gitbook/assets/06_notification_all.png)
-
 ## Change the layout
 
 You can increase the display area of an issue if you have a small screen, or if you are doing a pull request code review. You can increase the display area by toggling the layout icon in the top right corner, or you can toggle it by pressing ⌘ + 1, ⌘ + 2, or ⌘ + 3. You can also switch between them by pressing `⌘ + 1`, `⌘ + 2`, or `⌘ + 3`.
@@ -59,4 +53,10 @@ You can increase the display area of an issue if you have a small screen, or if 
 ![](../.gitbook/assets/08_layout1.png)
 {% endtab %}
 {% endtabs %}
+
+## Hide the Stream
+
+You can also hide unwanted Streams. For example, if you don't use `Inbox` or `Archive`, you can hide them to make Jasper easier to see.
+
+![](../.gitbook/assets/06_notification_all.png)
 
