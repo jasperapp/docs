@@ -26,16 +26,6 @@ description: 効率的にissueを閲覧できるようにJasperには様々な�
 
 ![](../.gitbook/assets/08_hover_menu_archive.png)
 
-## 素早くissueを検索 <a id="jump-navigation"></a>
-
-Jasperが保持しているissueの中から検索を行うには`Jump Navigation`機能を使います。Jump Navigationは左上の🔍アイコンから開始します。もしくは`⌘ + E (Mac)`, `Ctrl + E (Window/Linux)`を押すことでも開始できます。
-
-![](../.gitbook/assets/08_jump_navi.png)
-
-{% hint style="info" %}
-Jump Navigationでの検索にはFilter Streamと同じフィルターが使用できます。詳しくはリファレンスの「[Filter Stream](../reference/filter-stream.md)」を参照してください。
-{% endhint %}
-
 ## 集中してissueを閲覧 <a id="layout"></a>
 
 難しいissueやpull requestのレビューなど集中してissueを閲覧したい場合、issueの表示領域を大きくすることができます。issueの表示領域を大きくするには右上のレイアウトアイコンから切り替えることができます。もしくは`⌘ + 1`, `⌘ + 2`, `⌘ + 3`を押すことでも切り替えることができます。

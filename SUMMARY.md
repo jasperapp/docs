@@ -10,6 +10,8 @@
   * [Streamの見た目と通知設定](usecase/stream-detail.md)
   * [Streamの高度な使い方](usecase/stream-advanced.md)
   * [issueの閲覧](usecase/issue-browse.md)
+  * [issueの検索](usecase/issue-search.md)
+  * [issueの更新](usecase/issue-update.md)
   * [キーボード操作](usecase/keyboard.md)
 * [リファレンス](reference/README.md)
   * [Stream](reference/stream.md)

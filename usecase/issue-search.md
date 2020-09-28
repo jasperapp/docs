@@ -1,0 +1,14 @@
+---
+description: Jasperが保持しているissueを検索することができます。
+---
+
+# issueの検索
+
+Jasperが保持しているissueの中から検索を行うには`Jump Navigation`機能を使います。Jump Navigationは左上の🔍アイコンから開始します。もしくは`⌘ + E (Mac)`, `Ctrl + E (Window/Linux)`を押すことでも開始できます。
+
+![](../.gitbook/assets/08_jump_navi.png)
+
+{% hint style="info" %}
+Jump Navigationでの検索にはFilter Streamと同じフィルターが使用できます。詳しくはリファレンスの「[Filter Stream](../reference/filter-stream.md)」を参照してください。
+{% endhint %}
+
