@@ -50,13 +50,15 @@ The filters available in the Filter Stream are pretty much the same as in the St
 | `involves:defunkt` | User involved issues |
 | `author:defunkt` | User created issues |
 | `assignee:defunkt` | User assigned issues |
+| `mentions:defunkt` | User mentioned issues |
+| `team:github/owners` | Team mentioned issues |
 
 {% hint style="info" %}
 Multiple filters of the same type can be specified as OR conditions. For example, `involves:defunkt involves:jlord` is issues involving `defunkt` or `jlord`.
 {% endhint %}
 
 {% hint style="info" %}
-`involves` as well as `author`, `assignee`, `commenter` and `review-requested` all together.‌
+`involves` as well as `author`, `assignee`, `mentions`,`commenter` and `review-requested` all together.‌
 {% endhint %}
 
 ## Pull requests review <a id="review"></a>
