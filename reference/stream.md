@@ -70,15 +70,15 @@ Streamに使用できるクエリはGitHub Searchのクエリと完全に互換�
 
 | クエリ | 条件 |
 | :--- | :--- |
-| `involves:defunkt involves:jlord` | ユーザが関連するissue |
-| `author:defunkt author:jlord` | ユーザが作成したissue |
-| `assignee:defunkt assignee:jlord` | ユーザがアサインされたissue |
-| `mentions:defunkt mentions:jlord` | ユーザがメンションされたissue |
-| `commenter:defunkt commenter:jlord` | ユーザがコメントしたissue |
-| `team:github/owners team:octocat/owners` | チームがメンションされたissue |
+| `involves:defunkt` | ユーザが関係するissue |
+| `author:defunkt` | ユーザが作成したissue |
+| `assignee:defunkt` | ユーザがアサインされたissue |
+| `mentions:defunkt` | ユーザがメンションされたissue |
+| `commenter:defunkt` | ユーザがコメントしたissue |
+| `team:github/owners` | チームがメンションされたissue |
 
 {% hint style="info" %}
-同じ種類のクエリを複数指定するとOR条件になります。
+同じ種類のクエリを複数指定するとOR条件になります。`involves:defunkt involves:jlord` は`defunkt`もしくは`jlord`が関係するissueです。
 {% endhint %}
 
 {% hint style="info" %}
@@ -87,40 +87,71 @@ involvesはauthor, assignee, mentions, commenter, review-requestedをまとめ�
 
 ## レビューに関係するpull requestを指定するクエリ <a id="review-query"></a>
 
-| クエリ | 条件 |
-| :--- | :--- |
-| `review-requested:defunkt review-requested:jlord` | ユーザにレビューリクエストされたpull request |
-| `team-review-requested:github/owners team-review-requested:octocat/owners` | チームにレビューリクエストされたpull request |
-| `reviewed-by:defunkt reviewed-by:jlord` | ユーザがレビューしたpull request |
-| `review:approved`, `review:changes_requested` | approvedされたpull request, changes requestedされたpull request |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">&#x30AF;&#x30A8;&#x30EA;</th>
+      <th style="text-align:left">&#x6761;&#x4EF6;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><code>review-requested:defunkt</code>
+      </td>
+      <td style="text-align:left">&#x30E6;&#x30FC;&#x30B6;&#x306B;&#x30EC;&#x30D3;&#x30E5;&#x30FC;&#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x3055;&#x308C;&#x305F;pull
+        request</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>team-review-requested:github/owners</code>
+      </td>
+      <td style="text-align:left">&#x30C1;&#x30FC;&#x30E0;&#x306B;&#x30EC;&#x30D3;&#x30E5;&#x30FC;&#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x3055;&#x308C;&#x305F;pull
+        request</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>reviewed-by:defunkt</code>
+      </td>
+      <td style="text-align:left">&#x30E6;&#x30FC;&#x30B6;&#x304C;&#x30EC;&#x30D3;&#x30E5;&#x30FC;&#x3057;&#x305F;pull
+        request</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>review:approved</code>, <code>review:changes_requested</code>
+      </td>
+      <td style="text-align:left">
+        <p>approved&#x3055;&#x308C;&#x305F;pull request,</p>
+        <p>changes requested&#x3055;&#x308C;&#x305F;pull request</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 {% hint style="info" %}
-同じ種類のクエリを複数指定するとOR条件になります。
+同じ種類のクエリを複数指定するとOR条件になります。`review-requested:defunkt review-requested:jlord`は`defunkt`もしくは`jlord`がレビューリクエストされたpull requestです。
 {% endhint %}
 
 ## issueのリポジトリやOrganizationを指定するクエリ <a id="repo-query"></a>
 
 | クエリ | 条件 |
 | :--- | :--- |
-| `repo:nodejs/node repo:electron/electron` | リポジトリのissue |
-| `org:nodejs org:electron` | Organizationのissue |
-| `user:defunkt user:jlord` | ユーザ下のissue |
+| `repo:nodejs/node` | リポジトリのissue |
+| `org:nodejs` | Organizationのissue |
+| `user:defunkt` | ユーザ下のissue |
 
 {% hint style="info" %}
-同じ種類のクエリを複数指定するとOR条件になります。
+同じ種類のクエリを複数指定するとOR条件になります。`repo:nodejs/node repo:electron/electron`は`nodejs/node`もしくは`electron/electron`のissueです。
 {% endhint %}
 
 ## ラベルなどのissueの属性を指定するクエリ <a id="label-query"></a>
 
 | クエリ | 条件 |
 | :--- | :--- |
-| `label:bug label:important` | ラベルがついたissue |
-| `milestone:v1.0.0 milestone:v2.0.0` | マイルストーンがついたissue |
+| `label:bug` | ラベルがついたissue |
+| `milestone:v1.0.0` | マイルストーンがついたissue |
 | `project:github/57` | Organizationレベルのプロジェクト に紐付いたissue |
 | `project:github/linguist/1` | リポジトリレベルのプロジェクト に紐付いたissue |
 
 {% hint style="info" %}
-同じ種類のクエリを複数指定するとOR条件になります。ただし、ラベルについてはAND条件となります。
+同じ種類のクエリを複数指定するとOR条件になります。`milestone:v1.0.0 milestone:v2.0.0`は`v1.0.0`もしくは`v2.0.0`のissueです。  
+ただし、ラベルについてはAND条件となります。
 {% endhint %}
 
 {% hint style="info" %}
