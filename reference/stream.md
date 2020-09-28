@@ -67,7 +67,7 @@ See "[Searching issues and pull requests - github.com](https://docs.github.com/e
 </table>
 
 {% hint style="warning" %}
-Open, merge and draft state queries are not recommended. If you use these queries, use Filter Stream. See [here](../usecase/stream-query.md#open-issue) for more information.
+Open, merge and draft state queries are not recommended. If you use these queries, use Filter Stream. See [here](../usecase/query.md#open-issue) for more information.
 {% endhint %}
 
 ## Involve users and teams

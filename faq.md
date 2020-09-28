@@ -18,7 +18,7 @@ That's why we're developing Jasper, balancing flexibility with these shortcoming
 
 ## Smartphone App
 
-Jasper is compatible with Mac/Window/Linux, but it does not support Android/iOS smartphone apps. However, by integrating GitHub Notifications with Jasper, issues viewed from your smartphone's browser can be marked as read in Jasper as well. See "[Smartphone integration](usecase/stream-advanced.md#mobile)" for more information.
+Jasper is compatible with Mac/Window/Linux, but it does not support Android/iOS smartphone apps. However, by integrating GitHub Notifications with Jasper, issues viewed from your smartphone's browser can be marked as read in Jasper as well. See "[Smartphone integration](usecase/advanced.md#mobile)" for more information.
 
 ## Synchronization of Multiple Machines
 
@@ -50,7 +50,7 @@ This will delete the Stream you've created and any issues you've been holding in
 Jasper's core functionality, Stream, is achieved by polling the [GitHub Search API](https://docs.github.com/en/free-pro-team@latest/rest/reference/search) on a regular basis. Short polling intervals place a heavy load on the GitHub side, while longer intervals result in poor user experience \(i.e., issue updates\). Jasper strikes a balance between these two by designing the polling as follows
 
 * Instead of polling each Stream, poll the whole Jasper as one poll.
-  * Therefore, if there are too many Streams, the update interval per Stream will increase. To mitigate this problem, see "[Optimizing the update interval](usecase/stream-advanced.md#optimizing-the-update-interval)".
+  * Therefore, if there are too many Streams, the update interval per Stream will increase. To mitigate this problem, see "[Optimizing the update interval](usecase/advanced.md#optimizing-the-update-interval)".
 * Automatically extend the polling interval when the GitHub API rate limit is reached
   * The rate limit of the GitHub Search API is 10 requests per 60 seconds. The default polling interval is 6 requests per 60 seconds, so the rate limit will never be reached
   * GHE\(GitHub Enterprise\) may have its own rate limit set. Please contact the GHE administrator for more information.

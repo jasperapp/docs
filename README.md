@@ -33,7 +33,7 @@ And since Stream can use the exact same queries as the GitHub Search API, you ha
 ![](.gitbook/assets/01_stream.png)
 
 {% hint style="info" %}
-See "[Stream queries](usecase/stream-query.md)" and "[Stream](reference/stream.md)" for a list of queries that can be used with Stream.
+See "[Stream queries](usecase/query.md)" and "[Stream](reference/stream.md)" for a list of queries that can be used with Stream.
 {% endhint %}
 
 ## High flexibility <a id="flexible"></a>
