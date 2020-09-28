@@ -11,7 +11,7 @@
   * [Advanced Stream](usecase/stream-advanced.md)
   * [Browse Issues](usecase/issue-browse.md)
   * [Keyboard operation](usecase/keyboard.md)
-* [リファレンス](reference/README.md)
+* [Reference](reference/README.md)
   * [Stream](reference/stream.md)
   * [Filter Stream / Filter](reference/filter-stream.md)
   * [Project Stream](reference/project-stream.md)

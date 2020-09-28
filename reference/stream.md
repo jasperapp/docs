@@ -1,31 +1,32 @@
 ---
-description: Streamに使用できるクエリのリファレンスです。
+description: A query reference that can be used for Stream.
 ---
 
 # Stream
 
-Streamは`Add Stream`メニューから追加します。
+Streams can be added from the `Add Stream` menu.
 
 {% tabs %}
-{% tab title="Streamの追加" %}
+{% tab title="Add Stream" %}
 ![](../.gitbook/assets/09_add_stream1.png)
 {% endtab %}
 
-{% tab title="Streamの設定" %}
+{% tab title="Stream setting" %}
 ![](../.gitbook/assets/09_add_stream2.png)
 {% endtab %}
 {% endtabs %}
 
 {% hint style="info" %}
-Streamに使用できるクエリはGitHub Searchのクエリと完全に互換性があります。全てのクエリ一覧とシンタックスについては「[Searching issues and pull requests - github.com](https://docs.github.com/en/github/searching-for-information-on-github/searching-issues-and-pull-requests)」と「[Understanding the search syntax - github.com](https://docs.github.com/en/github/searching-for-information-on-github/understanding-the-search-syntax)」を参照してください。
+Streamに使用できるクエリはGitHub Searchのクエリと完全に互換性があります。  
+See "[Searching issues and pull requests - github.com](https://docs.github.com/en/free-pro-team@latest/github/searching-for-information-on-github/searching-issues-and-pull-requests)"and "[Understanding the search syntax - github.com](https://docs.github.com/en/free-pro-team@latest/github/searching-for-information-on-github/understanding-the-search-syntax)" for all GitHub Search queries and syntax.
 {% endhint %}
 
-## issueの状態を指定するクエリ <a id="is-query"></a>
+## Specify the state of an issue
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x30AF;&#x30A8;&#x30EA;</th>
+      <th style="text-align:left">Query</th>
       <th style="text-align:left">&#x6761;&#x4EF6;</th>
     </tr>
   </thead>
@@ -33,40 +34,43 @@ Streamに使用できるクエリはGitHub Searchのクエリと完全に互換�
     <tr>
       <td style="text-align:left"><code>is:issue</code>, <code>is:pr</code>
       </td>
-      <td style="text-align:left">issue&#x306E;&#x307F;&#x3001;pull request&#x306E;&#x307F;</td>
+      <td style="text-align:left">Issue only, pull request only</td>
     </tr>
     <tr>
       <td style="text-align:left">
         <p><code>is:open</code>, <code>is:closed</code>
         </p>
-        <p>&#x203B;&#x975E;&#x63A8;&#x5968;</p>
+        <p><em>not recommended</em>
+        </p>
       </td>
-      <td style="text-align:left">&#x30AA;&#x30FC;&#x30D7;&#x30F3;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;issue&#x3001;&#x30AF;&#x30ED;&#x30FC;&#x30BA;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;issue</td>
+      <td style="text-align:left">Open issues, closed issues</td>
     </tr>
     <tr>
       <td style="text-align:left">
         <p><code>is:merged</code>, <code>is:unmerged</code>
         </p>
-        <p>&#x203B;&#x975E;&#x63A8;&#x5968;</p>
+        <p><em>not recommended</em>
+        </p>
       </td>
-      <td style="text-align:left">&#x30DE;&#x30FC;&#x30B8;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;issue&#x3001;&#x30DE;&#x30FC;&#x30B8;&#x3055;&#x308C;&#x3066;&#x3044;&#x306A;&#x3044;issue</td>
+      <td style="text-align:left">Merged issues, unmerged issues</td>
     </tr>
     <tr>
       <td style="text-align:left">
         <p><code>draft:true</code>, <code>draft:false</code>
         </p>
-        <p>&#x203B;&#x975E;&#x63A8;&#x5968;</p>
+        <p><em>not recommended</em>
+        </p>
       </td>
-      <td style="text-align:left">&#x30C9;&#x30E9;&#x30D5;&#x30C8;&#x306E;issue&#x3001;&#x30C9;&#x30E9;&#x30D5;&#x30C8;&#x3067;&#x306F;&#x306A;&#x3044;issue</td>
+      <td style="text-align:left">Draft issues&#x3001;not draft issues</td>
     </tr>
   </tbody>
 </table>
 
 {% hint style="warning" %}
-オープン状態、マージ状態、ドラフト状態のクエリは非推奨です。これらのクエリを使用する場合はFilter Streamをお使いください。詳しくは[こちら](../usecase/stream-query.md#open-issue)を参照してください。
+Open, merge and draft state queries are not recommended. If you use these queries, use Filter Stream. See [here](../usecase/stream-query.md#open-issue) for more information.
 {% endhint %}
 
-## ユーザやチームが関係するissueを指定するクエリ <a id="involves-query"></a>
+## Specify issues that involve users and teams
 
 | クエリ | 条件 |
 | :--- | :--- |
