@@ -30,7 +30,7 @@ Filter StreamはStreamのメニューにある`Add Filter Stream`から追加し
 Filter StreamとFilterで使用できるフィルターはStreamとほとんど同じ条件を指定できます。ただし、少し異なるものもあるので注意してください。
 {% endhint %}
 
-## issueの状態をフィルター <a id="is-filter"></a>
+## issueの状態 <a id="is-filter"></a>
 
 <table>
   <thead>
@@ -91,34 +91,34 @@ Filter StreamとFilterで使用できるフィルターはStreamとほとんど�
   </tbody>
 </table>
 
-## ユーザやチームが関係するissueをフィルター <a id="involves-filter"></a>
+## ユーザやチーム <a id="involves-filter"></a>
 
 | フィルター | 条件 |
 | :--- | :--- |
-| `involves:defunkt involves:jlord` | ユーザが関連するissue |
-| `author:defunkt author:jlord` | ユーザが作成したissue |
-| `assignee:defunkt assignee:jlord` | ユーザがアサインされたissue |
+| `involves:defunkt` | ユーザが関係するissue |
+| `author:defunkt` | ユーザが作成したissue |
+| `assignee:defunkt` | ユーザがアサインされたissue |
 
 {% hint style="info" %}
-同じ種類のフィルターを複数指定するとOR条件になります。
+同じ種類のフィルターを複数指定するとOR条件になります。例えば、`involves:defunkt involves:jlord`は`defunkt`もしくは`jlord`が関係するissueです。
 {% endhint %}
 
 {% hint style="info" %}
-involvesはauthor, assignee, commenter, review-requestedをまとめて指定したものと同様になります。‌
+`involves`は`author`, `assignee`, `commenter`, `review-requested`をまとめて指定したものと同様になります。‌
 {% endhint %}
 
-## レビューに関係するpull requestをフィルター <a id="review-filter"></a>
+## Pull requestレビュー <a id="review-filter"></a>
 
 | フィルター | 条件 |
 | :--- | :--- |
-| `review-requested:defunkt review-requested:jlord` | ユーザにレビューリクエストされたpull request |
-| `reviewed-by:defunkt reviewed-by:jlord` | ユーザがレビューしたpull request |
+| `review-requested:defunkt` | ユーザがレビューリクエストされたpull request |
+| `reviewed-by:defunkt` | ユーザがレビューしたpull request |
 
 {% hint style="info" %}
-同じ種類のクエリを複数指定するとOR条件になります。‌
+同じ種類のクエリを複数指定するとOR条件になります。例えば、‌`review-requested:defunkt review-requested:jlord`は`defunkt`もしくは`jlord`がレビューリクエストされたpull requestです。
 {% endhint %}
 
-## issueのリポジトリやOrganizationをフィルター <a id="repo-filter"></a>
+## リポジトリやOrganization <a id="repo-filter"></a>
 
 | フィルター | 条件 |
 | :--- | :--- |
@@ -127,10 +127,10 @@ involvesはauthor, assignee, commenter, review-requestedをまとめて指定し
 | `user:defunkt user:jlord` | ユーザ下のissue |
 
 {% hint style="info" %}
-同じ種類のクエリを複数指定するとOR条件になります。‌
+同じ種類のクエリを複数指定するとOR条件になります。‌例えば、`repo:nodejs/node repo:electron/electron`は`nodejs/node`もしくは`electron/electron`のissueです。
 {% endhint %}
 
-## ラベルなどのissueの属性をフィルター <a id="label-filter"></a>
+## ラベルやマイルストーンなど <a id="label-filter"></a>
 
 | フィルター | 条件 |
 | :--- | :--- |
@@ -141,14 +141,14 @@ involvesはauthor, assignee, commenter, review-requestedをまとめて指定し
 | `number:123` | 特定のissue番号 |
 
 {% hint style="info" %}
-同じ種類のクエリを複数指定するとOR条件になります。ただし、ラベルについてはAND条件となります。
+同じ種類のクエリを複数指定するとOR条件になります。例えば、`milestone:v1.0.0 milestone:v2.0.0`は`v1.0.0`もしくは`v2.0.0`のマイルストーンがついたissueです。ただし、ラベルについてはAND条件となります。
 {% endhint %}
 
 {% hint style="info" %}
-スペースを含むラベルやマイルストーンの場合は`label:"foo bar"`のようにダブルクオーテーションで囲んでください。‌
+スペースを含むラベルやマイルストーンの場合は`label:"`hello `world"`のようにダブルクオーテーションで囲んでください。‌
 {% endhint %}
 
-## issueのキーワードを指定するクエリ <a id="keyword-filter"></a>
+## 任意のキーワード <a id="keyword-filter"></a>
 
 | フィルター | 条件 |
 | :--- | :--- |
@@ -166,11 +166,10 @@ involvesはauthor, assignee, commenter, review-requestedをまとめて指定し
 OR, NOTには対応していません。
 {% endhint %}
 
-## 除外・欠如を指定するクエリ <a id="exclude-filter"></a>
+## 除外・欠如 <a id="exclude-filter"></a>
 
 | フィルター | 条件 |
 | :--- | :--- |
 | `-label:bug`, `-milestone:v0.0.1`, `-repo:nodejs/node` `-involves:defunk`... | 指定した条件が含まれないissue |
 | `no:label`, `no:milestone`, `no:assignee`, `no:project`, `no:dueon` | ラベル、マイルストーン、アサイン、 プロジェクト、締切が設定されていないissue |
 | `have:label`, `have:milestone`, `have:assignee`, `have:project`, `have:dueon` | ラベル、マイルストーン、アサイン、 プロジェクト、締切が設定されているissue |
-
