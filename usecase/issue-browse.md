@@ -26,32 +26,6 @@ description: 効率的にissueを閲覧できるようにJasperには様々な�
 
 ![](../.gitbook/assets/08_hover_menu_archive.png)
 
-## 集中してissueを閲覧 <a id="layout"></a>
-
-難しいissueやpull requestのレビューなど集中してissueを閲覧したい場合、issueの表示領域を大きくすることができます。issueの表示領域を大きくするには右上のレイアウトアイコンから切り替えることができます。もしくは`⌘ + 1`, `⌘ + 2`, `⌘ + 3`を押すことでも切り替えることができます。
-
-{% tabs %}
-{% tab title="レイアウトアイコン" %}
-![](../.gitbook/assets/08_layout_icon.png)
-{% endtab %}
-
-{% tab title="3レイアウト\(通常時\)" %}
-![](../.gitbook/assets/08_layout3.png)
-{% endtab %}
-
-{% tab title="2レイアウト" %}
-![](../.gitbook/assets/08_layout2.png)
-{% endtab %}
-
-{% tab title="1レイアウト" %}
-![](../.gitbook/assets/08_layout1.png)
-{% endtab %}
-{% endtabs %}
-
-またissue閲覧中に通知が気にならないように、素早く通知をオフにすることもできます。通知をオン/オフの切り替えは左上の🔔アイコンからできます。もしくは`⌘ + I`を押すことでもできます。
-
-![](../.gitbook/assets/08_notification.png)
-
 ## 未読コメントを確認 <a id="unread-comment"></a>
 
 Jasperの内部ブラウザでissueを閲覧すると、前回閲覧時から追加・更新されたコメントがハイライトされます。またissueの左側に追加・更新されたコメントのミニマップが表示されます。このコメントのハイライトとミニマップを使って未読のコメントを素早く確認できます。

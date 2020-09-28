@@ -18,7 +18,7 @@ Jasperは「簡単さ」よりも「柔軟性」を重視し、様々なユー�
 
 ## スマートフォンアプリ <a id="mobile"></a>
 
-JasperはMac/Window/Linuxに対応していますが、Android/iOSのスマートフォンアプリには対応していません。しかし、GitHub NotificationsとJasperを連携させることで、スマートフォンのブラウザから閲覧したissueをJasperでも既読にすることができます。詳しくは「[スマートフォンと連携](usecase/github-integration.md#mobile)」を参照してください。
+JasperはMac/Window/Linuxに対応していますが、Android/iOSのスマートフォンアプリには対応していません。しかし、GitHub NotificationsとJasperを連携させることで、スマートフォンのブラウザから閲覧したissueをJasperでも既読にすることができます。詳しくは「[スマートフォンと連携](usecase/advanced.md#mobile)」を参照してください。
 
 ## 複数マシンの同期 <a id="multi-machine"></a>
 
@@ -50,7 +50,7 @@ Jasperの内部ブラウザでissueを表示したときに、表示速度が遅
 Jasperのコア機能であるStreamは[GitHub Search API](https://docs.github.com/en/rest/reference/search)を定期的にポーリングすることで実現しています。ポーリングは短い間隔にするとGitHub側に負荷がかかり、長い間隔にするとユーザ側の使い勝手\(issueの更新\)が悪くなります。そこで、Jasperでは以下のようなポーリング設計とすることで、両者のバランスをとっています。
 
 * Streamごとにポーリングするのではなく、Jasper全体で1つのポーリングとする
-  * このため、Streamが増えすぎると1つのStreamあたりの更新間隔が伸びる。 この問題を緩和するには「[更新間隔を最適化する](usecase/github-integration.md#polling)」を参照してください。
+  * このため、Streamが増えすぎると1つのStreamあたりの更新間隔が伸びる。 この問題を緩和するには「[更新間隔を最適化する](usecase/advanced.md#polling)」を参照してください。
 * GitHub APIのrate limitに達した場合、ポーリング間隔を自動的に伸ばす
   * GitHub Search APIのrate limitは60秒間に10リクエストです。デフォルトのポーリング間隔では60秒間に6リクエストであるため、rate limitに達することはありません
   * GHE\(GitHub Enterprise\)ではrate limitが独自に設定されている場合があります。詳しくはGHEの管理者にお問い合わせください。
