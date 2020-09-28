@@ -2,7 +2,7 @@
 description: Jasperがissueを更新する仕組みを紹介します。
 ---
 
-# issueの更新
+# Streamの更新
 
 ## 更新の仕組み <a id="polling"></a>
 

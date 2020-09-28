@@ -2,7 +2,7 @@
 description: GitHubの機能と連携させることで、より高度な使い方が可能になります。
 ---
 
-# Streamの高度な使い方
+# GitHubと連携
 
 ## スマートフォンと連携 <a id="mobile"></a>
 
