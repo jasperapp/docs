@@ -1,5 +1,5 @@
 ---
-description: Filter StreamとFilterで使用できるフィルターのリファレンスです。
+description: This is a reference for the filters available in Filter Stream and Filter.
 ---
 
 # Filter Stream / Filter
@@ -173,3 +173,4 @@ OR, NOTには対応していません。
 | `-label:bug`, `-milestone:v0.0.1`, `-repo:nodejs/node` `-involves:defunk`... | 指定した条件が含まれないissue |
 | `no:label`, `no:milestone`, `no:assignee`, `no:project`, `no:dueon` | ラベル、マイルストーン、アサイン、 プロジェクト、締切が設定されていないissue |
 | `have:label`, `have:milestone`, `have:assignee`, `have:project`, `have:dueon` | ラベル、マイルストーン、アサイン、 プロジェクト、締切が設定されているissue |
+
