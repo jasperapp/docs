@@ -13,7 +13,7 @@
   * [Keyboard operation](usecase/keyboard.md)
 * [Reference](reference/README.md)
   * [Stream](reference/stream.md)
-  * [Filter Stream / Filter](reference/filter-stream.md)
+  * [Filter Stream](reference/filter-stream.md)
   * [Project Stream](reference/project-stream.md)
   * [Library Stream](reference/library-stream.md)
   * [System Stream](reference/system-stream.md)

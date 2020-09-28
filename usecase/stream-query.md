@@ -37,6 +37,10 @@ is:open
 ![](../.gitbook/assets/05_open.png)
 
 {% hint style="info" %}
+For more information about Filter Stream, see "[Filter Stream](../reference/filter-stream.md)" in the reference.
+{% endhint %}
+
+{% hint style="info" %}
 The same restrictions apply to close, merge and draft states.
 {% endhint %}
 

@@ -1,33 +1,33 @@
 ---
-description: This is a reference for the filters available in Filter Stream and Filter.
+description: This is a reference for the filters available in Filter Stream.
 ---
 
-# Filter Stream / Filter
+# Filter Stream
 
-Filter StreamはStreamのissueをフィルターして表示します。
+Filter Stream filters the Stream's issues and displays them.
 
-Filter StreamはStreamのメニューにある`Add Filter Stream`から追加します。もしくはトップレベルに作成する場合は`Add Filter Stream top-level`から追加します。また、一時的にFilterを適用することもできます。
+Filter Streams are added from the `Add Filter Stream` menu in the Stream menu. Or, to create a top-level stream, add it from the `Add Filter Stream top-level` menu. It is also possible to apply a Filter temporarily.
 
 {% tabs %}
-{% tab title="Filter Streamの追加" %}
+{% tab title="Add Filter Stream" %}
 ![](../.gitbook/assets/10_filter_stream1.png)
 {% endtab %}
 
-{% tab title="Filter Streamの設定" %}
+{% tab title="Filter Stream setting" %}
 ![](../.gitbook/assets/10_filter_stream2.png)
 {% endtab %}
 
-{% tab title="Top Levelへの追加" %}
+{% tab title="Add Top Level Filter Stream" %}
 ![](../.gitbook/assets/10_filter_stream3.png)
 {% endtab %}
 
-{% tab title="一時的" %}
+{% tab title="Temporarily" %}
 ![](../.gitbook/assets/10_filter_stream4.png)
 {% endtab %}
 {% endtabs %}
 
 {% hint style="info" %}
-Filter StreamとFilterで使用できるフィルターはStreamとほとんど同じ条件を指定できます。ただし、少し異なるものもあるので注意してください。
+The filters available in the Filter Stream are pretty much the same as in the Stream, but note that some of them are slightly different.
 {% endhint %}
 
 ## issueの状態 <a id="is-filter"></a>

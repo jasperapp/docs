@@ -35,7 +35,7 @@ To search through Jasper's holdings of issues, we use the `Jump Navigation` feat
 ![](../.gitbook/assets/08_jump_navi.png)
 
 {% hint style="info" %}
-You can use the same filters as Filter Stream to search in Jump Navigation. See "[Filter Stream / Filter](../reference/filter-stream.md)" in the reference section for more information.
+You can use the same filters as Filter Stream to search in Jump Navigation. See "[Filter Stream](../reference/filter-stream.md)" in the reference section for more information.
 {% endhint %}
 
 ## Focused issue viewing
