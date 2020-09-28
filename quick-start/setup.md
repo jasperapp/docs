@@ -20,7 +20,7 @@ Download the latest version of Jasper from [jasperapp.io](https://jasperapp.io/)
 {% endtab %}
 {% endtabs %}
 
-## Setting up an access token <a id="github"></a>
+## Setting up an access token <a id="access-token"></a>
 
 When Jasper is launched, you will be presented with a choice of GitHub or GHE \(GitHub Enterprise\), for GHE enter the hostname `example ghe.example.com`.
 
