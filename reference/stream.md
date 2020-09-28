@@ -26,7 +26,7 @@ Streamに使用できるクエリはGitHub Searchのクエリと完全に互換�
   <thead>
     <tr>
       <th style="text-align:left">&#x30AF;&#x30A8;&#x30EA;</th>
-      <th style="text-align:left">&#x6761;&#x4EF6;</th>
+      <th style="text-align:left">&#x8AAC;&#x660E;</th>
     </tr>
   </thead>
   <tbody>
@@ -68,7 +68,7 @@ Streamに使用できるクエリはGitHub Searchのクエリと完全に互換�
 
 ## ユーザやチーム <a id="involves-query"></a>
 
-| クエリ | 条件 |
+| クエリ | 説明 |
 | :--- | :--- |
 | `involves:defunkt` | ユーザが関係するissue |
 | `author:defunkt` | ユーザが作成したissue |
@@ -91,7 +91,7 @@ involvesはauthor, assignee, mentions, commenter, review-requestedをまとめ�
   <thead>
     <tr>
       <th style="text-align:left">&#x30AF;&#x30A8;&#x30EA;</th>
-      <th style="text-align:left">&#x6761;&#x4EF6;</th>
+      <th style="text-align:left">&#x8AAC;&#x660E;</th>
     </tr>
   </thead>
   <tbody>
@@ -130,7 +130,7 @@ involvesはauthor, assignee, mentions, commenter, review-requestedをまとめ�
 
 ## リポジトリやOrganization <a id="repo-query"></a>
 
-| クエリ | 条件 |
+| クエリ | 説明 |
 | :--- | :--- |
 | `repo:nodejs/node` | リポジトリのissue |
 | `org:nodejs` | Organizationのissue |
@@ -142,7 +142,7 @@ involvesはauthor, assignee, mentions, commenter, review-requestedをまとめ�
 
 ## ラベルやマイルストーンなど <a id="label-query"></a>
 
-| クエリ | 条件 |
+| クエリ | 説明 |
 | :--- | :--- |
 | `label:bug` | ラベルがついたissue |
 | `milestone:v1.0.0` | マイルストーンがついたissue |
@@ -160,7 +160,7 @@ involvesはauthor, assignee, mentions, commenter, review-requestedをまとめ�
 
 ## 任意のキーワード <a id="keyword-query"></a>
 
-| クエリ | 条件 |
+| クエリ | 説明 |
 | :--- | :--- |
 | `github octocat` | キーワード\(AND条件\)が含まれるissue |
 | `github OR octocat` | キーワード\(OR条件\)が含まれるissue |
@@ -176,7 +176,7 @@ AND, OR, NOTについては5つまでしか含まれることはできません�
 
 ## 除外・未設定 <a id="exclude-query"></a>
 
-| クエリ | 条件 |
+| クエリ | 説明 |
 | :--- | :--- |
 | `-label:bug`,  `-milestone:v0.0.1`,  `-repo:nodejs/node` `-involves:defunk`... | 指定した条件が含まれないissue |
 | `no:label`, `no:milestone`,  `no:assignee`, `no:project` | ラベル、マイルストーン、アサイン、 プロジェクトが設定されていないissue |

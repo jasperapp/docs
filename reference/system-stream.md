@@ -8,7 +8,7 @@ System Streamとは動的にクエリを生成するシステム組み込みの�
 
 ![](../.gitbook/assets/13_system_stream.png)
 
-| System Stream | 内容 |
+| System Stream | 説明 |
 | :--- | :--- |
 | `Team Stream` | 自身がGitHub上で所属するチームがメンションされたissue |
 | `Watching Stream` | 自身がGitHub上でwatchしているリポジトリのissue |

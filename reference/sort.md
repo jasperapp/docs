@@ -18,7 +18,7 @@ description: issueの並び順についてのリファレンスです。
 
 `sort:ORDER`には次の値を指定できます。
 
-| sort | 並び順 |
+| sort | 説明 |
 | :--- | :--- |
 | `sort:updated` | 更新順 |
 | `sort:created` | 作成順 |

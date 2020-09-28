@@ -14,7 +14,7 @@ description: Jasperの基本的な使い方を紹介します。基本の使い�
   <thead>
     <tr>
       <th style="text-align:left">Stream</th>
-      <th style="text-align:left">&#x6761;&#x4EF6;</th>
+      <th style="text-align:left">&#x8AAC;&#x660E;</th>
     </tr>
   </thead>
   <tbody>

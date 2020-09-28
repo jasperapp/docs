@@ -36,7 +36,7 @@ Filter Streamで使用できるフィルターはStreamとほとんど同じ条�
   <thead>
     <tr>
       <th style="text-align:left">&#x30D5;&#x30A3;&#x30EB;&#x30BF;&#x30FC;</th>
-      <th style="text-align:left">&#x6761;&#x4EF6;</th>
+      <th style="text-align:left">&#x8AAC;&#x660E;</th>
     </tr>
   </thead>
   <tbody>
@@ -93,7 +93,7 @@ Filter Streamで使用できるフィルターはStreamとほとんど同じ条�
 
 ## ユーザやチーム <a id="involves-filter"></a>
 
-| フィルター | 条件 |
+| フィルター | 説明 |
 | :--- | :--- |
 | `involves:defunkt` | ユーザが関係するissue |
 | `author:defunkt` | ユーザが作成したissue |
@@ -109,7 +109,7 @@ Filter Streamで使用できるフィルターはStreamとほとんど同じ条�
 
 ## Pull requestレビュー <a id="review-filter"></a>
 
-| フィルター | 条件 |
+| フィルター | 説明 |
 | :--- | :--- |
 | `review-requested:defunkt` | ユーザ/チームがレビューリクエストされたpull request |
 | `reviewed-by:defunkt` | ユーザがレビューしたpull request |
@@ -120,7 +120,7 @@ Filter Streamで使用できるフィルターはStreamとほとんど同じ条�
 
 ## リポジトリやOrganization <a id="repo-filter"></a>
 
-| フィルター | 条件 |
+| フィルター | 説明 |
 | :--- | :--- |
 | `repo:nodejs/node` | リポジトリのissue |
 | `org:nodejs` | Organizationのissue |
@@ -132,7 +132,7 @@ Filter Streamで使用できるフィルターはStreamとほとんど同じ条�
 
 ## ラベルやマイルストーンなど <a id="label-filter"></a>
 
-| フィルター | 条件 |
+| フィルター | 説明 |
 | :--- | :--- |
 | `label:bug` | ラベルがついたissue |
 | `milestone:v1.0.0` | マイルストーンがついたissue |
@@ -150,7 +150,7 @@ Filter Streamで使用できるフィルターはStreamとほとんど同じ条�
 
 ## 任意のキーワード <a id="keyword-filter"></a>
 
-| フィルター | 条件 |
+| フィルター | 説明 |
 | :--- | :--- |
 | `github octocat` | キーワード\(AND条件\)が含まれるissue |
 
@@ -168,7 +168,7 @@ OR, NOTには対応していません。
 
 ## 除外・欠如 <a id="exclude-filter"></a>
 
-| フィルター | 条件 |
+| フィルター | 説明 |
 | :--- | :--- |
 | `-label:bug`, `-milestone:v0.0.1`, `-repo:nodejs/node` `-involves:defunk`... | 指定した条件が含まれないissue |
 | `no:label`, `no:milestone`, `no:assignee`, `no:project`, `no:dueon` | ラベル、マイルストーン、アサイン、 プロジェクト、締切が設定されていないissue |
