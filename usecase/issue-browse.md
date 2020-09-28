@@ -10,7 +10,7 @@ description: 効率的にissueを閲覧できるようにJasperには様々な�
 
 ![](../.gitbook/assets/filter_by_unread.png)
 
-## あとで読む <a id="bookmark"></a>
+## あとで読む <a id="read-it-later"></a>
 
 あとで読む場合、Jasperでは2つの方法があります。
 
