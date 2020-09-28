@@ -174,7 +174,7 @@ involvesはauthor, assignee, mentions, commenter, review-requestedをまとめ�
 AND, OR, NOTについては5つまでしか含まれることはできません。詳しくは「[Limitations on query length - github.com](https://docs.github.com/en/github/searching-for-information-on-github/troubleshooting-search-queries#limitations-on-query-length)」を参照してください。
 {% endhint %}
 
-## 除外・欠如 <a id="exclude-query"></a>
+## 除外・未設定 <a id="exclude-query"></a>
 
 | クエリ | 条件 |
 | :--- | :--- |
