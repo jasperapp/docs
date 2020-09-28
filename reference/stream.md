@@ -21,7 +21,7 @@ Streamに使用できるクエリはGitHub Searchのクエリと完全に互換�
 See "[Searching issues and pull requests - github.com](https://docs.github.com/en/free-pro-team@latest/github/searching-for-information-on-github/searching-issues-and-pull-requests)"and "[Understanding the search syntax - github.com](https://docs.github.com/en/free-pro-team@latest/github/searching-for-information-on-github/understanding-the-search-syntax)" for all GitHub Search queries and syntax.
 {% endhint %}
 
-## State of issues
+## State of issues <a id="state"></a>
 
 <table>
   <thead>
@@ -70,7 +70,7 @@ See "[Searching issues and pull requests - github.com](https://docs.github.com/e
 Open, merge and draft state queries are not recommended. If you use these queries, use Filter Stream. See [here](../usecase/query.md#open-issue) for more information.
 {% endhint %}
 
-## Involve users and teams
+## Involve users and teams <a id="involves"></a>
 
 | Query | description |
 | :--- | :--- |
@@ -89,7 +89,7 @@ Multiple queries of the same type become OR conditions. For example, `Involves:d
 `involves` as well as `author`, `assignee`, `mentions`, `commenter`, and `review-requested` all together.
 {% endhint %}
 
-## Pull requests review
+## Pull requests review <a id="review"></a>
 
 <table>
   <thead>
@@ -129,7 +129,7 @@ Multiple queries of the same type become OR conditions. For example, `Involves:d
 Multiple queries of the same type become OR conditions. For example, `review-requested:defunkt review-requested:jlord` is pull requests where `defunk` or `jlord` is the review request.
 {% endhint %}
 
-## Repository and organization
+## Repository and organization <a id="repo"></a>
 
 | Query | description |
 | :--- | :--- |
@@ -141,7 +141,7 @@ Multiple queries of the same type become OR conditions. For example, `review-req
 Multiple queries of the same type will result in OR conditions. For example, `repo:nodejs/node repo:electron/electron` is issues `nodejs/node` or `electron/electron`.
 {% endhint %}
 
-## Labels, milestones, etc.
+## Labels, milestones, etc. <a id="label"></a>
 
 | Query | description |
 | :--- | :--- |
@@ -158,7 +158,7 @@ More than one query of the same type is an OR condition. For example, `milestone
 A label or milestone containing spaces should be enclosed in double quotes, such as `label: "hello world"`.
 {% endhint %}
 
-## Any keywords
+## Any keywords <a id="keyword"></a>
 
 | Query | description |
 | :--- | :--- |
@@ -174,7 +174,7 @@ To include spaces, use double quotation marks, such as `"hello world"`.
 AND, OR, and NOT can only contain up to five query lengths. See "[Limitations on query length - github.com](https://docs.github.com/en/free-pro-team@latest/github/searching-for-information-on-github/troubleshooting-search-queries#limitations-on-query-length)" for more information.
 {% endhint %}
 
-## Exclusion and missing <a id="exclude-query"></a>
+## Exclusion and missing <a id="exclude"></a>
 
 <table>
   <thead>
