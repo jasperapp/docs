@@ -43,7 +43,7 @@ See "[Searching issues and pull requests - github.com](https://docs.github.com/e
         <p><em>not recommended</em>
         </p>
       </td>
-      <td style="text-align:left">Open issues, closed issues</td>
+      <td style="text-align:left">Opened issues, closed issues</td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -61,7 +61,7 @@ See "[Searching issues and pull requests - github.com](https://docs.github.com/e
         <p><em>not recommended</em>
         </p>
       </td>
-      <td style="text-align:left">Draft issues&#x3001;not draft issues</td>
+      <td style="text-align:left">Draft issues, not draft issues</td>
     </tr>
   </tbody>
 </table>

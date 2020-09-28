@@ -30,97 +30,49 @@ Filter Streams are added from the `Add Filter Stream` menu in the Stream menu. O
 The filters available in the Filter Stream are pretty much the same as in the Stream, but note that some of them are slightly different.
 {% endhint %}
 
-## issueの状態 <a id="is-filter"></a>
+## State of issues
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">&#x30D5;&#x30A3;&#x30EB;&#x30BF;&#x30FC;</th>
-      <th style="text-align:left">&#x6761;&#x4EF6;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><code>is:issue</code>, <code>is:pr</code>
-      </td>
-      <td style="text-align:left">issue&#x306E;&#x307F;&#x3001;pull request&#x306E;&#x307F;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>is:open</code>, <code>is:closed</code>
-      </td>
-      <td style="text-align:left">&#x30AA;&#x30FC;&#x30D7;&#x30F3;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;issue&#x3001;&#x30AF;&#x30ED;&#x30FC;&#x30BA;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;issue</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>is:merged</code>, <code>is:unmerged</code>
-      </td>
-      <td style="text-align:left">&#x30DE;&#x30FC;&#x30B8;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;issue&#x3001;&#x30DE;&#x30FC;&#x30B8;&#x3055;&#x308C;&#x3066;&#x3044;&#x306A;&#x3044;issue</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>draft:true</code>, <code>draft:false</code>
-      </td>
-      <td style="text-align:left">&#x30C9;&#x30E9;&#x30D5;&#x30C8;&#x306E;issue&#x3001;&#x30C9;&#x30E9;&#x30D5;&#x30C8;&#x3067;&#x306F;&#x306A;&#x3044;issue&#x200C;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>is:read</code>, <code>is:unread</code>
-      </td>
-      <td style="text-align:left">&#x65E2;&#x8AAD;&#x306E;issue&#x3001;&#x672A;&#x8AAD;&#x306E;issue</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>is:bookmark</code>, <code>is:unbookmark</code>
-      </td>
-      <td style="text-align:left">&#x30D6;&#x30C3;&#x30AF;&#x30DE;&#x30FC;&#x30AF;&#x3055;&#x308C;&#x305F;issue&#x3001;
-        <br
-        />&#x30D6;&#x30C3;&#x30AF;&#x30DE;&#x30FC;&#x30AF;&#x3055;&#x308C;&#x3066;&#x3044;&#x306A;&#x3044;issue</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>is:archived</code>, <code>is:unarchived</code>
-      </td>
-      <td style="text-align:left">
-        <p>&#x30A2;&#x30FC;&#x30AB;&#x30A4;&#x30D6;&#x3055;&#x308C;&#x305F;issue&#x3001;</p>
-        <p>&#x30A2;&#x30FC;&#x30AB;&#x30A4;&#x30D6;&#x3055;&#x308C;&#x3066;&#x3044;&#x306A;&#x3044;issue</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>is:private</code>, <code>is:unprivate</code>
-      </td>
-      <td style="text-align:left">
-        <p>&#x30D7;&#x30E9;&#x30A4;&#x30D9;&#x30FC;&#x30C8;&#x30EA;&#x30DD;&#x30B8;&#x30C8;&#x30EA;&#x306E;issue&#x3001;</p>
-        <p>&#x30D1;&#x30D6;&#x30EA;&#x30C3;&#x30AF;&#x30EA;&#x30DD;&#x30B8;&#x30C8;&#x30EA;&#x306E;issue</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-## ユーザやチーム <a id="involves-filter"></a>
-
-| フィルター | 条件 |
+| Filter | Condition |
 | :--- | :--- |
-| `involves:defunkt` | ユーザが関係するissue |
-| `author:defunkt` | ユーザが作成したissue |
-| `assignee:defunkt` | ユーザがアサインされたissue |
+| `is:issue`, `is:pr` | Issues only, pull requests only |
+| `is:open`, `is:closed` | Opened issues, closed issues |
+| `is:merged`, `is:unmerged` | Merged issues, unmerged issues |
+| `draft:true`, `draft:false` | Draft issues, not draft issue‌s |
+| `is:read`, `is:unread` | Read issues, unread issues |
+| `is:bookmark`, `is:unbookmark` | Bookmarked issues, not bookmarked issue |
+| `is:archived`, `is:unarchived` | Archived issues, not archived issues |
+| `is:private`, `is:unprivate` | Private repository issues, not private repository issues |
 
-{% hint style="info" %}
-同じ種類のフィルターを複数指定するとOR条件になります。例えば、`involves:defunkt involves:jlord`は`defunkt`もしくは`jlord`が関係するissueです。
-{% endhint %}
+## Involve users and teams <a id="involves-filter"></a>
 
-{% hint style="info" %}
-`involves`は`author`, `assignee`, `commenter`, `review-requested`をまとめて指定したものと同様になります。‌
-{% endhint %}
-
-## Pull requestレビュー <a id="review-filter"></a>
-
-| フィルター | 条件 |
+| Filter | Condition |
 | :--- | :--- |
-| `review-requested:defunkt` | ユーザがレビューリクエストされたpull request |
-| `reviewed-by:defunkt` | ユーザがレビューしたpull request |
+| `involves:defunkt` | User involved issues |
+| `author:defunkt` | User created issues |
+| `assignee:defunkt` | User assigned issues |
 
 {% hint style="info" %}
-同じ種類のクエリを複数指定するとOR条件になります。例えば、‌`review-requested:defunkt review-requested:jlord`は`defunkt`もしくは`jlord`がレビューリクエストされたpull requestです。
+Multiple filters of the same type can be specified as OR conditions. For example, `involves:defunkt involves:jlord` is an issue involving `defunkt` or `jlord`.
 {% endhint %}
 
-## リポジトリやOrganization <a id="repo-filter"></a>
+{% hint style="info" %}
+`involves` as well as `author`, `assignee`, `commenter` and `review-requested` all together.‌
+{% endhint %}
 
-| フィルター | 条件 |
+## Pull requests review <a id="review-filter"></a>
+
+| Filter | Condition |
+| :--- | :--- |
+| `review-requested:defunkt` | Pull requests where the user/team has requested a review |
+| `reviewed-by:defunkt` | User reviewed pull requests |
+
+{% hint style="info" %}
+Specifying multiple queries of the same type is an OR condition. For example, `review-requested:defunkt review-requested:jlord` is pull requests where `defunkt` or `jlord` is the review request.
+{% endhint %}
+
+## Repository and Organization <a id="repo-filter"></a>
+
+| Filter | Condition |
 | :--- | :--- |
 | `repo:nodejs/node repo:electron/electron` | リポジトリのissue |
 | `org:nodejs org:electron` | Organizationのissue |
