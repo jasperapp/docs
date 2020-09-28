@@ -57,8 +57,6 @@ JasperからGitHub Notificationへの反映は「issueを閲覧して既読に�
 {% endtab %}
 {% endtabs %}
 
-
-
 ## GitHub Watchingと連携する <a id="watching"></a>
 
 自分がGitHub上でwatchしたリポジトリのissueを見るにはWatching Streamを使います。Watching Streamは設定画面から有効にします。
@@ -99,7 +97,7 @@ Subscription Streamを右クリックして、メニューからissueのURLを�
 {% endtab %}
 {% endtabs %}
 
-## 更新間隔を最適化する <a id="polling"></a>
+## 更新間隔を最適化する <a id="optimize"></a>
 
 Jasperは通常10秒ごとにissueを検索して更新を取得しています。この更新間隔はStreamごとではなく、Jasper全体の更新間隔です。つまり、Streamをたくさん作れば作るほど、Stream1個あたりの更新は遅くなります。例えばStreamを3つ作っていた場合、1つのStreamが更新されるのは30秒ごとになります。
 
