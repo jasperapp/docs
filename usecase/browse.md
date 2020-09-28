@@ -12,7 +12,7 @@ To quickly display just the unread issues, use the issue's filter function - sel
 
 ![](../.gitbook/assets/filter_by_unread.png)
 
-## Read it later.
+## Read it later
 
 If you want to read it later, there are two ways to do it in Jasper.
 

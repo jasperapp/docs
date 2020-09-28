@@ -108,7 +108,7 @@ The reason it works this way is so that more Streams don't overload GitHub.
 This is why creating a lot of Streams can slow down updates. So we use fewer regular Streams and more Filter Streams, so that updates are not slowed down.
 
 {% hint style="info" %}
-Filter Stream does not search GitHub and filters local issues, so it does not affect the update interval. For more information on Filter Stream, see "[Filter Stream / Filter](../reference/filter-stream.md)".
+Filter Stream does not search GitHub and filters local issues, so it does not affect the update interval. For more information on Filter Stream, see "[Filter Stream](../reference/filter-stream.md)".
 {% endhint %}
 
 For example, instead of creating two Streams, create a Stream and two Filter Streams, like this This will allow you to update at 10 second intervals per stream, instead of 20 seconds per stream in the former.
