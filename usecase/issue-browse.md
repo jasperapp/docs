@@ -1,89 +1,91 @@
 ---
-description: 効率的にissueを閲覧できるようにJasperには様々な機能があります。ここではよく使われる機能をいくつか紹介します。
+description: >-
+  There are a number of features available in Jasper to help you browse issues
+  efficiently. Here are some of the most commonly used features.
 ---
 
-# issueの閲覧
+# Browse Issues
 
-## 未読issueを素早く表示する <a id="unread"></a>
+## Quickly view unread issues
 
-未読issueだけを素早く表示するにはissueのフィルター機能を使います。issue一覧の上部にあるフィルターから`Filter by unread`を選択してください。もしくはキーボードの `U` を押すことで未読issueだけを表示することもできます。
+To quickly display just the unread issues, use the issue's filter function - select `Filter by unread` from the filters at the top of the issue list. Alternatively, you can also display just the unread issues by pressing `U` on your keyboard.
 
 ![](../.gitbook/assets/03_filter_menu.png)
 
-## あとで読む・あとで返事をする <a id="bookmark"></a>
+## Read it later.
 
-あとで読む場合、Jasperでは2つの方法があります。1つはissueを未読に戻す方法です。issueのフローティングメニューから`Mark as Unread`を選択します。もしくは選択状態のissueに対してキーボードの `I` を押して未読に戻すこともできます。
+If you want to read it later, Jasper offers two ways to return an issue to unread: by selecting `Mark as Unread` from the issue's floating menu. Alternatively, you may choose to mark an issue as unread by pressing `I` on the keyboard while it is selected.
 
 ![](../.gitbook/assets/03_hover_menu.png)
 
-2つ目の方法はブックマークに登録する方法です。issueのフローティングメニューから`Add to Bookmark`を選択します。もしくは選択状態のissueに対してキーボードの `B` を押してブックマークに登録することもできます。
+The second way to bookmark an issue is to add it to your bookmarks. Select `Add to Bookmark` from the issue's floating menu. Alternatively, you may bookmark a selected issue by pressing  `B`  on the keyboard.
 
 ![](../.gitbook/assets/08_hover_menu.png)
 
-## 不要なissueを除外する <a id="archive"></a>
+## Exclude unwanted issues
 
-今後閲覧する必要がないissueを除外する場合、アーカイブ機能を使用できます。アーカイブするにはフローティングメニューから`Move to Archive`を選択します。もしくは選択状態のissueに対してキーボードの `E` を押してアーカイブすることもできます。
+You can use the archive feature to exclude issues that you do not need to view in the future. To archive, select `Move to Archive` from the floating menu. Alternatively, you may archive an issue in the selected state by pressing the `E` key on your keyboard.
 
 ![](../.gitbook/assets/08_hover_menu_archive.png)
 
-## 素早くissueを検索する <a id="jump-navigation"></a>
+## Quickly search for issues
 
-Jasperが保持しているissueの中から検索を行うには`Jump Navigation`機能を使います。Jump Navigationは左上の🔍アイコンから開始します。もしくは`⌘ + E (Mac)`, `Ctrl + E (Window/Linux)`を押すことでも開始できます。
+To search through Jasper's holdings of issues, we use the `Jump Navigation` feature, starting with the 🔍 icon in the top left corner. You can also start by pressing `⌘ + E (Mac)`, `Ctrl + E (Window/Linux)`.
 
 ![](../.gitbook/assets/08_jump_navi.png)
 
 {% hint style="info" %}
-Jump Navigationでの検索にはFilter Streamと同じフィルターが使用できます。詳しくはリファレンスの「[Filter Stream / Filter](../reference/filter-stream.md)」を参照してください。
+You can use the same filters as Filter Stream to search in Jump Navigation. See "[Filter Stream / Filter](../reference/filter-stream.md)" in the reference section for more information.
 {% endhint %}
 
-## 集中してissueを閲覧する <a id="layout"></a>
+## Focused issue viewing
 
-難しいissueやpull requestのレビューなど集中してissueを閲覧したい場合、issueの表示領域を大きくすることができます。issueの表示領域を大きくするには右上のレイアウトアイコンから切り替えることができます。もしくは`⌘ + 1`, `⌘ + 2`, `⌘ + 3`を押すことでも切り替えることができます。
+If you want to focus on viewing an issue, such as reviewing a difficult issue or pull request, you may want to increase the display area of the issue. You can increase the display area of an issue by toggling the layout icon in the top right corner. Alternatively, you can also toggle between them by pressing `⌘ + 1`, `⌘ + 2`, or `⌘ + 3`.
 
 {% tabs %}
-{% tab title="レイアウトアイコン" %}
+{% tab title="Layout icon" %}
 ![](../.gitbook/assets/08_layout_icon.png)
 {% endtab %}
 
-{% tab title="3レイアウト\(通常時\)" %}
+{% tab title="3 Layouts\(normal\)" %}
 ![](../.gitbook/assets/08_layout3.png)
 {% endtab %}
 
-{% tab title="2レイアウト" %}
+{% tab title="2 Layouts" %}
 ![](../.gitbook/assets/08_layout2.png)
 {% endtab %}
 
-{% tab title="1レイアウト" %}
+{% tab title="1 Layout" %}
 ![](../.gitbook/assets/08_layout1.png)
 {% endtab %}
 {% endtabs %}
 
-またissue閲覧中に通知が気にならないように、素早く通知をオフにすることもできます。通知をオン/オフの切り替えは左上の🔔アイコンからできます。もしくは`⌘ + I`を押すことでもできます。
+You can also quickly turn off notifications while browsing an issue so that you are not bothered by them. You can turn notifications on or off by clicking the 🔔 icon in the top left corner. Or you can also press `⌘+I`.
 
 ![](../.gitbook/assets/08_notification.png)
 
-## 未読コメントを確認する <a id="unread-comment"></a>
+## Check for unread comments.
 
-Jasperの内部ブラウザでissueを閲覧すると、前回閲覧時から追加・更新されたコメントがハイライトされます。またissueの左側に追加・更新されたコメントのミニマップが表示されます。このコメントのハイライトとミニマップを使って未読のコメントを素早く確認できます。
+When viewing an issue in Jasper's built-in browser, Jasper will highlight the comments that have been added or updated since the last time you viewed the issue. You will also see a mini-map of the comments that have been added/updated on the left side of the issue. You can use this comment highlighting and minimap to quickly see which comments have not been read.
 
 {% tabs %}
-{% tab title="コメントのハイライト" %}
+{% tab title="Highlight comments" %}
 ![](../.gitbook/assets/03_highlight_comment.png)
 {% endtab %}
 
-{% tab title="コメントのミニマップ" %}
+{% tab title="Comment minimap" %}
 ![](../.gitbook/assets/08_minimap.png)
 {% endtab %}
 {% endtabs %}
 
-また、issueの本文に関しては更新があった場合は差分が表示されます。
+Also, any updates to the body of the issue will be displayed as a differential.
 
 {% tabs %}
-{% tab title="差分のお知らせ" %}
+{% tab title="Notice of difference" %}
 ![](../.gitbook/assets/08_diff_body1.png)
 {% endtab %}
 
-{% tab title="差分の表示" %}
+{% tab title="Show the difference" %}
 ![](../.gitbook/assets/08_diff_body2.png)
 {% endtab %}
 {% endtabs %}

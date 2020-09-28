@@ -9,7 +9,7 @@
   * [Stream queries](usecase/stream-query.md)
   * [Stream appearance and notifications](usecase/stream-detail.md)
   * [Advanced Stream](usecase/stream-advanced.md)
-  * [issueの閲覧](usecase/issue-browse.md)
+  * [Browse Issues](usecase/issue-browse.md)
   * [キーボード操作](usecase/keyboard.md)
 * [リファレンス](reference/README.md)
   * [Stream](reference/stream.md)
