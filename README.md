@@ -55,7 +55,7 @@ Streamは[GitHub Search API](https://docs.github.com/en/rest/reference/search)�
 
 そして、StreamはGitHub Search APIと全く同じクエリを使用することができるため、自分が関心のあるissueを柔軟に閲覧することができます。
 
-![](.gitbook/assets/01_stream.png)
+![](.gitbook/assets/stream_editor.png)
 
 {% hint style="info" %}
 Streamで使用できるクエリは「[Streamのクエリ](usecase/query.md)」や「[Stream](reference/stream.md)」を参照してください。
