@@ -14,7 +14,7 @@ Notifications can also be turned on or off per Stream. If you don't want to be n
 
 {% tabs %}
 {% tab title="Stream details" %}
-![](../.gitbook/assets/06_detail.png)
+![](../.gitbook/assets/stream_editor_details.png)
 {% endtab %}
 
 {% tab title="Collective setting" %}
