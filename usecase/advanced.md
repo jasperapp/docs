@@ -37,7 +37,7 @@ To view issues related to a specific Github Project, create a Project Stream.
 With the `project:REPOSITORY/PROJECT_BOARD` query, you can still create a regular Stream to view issues related to GitHub Projects. However, we recommend using Project Stream as it allows you to work with the Project Board \(Kanban\).
 {% endhint %}
 
-## GitHub Team Integration
+## GitHub Team Integration <a id="team"></a>
 
 Use the Team Stream to view issues that have been mentioned to your GitHub Team.
 
@@ -57,7 +57,7 @@ Queries are automatically created from the Team you belong to.
 {% endtab %}
 {% endtabs %}
 
-## GitHub Watching Integration
+## GitHub Watching Integration <a id="watching"></a>
 
 You can use the Watching Stream to view issues in repositories that you have watched on GitHub.
 
@@ -77,7 +77,7 @@ Queries are automatically created from the repositories you watch.
 {% endtab %}
 {% endtabs %}
 
-## Register any issues
+## Register any issues <a id="subscription"></a>
 
 If you want the issue to be a Stream on its own, rather than a repository or organization, use the Subscription Stream, which you enable from the configuration screen.
 
@@ -97,7 +97,7 @@ Right-click on the Subscription Stream and register the URL of the issue in the 
 {% endtab %}
 {% endtabs %}
 
-## Optimizing the update interval
+## Optimizing the update interval <a id="optimize"></a>
 
 Jasper typically looks for an issue every 10 seconds to get an update. This update interval is not per Stream, but rather for the entire Jasper. This means that the more Streams you create, the slower the update per Stream will be. For example, if you are creating three Streams, a Stream will only be updated every 30 seconds.
 
