@@ -16,7 +16,7 @@ Library StreamとはJasper内のissueを横断的に整理したものです。L
 | `Bookmark` | アーカイブされていないブックマークされたissue |
 | `Archived` | アーカイブされたissue |
 
-デフォルトではInbox, Bookmark, Archivedが有効になっています。
+デフォルトでは`Inbox`, `Bookmark`, `Archived`が有効になっています。
 
 ![](../.gitbook/assets/12_inbox.png)
 
