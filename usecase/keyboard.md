@@ -45,7 +45,7 @@ description: Jasperには様々なキーボードショートカットがあり�
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">&#x6B21;/&#x76EE;&#x306E;issue&#x3092;&#x8868;&#x793A;</td>
+      <td style="text-align:left">&#x6B21;/&#x524D;&#x306E;issue&#x3092;&#x8868;&#x793A;</td>
       <td style="text-align:left"><code> J </code>, <code> K </code>
       </td>
     </tr>
@@ -63,6 +63,6 @@ description: Jasperには様々なキーボードショートカットがあり�
 {% endhint %}
 
 {% hint style="info" %}
-キーボードショートカットをカスタマイズする場合は「[キーボードをカスタマイズする\(Mac\)](../reference/keyboard-shortcut.md#customize)」を参照してください。
+キーボードショートカットをカスタマイズする場合は「[キーボードショートカットをカスタマイズする\(Mac\)](../reference/keyboard-shortcut.md#customize)」を参照してください。
 {% endhint %}
 
