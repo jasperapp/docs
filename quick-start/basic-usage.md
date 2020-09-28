@@ -83,8 +83,6 @@ description: Jasperの基本的な使い方を紹介します。基本の使い�
 {% endtab %}
 
 {% tab title="フローティングメニュー" %}
-![](../.gitbook/assets/03_hover_menu.png)
-{% endtab %}
 {% endtabs %}
 
 ## ブラウザ

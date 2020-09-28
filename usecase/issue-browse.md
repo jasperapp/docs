@@ -8,23 +8,31 @@ description: 効率的にissueを閲覧できるようにJasperには様々な�
 
 未読issueだけを素早く表示するにはissueのフィルター機能を使います。issue一覧の上部にあるフィルターから`Filter by unread`を選択してください。もしくはキーボードの `U` を押すことで未読issueだけを表示することもできます。
 
-![](../.gitbook/assets/03_filter_menu.png)
+![](../.gitbook/assets/filter_by_unread.png)
 
 ## あとで読む <a id="bookmark"></a>
 
-あとで読む場合、Jasperでは2つの方法があります。1つはissueを未読に戻す方法です。issueのフローティングメニューから`Mark as Unread`を選択します。もしくは選択状態のissueに対してキーボードの `I` を押して未読に戻すこともできます。
+あとで読む場合、Jasperでは2つの方法があります。
 
-![](../.gitbook/assets/03_hover_menu.png)
+1つ目はissueを未読に戻す方法です。issueのフローティングメニューから`Mark as Unread`を選択します。もしくは選択状態のissueに対してキーボードの `I` を押して未読に戻すこともできます。
 
 2つ目の方法はブックマークに登録する方法です。issueのフローティングメニューから`Add to Bookmark`を選択します。もしくは選択状態のissueに対してキーボードの `B` を押してブックマークに登録することもできます。
 
-![](../.gitbook/assets/08_hover_menu.png)
+{% tabs %}
+{% tab title="未読に戻す" %}
+![](../.gitbook/assets/hover_unread.png)
+{% endtab %}
+
+{% tab title="ブックマークする" %}
+![](../.gitbook/assets/hover_bookmark.png)
+{% endtab %}
+{% endtabs %}
 
 ## 不要なissueを除外 <a id="archive"></a>
 
 今後閲覧する必要がないissueを除外する場合、アーカイブ機能を使用できます。アーカイブするにはフローティングメニューから`Move to Archive`を選択します。もしくは選択状態のissueに対してキーボードの `E` を押してアーカイブすることもできます。
 
-![](../.gitbook/assets/08_hover_menu_archive.png)
+![](../.gitbook/assets/hover_archive.png)
 
 ## 未読コメントを確認 <a id="unread-comment"></a>
 
