@@ -52,7 +52,7 @@ Jasperのコア機能であるStreamは[GitHub Search API](https://docs.github.c
 * Streamごとにポーリングするのではなく、Jasper全体で1つのポーリングとする
   * このため、Streamが増えすぎると1つのStreamあたりの更新間隔が伸びる。 この問題を緩和するには「[更新間隔を最適化する](usecase/stream-advanced.md#polling)」を参照してください。
 * GitHub APIのrate limitに達した場合、ポーリング間隔を自動的に伸ばす
-  * GitHub Search APIのrate limitは60秒間に10リクエストです。そのため、デフォルトのポーリング間隔では60秒間に6リクエストであるため、rate limitに達することはありません
+  * GitHub Search APIのrate limitは60秒間に10リクエストです。デフォルトのポーリング間隔では60秒間に6リクエストであるため、rate limitに達することはありません
   * GHE\(GitHub Enterprise\)ではrate limitが独自に設定されている場合があります。詳しくはGHEの管理者にお問い合わせください。
 
 ## サポーター  サブスクリプション <a id="supporter"></a>
