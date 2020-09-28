@@ -18,7 +18,7 @@
   * [Library Stream](reference/library-stream.md)
   * [System Stream](reference/system-stream.md)
   * [Sort order](reference/sort.md)
-  * [ブラウザ](reference/browser.md)
+  * [Browser](reference/browser.md)
   * [ジャンプナビゲーション](reference/jump-navigation.md)
   * [キーボードショートカット](reference/keyboard-shortcut.md)
 * [FAQ](faq.md)

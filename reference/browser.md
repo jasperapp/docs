@@ -1,44 +1,44 @@
 ---
-description: Jasperの組み込みブラウザについてのリファレンスです。
+description: This is a reference for Jasper's built-in browser.
 ---
 
-# ブラウザ
+# Browser
 
-## ページ内検索
+## Search within a page
 
-ページ内の検索を行うにはページ右上の虫眼鏡アイコンを押してください。もしくはキーボードの`⌘ + F(Mac)`, `Ctrl + F(Window/Linux)`を押すことで検索することもできます。
+To search within a page, press the magnifying glass icon at the top right of the page. Or you can search by pressing `⌘ + F(Mac)`, `Ctrl + F(Window/Linux)` on your keyboard.
 
 ![](../.gitbook/assets/15_search_page.png)
 
-## 外部ブラウザで開く
+## Open with an external browser
 
-現在のページを外部ブラウザで開くにはページ右上の開くアイコンを押してください。もしくはキーボードの`⌘ + O(Mac)`, `Ctrl + O(Windows)`を押すことでも開くことができます。
+To open the current page in an external browser, press the open icon at the top right of the page. Or you can press `⌘ + O(Mac)` or `Ctrl + O(Windows)` to open the page.
 
 ![](../.gitbook/assets/15_open_external.png)
 
-## URLを表示
+## Show URL
 
-現在のページのURLを表示するにはページ上部のissue情報エリアをクリックしてください。もしくはキーボードの`⌘ + L(Mac)`, `Ctrl + L(Window/Linux)`を押すことでも表示することができます。
+To view the URL of the current page, click on the Issue Information area at the top of the page. Alternatively, you can also display it by pressing `⌘ + L(Mac)` or `Ctrl + L(Window/Linux)` on your keyboard.
 
 ![](../.gitbook/assets/15_url.png)
 
-## issue本文の差分表示
+## Issue body diff
 
-issueを前回閲覧した時からissue本文に更新があれば、その差分を表示します。
+Displays the differences in the body of the issue, if there have been any updates to the issue body since the last time the issue was viewed.
 
 {% tabs %}
-{% tab title="差分のお知らせ" %}
+{% tab title="Notice diff" %}
 ![](../.gitbook/assets/08_diff_body1.png)
 {% endtab %}
 
-{% tab title="差分の表示" %}
+{% tab title="Show diff" %}
 ![](../.gitbook/assets/08_diff_body2.png)
 {% endtab %}
 {% endtabs %}
 
-## 未読コメントのハイライト・ミニマップ
+## Unread comment highlights and mini-maps
 
-issueを前回閲覧した時からコメントの追加・更新があれば、そのコメントをハイライト表示します。また、それらのハイライトされたコメントを見にマップ上に表示します。
+Highlight any comments that have been added or updated since the issue was last viewed. It will also display those highlighted comments on the map for you to see.
 
 {% tabs %}
 {% tab title="コメントのハイライト" %}
