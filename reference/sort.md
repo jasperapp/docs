@@ -33,7 +33,7 @@ The following values can be specified for `sort:ORDER`.
 | `sort:milestone` | Milestone name order |
 | `sort:dueon` | Deadline of milestone order |
 | `sort:title` | Title order |
-| `sort:number` | Number order |
+| `sort:number` | Issue number order |
 | `sort:type` | Issue type\(Issue or Pull Request\) order |
 
 You can also specify multiple orders and ascending/descending order.
