@@ -6,7 +6,7 @@ description: Streamや全体からissueを検索することができます。
 
 ## Streamから検索
 
-任意のStreamからissueを検索するにはFilter機能を使います。Filterを使うにはissueリストの上部にあるフィルターアイコンをクリックしてください。
+任意のStreamからissueを検索するには`Filter`機能を使います。Filterを使うにはissueリストの上部にあるフィルターアイコンをクリックしてください。
 
 ![](../.gitbook/assets/show_filter_edit.png)
 
