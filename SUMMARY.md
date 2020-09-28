@@ -6,7 +6,7 @@
   * [Basic usage](quick-start/basic-usage.md)
   * [Data migration](quick-start/data-migration.md)
 * [Use cases](usecase/README.md)
-  * [Streamのクエリ](usecase/stream-query.md)
+  * [Stream queries](usecase/stream-query.md)
   * [Streamの見た目と通知設定](usecase/stream-detail.md)
   * [Streamの高度な使い方](usecase/stream-advanced.md)
   * [issueの閲覧](usecase/issue-browse.md)
