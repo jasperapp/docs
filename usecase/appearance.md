@@ -26,13 +26,13 @@ Notifications can also be turned on or off per Stream. If you don't want to be n
 Icons are available for all types of icons registered in [Material Design Icons](https://materialdesignicons.com/).
 {% endhint %}
 
-## General notification settings
+## General notification settings <a id="general-notification"></a>
 
 You can also turn off notifications for the entire issue if you want to focus on viewing the issue. You can turn notifications on/off by clicking the 🔔 icon in the top left corner. Or you can press `⌘ + I`.
 
 ![](../.gitbook/assets/08_notification.png)
 
-## Change the layout
+## Change the layout <a id="layout"></a>
 
 You can increase the display area of an issue if you have a small screen, or if you are doing a pull request code review. You can increase the display area by toggling the layout icon in the top right corner, or you can toggle it by pressing ⌘ + 1, ⌘ + 2, or ⌘ + 3. You can also switch between them by pressing `⌘ + 1`, `⌘ + 2`, or `⌘ + 3`.
 
@@ -54,7 +54,7 @@ You can increase the display area of an issue if you have a small screen, or if 
 {% endtab %}
 {% endtabs %}
 
-## Hide the Stream
+## Hide the Stream <a id="hide-stream"></a>
 
 You can also hide unwanted Streams. For example, if you don't use `Inbox` or `Archive`, you can hide them to make Jasper easier to see.
 
