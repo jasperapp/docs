@@ -21,7 +21,7 @@ Streamに使用できるクエリはGitHub Searchのクエリと完全に互換�
 See "[Searching issues and pull requests - github.com](https://docs.github.com/en/free-pro-team@latest/github/searching-for-information-on-github/searching-issues-and-pull-requests)"and "[Understanding the search syntax - github.com](https://docs.github.com/en/free-pro-team@latest/github/searching-for-information-on-github/understanding-the-search-syntax)" for all GitHub Search queries and syntax.
 {% endhint %}
 
-## Specify the state of an issue
+## State of issues
 
 <table>
   <thead>
@@ -70,87 +70,148 @@ See "[Searching issues and pull requests - github.com](https://docs.github.com/e
 Open, merge and draft state queries are not recommended. If you use these queries, use Filter Stream. See [here](../usecase/stream-query.md#open-issue) for more information.
 {% endhint %}
 
-## Specify issues that involve users and teams
+## Involve users and teams
 
 | Query | Condition |
 | :--- | :--- |
-| `involves:defunkt involves:jlord` | User involved issues |
-| `author:defunkt author:jlord` | User created issues |
-| `assignee:defunkt assignee:jlord` | User assigned issues |
-| `mentions:defunkt mentions:jlord` | User mentioned issues |
-| `commenter:defunkt commenter:jlord` | User commented issues |
-| `team:github/owners team:octocat/owners` | Team mentioned issues |
+| `involves:defunkt` | User involved issues |
+| `author:defunkt` | User created issues |
+| `assignee:defunkt` | User assigned issues |
+| `mentions:defunkt` | User mentioned issues |
+| `commenter:defunkt` | User commented issues |
+| `team:github/owners` | Team mentioned issues |
 
 {% hint style="info" %}
-Multiple queries of the same type become OR conditions. `Involves:defunkt involves:jlord` is an issue involving `defunkt` or `jlord`.
+Multiple queries of the same type become OR conditions. For example, `Involves:defunkt involves:jlord` is issues involving `defunkt` or `jlord`.
 {% endhint %}
 
 {% hint style="info" %}
-involvesはauthor, assignee, mentions, commenter, review-requestedをまとめて指定したものと同様になります。
+`involves` as well as `author`, `assignee`, `mentions`, `commenter`, and `review-requested` all together.
 {% endhint %}
 
-## レビューに関係するpull requestを指定するクエリ <a id="review-query"></a>
+## Pull requests review
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Query</th>
+      <th style="text-align:left">Condition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><code>review-requested:defunkt</code>
+      </td>
+      <td style="text-align:left">Pull requests where the user has requested a review</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>team-review-requested:github/owners</code>
+      </td>
+      <td style="text-align:left">Pull requests for which the team has requested a review</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>reviewed-by:defunkt</code>
+      </td>
+      <td style="text-align:left">User reviewed pull requests</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>review:approved</code>, <code>review:changes_requested</code>
+      </td>
+      <td style="text-align:left">
+        <p>Approved pull requests,</p>
+        <p>Changes requested pull requests</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+{% hint style="info" %}
+Multiple queries of the same type become OR conditions. For example, `review-requested:defunkt review-requested:jlord` is pull requests where `defunk` or `jlord` is the review request.
+{% endhint %}
+
+## Repository and organization
+
+| Query | Condition |
+| :--- | :--- |
+| `repo:nodejs/node` | Repository issues |
+| `org:nodejs` | Organization issues |
+| `user:defunkt` | User issues |
+
+{% hint style="info" %}
+Multiple queries of the same type will result in OR conditions. For example, `repo:nodejs/node repo:electron/electron` is issues `nodejs/node` or `electron/electron`.
+{% endhint %}
+
+## Labels, milestones, etc.
+
+| Query | Condition |
+| :--- | :--- |
+| `label:bug` | Labeled issues |
+| `milestone:v1.0.0` | Milestone issues |
+| `project:github/57` | Organization project issues |
+| `project:github/linguist/1` | Repository project issues |
+
+{% hint style="info" %}
+More than one query of the same type is an OR condition. For example, `milestone:v1.0.0.0 milestone:v2.0.0` is an issue with a `v1.0.0` or `v2.0.0.0` milestone. However, this is an AND condition for labels.
+{% endhint %}
+
+{% hint style="info" %}
+A label or milestone containing spaces should be enclosed in double quotes, such as `label: "hello world"`.
+{% endhint %}
+
+## Any keywords
 
 | クエリ | 条件 |
 | :--- | :--- |
-| `review-requested:defunkt review-requested:jlord` | ユーザにレビューリクエストされたpull request |
-| `team-review-requested:github/owners team-review-requested:octocat/owners` | チームにレビューリクエストされたpull request |
-| `reviewed-by:defunkt reviewed-by:jlord` | ユーザがレビューしたpull request |
-| `review:approved`, `review:changes_requested` | approvedされたpull request, changes requestedされたpull request |
+| `github octocat` | Issues containing the keywords \(AND conditions\) |
+| `github OR octocat` | Issues containing the keyword \(OR condition\) |
+| `github NOT octocat` | Issues containing the keywords \(NOT conditions\) |
 
 {% hint style="info" %}
-同じ種類のクエリを複数指定するとOR条件になります。
-{% endhint %}
-
-## issueのリポジトリやOrganizationを指定するクエリ <a id="repo-query"></a>
-
-| クエリ | 条件 |
-| :--- | :--- |
-| `repo:nodejs/node repo:electron/electron` | リポジトリのissue |
-| `org:nodejs org:electron` | Organizationのissue |
-| `user:defunkt user:jlord` | ユーザ下のissue |
-
-{% hint style="info" %}
-同じ種類のクエリを複数指定するとOR条件になります。
-{% endhint %}
-
-## ラベルなどのissueの属性を指定するクエリ <a id="label-query"></a>
-
-| クエリ | 条件 |
-| :--- | :--- |
-| `label:bug label:important` | ラベルがついたissue |
-| `milestone:v1.0.0 milestone:v2.0.0` | マイルストーンがついたissue |
-| `project:github/57` | Organizationレベルのプロジェクト に紐付いたissue |
-| `project:github/linguist/1` | リポジトリレベルのプロジェクト に紐付いたissue |
-
-{% hint style="info" %}
-同じ種類のクエリを複数指定するとOR条件になります。ただし、ラベルについてはAND条件となります。
+To include spaces, use double quotation marks, such as `"hello world"`.
 {% endhint %}
 
 {% hint style="info" %}
-スペースを含むラベルやマイルストーンの場合は`label:"foo bar"`のようにダブルクオーテーションで囲んでください。
+AND, OR, and NOT can only contain up to five query lengths. See "[Limitations on query length - github.com](https://docs.github.com/en/free-pro-team@latest/github/searching-for-information-on-github/troubleshooting-search-queries#limitations-on-query-length)" for more information.
 {% endhint %}
 
-## issueのキーワードを指定するクエリ <a id="keyword-query"></a>
+## Exclusion and missing <a id="exclude-query"></a>
 
-| クエリ | 条件 |
-| :--- | :--- |
-| `github octocat` | キーワード\(AND条件\)が含まれるissue |
-| `github OR octocat` | キーワード\(OR条件\)が含まれるissue |
-| `github NOT octocat` | キーワード\(NOT条件\)が含まれるissue |
-
-{% hint style="info" %}
-スペースを含む場合は`"hello world"`のようにダブルクオーテーションで囲んでください。
-{% endhint %}
-
-{% hint style="info" %}
-AND, OR, NOTについては5つまでしか含まれることはできません。詳しくは「[Limitations on query length - github.com](https://docs.github.com/en/github/searching-for-information-on-github/troubleshooting-search-queries#limitations-on-query-length)」を参照してください。
-{% endhint %}
-
-## 除外・欠如を指定するクエリ <a id="exclude-query"></a>
-
-| クエリ | 条件 |
-| :--- | :--- |
-| `-label:bug`,  `-milestone:v0.0.1`,  `-repo:nodejs/node` `-involves:defunk`... | 指定した条件が含まれないissue |
-| `no:label`, `no:milestone`,  `no:assignee`, `no:project` | ラベル、マイルストーン、アサイン、 プロジェクトが設定されていないissue |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">&#x30AF;&#x30A8;&#x30EA;</th>
+      <th style="text-align:left">&#x6761;&#x4EF6;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <p><code>-label:bug</code>
+        </p>
+        <p><code>-milestone:v0.0.1</code> 
+          <br /><code>-repo:nodejs/node</code>
+        </p>
+        <p><code>-involves:defunk</code>
+        </p>
+        <p>and more</p>
+      </td>
+      <td style="text-align:left">Issues that do not contain the specified conditions</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <p><code>no:label</code>
+        </p>
+        <p><code>no:milestone</code> 
+          <br /><code>no:assignee</code>
+        </p>
+        <p><code>no:project</code>
+        </p>
+      </td>
+      <td style="text-align:left">
+        <p>Labels, Milestones, Assignments,</p>
+        <p>and An issue with no project set up</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
