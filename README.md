@@ -47,6 +47,6 @@ Currently, there are several tools for viewing GitHub issues, which fall into th
 Jasper is a tool that belongs to category 1. Normally, tools in this category use the [GitHub Notification API](https://docs.github.com/en/rest/reference/activity#notifications). However, Jasper is built using the [GitHub Search API](https://docs.github.com/en/rest/reference/search), which gives it a lot of flexibility not found in other tools. On the other hand, it may not be as easy to use as other tools. That's why Jasper has been developed with a balance between flexibility and simplicity in mind.
 
 {% hint style="info" %}
-See "[Concepts](faq.md#concept)" for more information.
+See "[Concept](faq.md#concept)" for more information.
 {% endhint %}
 
