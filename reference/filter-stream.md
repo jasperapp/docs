@@ -30,7 +30,7 @@ Filter Streams are added from the `Add Filter Stream` menu in the Stream menu. O
 The filters available in the Filter Stream are pretty much the same as in the Stream, but note that some of them are slightly different.
 {% endhint %}
 
-## State of issues
+## State of issues <a id="state"></a>
 
 | Filter | description |
 | :--- | :--- |
@@ -43,7 +43,7 @@ The filters available in the Filter Stream are pretty much the same as in the St
 | `is:archived`, `is:unarchived` | Archived issues, not archived issues |
 | `is:private`, `is:unprivate` | Private repository issues, not private repository issues |
 
-## Involve users and teams <a id="involves-filter"></a>
+## Involve users and teams <a id="involves"></a>
 
 | Filter | description |
 | :--- | :--- |
@@ -59,7 +59,7 @@ Multiple filters of the same type can be specified as OR conditions. For example
 `involves` as well as `author`, `assignee`, `commenter` and `review-requested` all together.‌
 {% endhint %}
 
-## Pull requests review <a id="review-filter"></a>
+## Pull requests review <a id="review"></a>
 
 | Filter | description |
 | :--- | :--- |
@@ -70,7 +70,7 @@ Multiple filters of the same type can be specified as OR conditions. For example
 Specifying multiple queries of the same type is an OR condition. For example, `review-requested:defunkt review-requested:jlord` is pull requests where `defunkt` or `jlord` is the review request.
 {% endhint %}
 
-## Repository and Organization <a id="repo-filter"></a>
+## Repository and Organization <a id="repo"></a>
 
 | Filter | description |
 | :--- | :--- |
@@ -82,7 +82,7 @@ Specifying multiple queries of the same type is an OR condition. For example, `r
 Specifying multiple queries of the same type is an OR condition. For example, `repo:nodejs/node repo:electron/electron` is issues of `nodejs/node` or `electron/electron`.
 {% endhint %}
 
-## Label, milestone, etc <a id="label-filter"></a>
+## Label, milestone, etc <a id="label"></a>
 
 | Filter | description |
 | :--- | :--- |
@@ -100,7 +100,7 @@ Specifying multiple queries of the same type is an OR condition. For example, `m
 A label or milestone containing spaces should be enclosed in double quotation marks, such as `label: "hello world"`.
 {% endhint %}
 
-## Any keywords <a id="keyword-filter"></a>
+## Any keywords <a id="keyword"></a>
 
 | Filter | description |
 | :--- | :--- |
@@ -118,7 +118,7 @@ Search keywords in issue body, author, assignee, label, milestone, repository, o
 OR and NOT are not supported.
 {% endhint %}
 
-## Exclusion and missing <a id="exclude-filter"></a>
+## Exclusion and missing <a id="exclude"></a>
 
 <table>
   <thead>
@@ -164,4 +164,6 @@ OR and NOT are not supported.
     </tr>
   </tbody>
 </table>
+
+
 
