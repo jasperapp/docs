@@ -4,7 +4,7 @@ description: Jump Navigationのリファレンスです。
 
 # ジャンプナビゲーション
 
-Jump NavigationはJasper内のissueを検索したり、Streamやリポジトリに移動するナビゲーション機能です。Jump Navigationを起動するには左上部にある🔍アイコン、もしくは`⌘ + K`を押してください。
+Jump NavigationはJasper内のissueを検索したり、Streamやリポジトリに移動するナビゲーション機能です。Jump Navigationを起動するには左上部にある🔍アイコン、もしくは`⌘ + K(Mac)`、`Ctrl + K(Window/Linux)` を押してください。
 
 ![](../.gitbook/assets/08_jump_navi.png)
 
