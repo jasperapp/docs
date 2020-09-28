@@ -33,7 +33,7 @@ Jasperが保持しているissueの中から検索を行うには`Jump Navigatio
 ![](../.gitbook/assets/08_jump_navi.png)
 
 {% hint style="info" %}
-Jump Navigationでの検索にはFilter Streamと同じフィルターが使用できます。詳しくはリファレンスの「[Filter Stream / Filter](../reference/filter-stream.md)」を参照してください。
+Jump Navigationでの検索にはFilter Streamと同じフィルターが使用できます。詳しくはリファレンスの「[Filter Stream](../reference/filter-stream.md)」を参照してください。
 {% endhint %}
 
 ## 集中してissueを閲覧する <a id="layout"></a>

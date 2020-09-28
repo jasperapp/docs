@@ -1,8 +1,8 @@
 ---
-description: Filter StreamとFilterで使用できるフィルターのリファレンスです。
+description: Filter Streamで使用できるフィルターのリファレンスです。
 ---
 
-# Filter Stream / Filter
+# Filter Stream
 
 Filter StreamはStreamのissueをフィルターして表示します。
 
@@ -27,7 +27,7 @@ Filter StreamはStreamのメニューにある`Add Filter Stream`から追加し
 {% endtabs %}
 
 {% hint style="info" %}
-Filter StreamとFilterで使用できるフィルターはStreamとほとんど同じ条件を指定できます。ただし、少し異なるものもあるので注意してください。
+Filter Streamで使用できるフィルターはStreamとほとんど同じ条件を指定できます。ただし、少し異なるものもあるので注意してください。
 {% endhint %}
 
 ## issueの状態 <a id="is-filter"></a>

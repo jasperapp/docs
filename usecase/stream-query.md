@@ -35,6 +35,10 @@ is:open
 ![](../.gitbook/assets/05_open.png)
 
 {% hint style="info" %}
+Filter Streamについてはリファレンスの「[Filter Stream](../reference/filter-stream.md)」を参照してください。
+{% endhint %}
+
+{% hint style="info" %}
 クローズ状態、マージ状態、ドラフト状態についても同様の制限があります。
 {% endhint %}
 
