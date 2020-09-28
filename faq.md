@@ -16,11 +16,11 @@ This gives us an advantage over other similar tools. However, our emphasis on fl
 
 That's why we're developing Jasper, balancing flexibility with these shortcomings.
 
-## Smartphone App
+## Smartphone App <a id="mobile"></a>
 
 Jasper is compatible with Mac/Window/Linux, but it does not support Android/iOS smartphone apps. However, by integrating GitHub Notifications with Jasper, issues viewed from your smartphone's browser can be marked as read in Jasper as well. See "[Smartphone integration](usecase/advanced.md#mobile)" for more information.
 
-## Synchronization of Multiple Machines
+## Synchronization of Multiple Machines <a id="multi-machines"></a>
 
 Jasper does not support multi-machine issue synchronization, although some users have used file synchronization services such as Dropbox to achieve this on their own. But we do not officially support this at this time. If you would like to use this service, try synchronizing the directories you open by going to `Menu → Dev → Open Data Directory`.
 
@@ -28,13 +28,13 @@ Jasper does not support multi-machine issue synchronization, although some users
 
 Jasper's built-in browser does not support tabbed browsers. If you wish to view multiple issues at the same time, please use an external browser.
 
-## Issue display speed
+## Issue display speed <a id="ttfb"></a>
 
 When viewing an issue in Jasper's internal browser, it may be slow, but this is due to a slow TTFB \(time to first byte\) on the GitHub side. I haven't been able to work around this on the Jasper side at the moment.
 
 ![](.gitbook/assets/17_ttfb.png)
 
-## Jasper no longer appears.
+## Jasper blank screen <a id="blank-screen"></a>
 
  If you get a blank screen after starting Jasper, your data may have been corrupted. Follow these steps to delete and initialize the data in Jasper
 
@@ -45,21 +45,21 @@ When viewing an issue in Jasper's internal browser, it may be slow, but this is 
 
 This will delete the Stream you've created and any issues you've been holding in Jasper, but it will not affect any data on GitHub.
 
-## Polling the GitHub Search API
+## Polling the GitHub Search API <a id="polling"></a>
 
 Jasper's core functionality, Stream, is achieved by polling the [GitHub Search API](https://docs.github.com/en/free-pro-team@latest/rest/reference/search) on a regular basis. Short polling intervals place a heavy load on the GitHub side, while longer intervals result in poor user experience \(i.e., issue updates\). Jasper strikes a balance between these two by designing the polling as follows
 
 * Instead of polling each Stream, poll the whole Jasper as one poll.
-  * Therefore, if there are too many Streams, the update interval per Stream will increase. To mitigate this problem, see "[Optimizing the update interval](usecase/advanced.md#optimizing-the-update-interval)".
+  * Therefore, if there are too many Streams, the update interval per Stream will increase. To mitigate this problem, see "[Optimizing the update interval](usecase/advanced.md#optimize)".
 * Automatically extend the polling interval when the GitHub API rate limit is reached
   * The rate limit of the GitHub Search API is 10 requests per 60 seconds. The default polling interval is 6 requests per 60 seconds, so the rate limit will never be reached
   * GHE\(GitHub Enterprise\) may have its own rate limit set. Please contact the GHE administrator for more information.
 
-## Supporter Subscriptions
+## Supporter Subscriptions <a id="supporter"></a>
 
 If you want to support the developer \([@h13i32maru](https://twitter.com/h13i32maru)\), it would be great if you could make a small subscription through "[Support Subscription](https://h13i32maru.jp/supporter/)".
 
-## Feedback <a id="competitor"></a>
+## Feedback <a id="feedback"></a>
 
 Please feel free to give us your feedback, and we'd love it if you could write a blog post about Jasper and [\#jasperapp](https://twitter.com/hashtag/jasperapp) on Twitter. If you have a bug or feature request, please send it to [jasperapp/jasper](https://github.com/jasperapp/jasper). We'll do our best to address them as much as possible.
 
@@ -83,7 +83,7 @@ Similar to Jasper, tools to manage issue viewing and notification are currently 
 | [DeckHub](https://getdeckhub.com/) |  | 2016.02 ~ 2016.04 |
 | [BugHub](http://www.bughubapp.com/) |  | 2013.04 ~ 2015.11 |
 
-## Articles
+## Articles <a id="article"></a>
 
 Developer articles
 
