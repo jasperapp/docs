@@ -32,7 +32,7 @@ The filters available in the Filter Stream are pretty much the same as in the St
 
 ## State of issues
 
-| Filter | Condition |
+| Filter | description |
 | :--- | :--- |
 | `is:issue`, `is:pr` | Issues only, pull requests only |
 | `is:open`, `is:closed` | Opened issues, closed issues |
@@ -45,7 +45,7 @@ The filters available in the Filter Stream are pretty much the same as in the St
 
 ## Involve users and teams <a id="involves-filter"></a>
 
-| Filter | Condition |
+| Filter | description |
 | :--- | :--- |
 | `involves:defunkt` | User involved issues |
 | `author:defunkt` | User created issues |
@@ -61,7 +61,7 @@ Multiple filters of the same type can be specified as OR conditions. For example
 
 ## Pull requests review <a id="review-filter"></a>
 
-| Filter | Condition |
+| Filter | description |
 | :--- | :--- |
 | `review-requested:defunkt` | Pull requests where the user/team has requested a review |
 | `reviewed-by:defunkt` | User reviewed pull requests |
@@ -72,7 +72,7 @@ Specifying multiple queries of the same type is an OR condition. For example, `r
 
 ## Repository and Organization <a id="repo-filter"></a>
 
-| Filter | Condition |
+| Filter | description |
 | :--- | :--- |
 | `repo:nodejs/node` | Repository issues |
 | `org:nodejs` | Organization issues |
@@ -84,7 +84,7 @@ Specifying multiple queries of the same type is an OR condition. For example, `r
 
 ## Label, milestone, etc <a id="label-filter"></a>
 
-| Filter | Condition |
+| Filter | description |
 | :--- | :--- |
 | `label:bug` | Labeled issues |
 | `milestone:v1.0.0` | Milestone issues |
@@ -102,7 +102,7 @@ A label or milestone containing spaces should be enclosed in double quotation ma
 
 ## Any keywords <a id="keyword-filter"></a>
 
-| Filter | Condition |
+| Filter | description |
 | :--- | :--- |
 | `github octocat` | Issues containing the keywords \(AND conditions\) |
 

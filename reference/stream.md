@@ -27,7 +27,7 @@ See "[Searching issues and pull requests - github.com](https://docs.github.com/e
   <thead>
     <tr>
       <th style="text-align:left">Query</th>
-      <th style="text-align:left">Condition</th>
+      <th style="text-align:left">description</th>
     </tr>
   </thead>
   <tbody>
@@ -72,7 +72,7 @@ Open, merge and draft state queries are not recommended. If you use these querie
 
 ## Involve users and teams
 
-| Query | Condition |
+| Query | description |
 | :--- | :--- |
 | `involves:defunkt` | User involved issues |
 | `author:defunkt` | User created issues |
@@ -95,7 +95,7 @@ Multiple queries of the same type become OR conditions. For example, `Involves:d
   <thead>
     <tr>
       <th style="text-align:left">Query</th>
-      <th style="text-align:left">Condition</th>
+      <th style="text-align:left">description</th>
     </tr>
   </thead>
   <tbody>
@@ -131,7 +131,7 @@ Multiple queries of the same type become OR conditions. For example, `review-req
 
 ## Repository and organization
 
-| Query | Condition |
+| Query | description |
 | :--- | :--- |
 | `repo:nodejs/node` | Repository issues |
 | `org:nodejs` | Organization issues |
@@ -143,7 +143,7 @@ Multiple queries of the same type will result in OR conditions. For example, `re
 
 ## Labels, milestones, etc.
 
-| Query | Condition |
+| Query | description |
 | :--- | :--- |
 | `label:bug` | Labeled issues |
 | `milestone:v1.0.0` | Milestone issues |
@@ -160,7 +160,7 @@ A label or milestone containing spaces should be enclosed in double quotes, such
 
 ## Any keywords
 
-| クエリ | 条件 |
+| Query | description |
 | :--- | :--- |
 | `github octocat` | Issues containing the keywords \(AND conditions\) |
 | `github OR octocat` | Issues containing the keyword \(OR condition\) |
@@ -179,8 +179,8 @@ AND, OR, and NOT can only contain up to five query lengths. See "[Limitations on
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x30AF;&#x30A8;&#x30EA;</th>
-      <th style="text-align:left">&#x6761;&#x4EF6;</th>
+      <th style="text-align:left">Query</th>
+      <th style="text-align:left">description</th>
     </tr>
   </thead>
   <tbody>

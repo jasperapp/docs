@@ -6,7 +6,7 @@ description: >-
 
 # Browse Issues
 
-## Quickly view unread issues
+## Unread issues
 
 To quickly display just the unread issues, use the issue's filter function - select `Filter by unread` from the filters at the top of the issue list. Alternatively, you can also display just the unread issues by pressing `U` on your keyboard.
 

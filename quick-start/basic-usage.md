@@ -12,7 +12,7 @@ After setup, it will automatically create Streams.
 
 ![](../.gitbook/assets/03_streams.png)
 
-| Stream | conditions |
+| Stream | description |
 | :--- | :--- |
 | `Me` | You can see the issues/pull requests that are relevant to you. Basically, you can look at this stream and you won't miss anything.  You will also see the Streams filtered by "My Issues", "My PRs" and "Assign". |
 | `Team` | Issues that are maintained by the team you are on. You will also see a Stream filtered by team \(Organization\). |
