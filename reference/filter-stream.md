@@ -98,13 +98,15 @@ Filter Streamで使用できるフィルターはStreamとほとんど同じ条�
 | `involves:defunkt` | ユーザが関係するissue |
 | `author:defunkt` | ユーザが作成したissue |
 | `assignee:defunkt` | ユーザがアサインされたissue |
+| `mentions:defunkt` | ユーザがメンションされたissue |
+| `team:github/owners` | チームがメンションされたissue |
 
 {% hint style="info" %}
 同じ種類のフィルターを複数指定するとOR条件になります。例えば、`involves:defunkt involves:jlord`は`defunkt`もしくは`jlord`が関係するissueです。
 {% endhint %}
 
 {% hint style="info" %}
-`involves`は`author`, `assignee`, `commenter`, `review-requested`をまとめて指定したものと同様になります。‌
+`involves`は`author`, `assignee`, `mentions`,`commenter`, `review-requested`をまとめて指定したものと同様になります。‌
 {% endhint %}
 
 ## Pull requestレビュー <a id="review"></a>
