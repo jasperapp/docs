@@ -1,22 +1,22 @@
 ---
-description: Library Streamのリファレンスです。
+description: Library Stream reference.
 ---
 
 # Library Stream
 
-Library StreamとはJasper内のissueを横断的に整理したものです。Library Streamを使用する場合は`メニュー → Preferences → Streams`から有効にしてください。
+The Library Stream is a cross-section of issues within Jasper. To use the Library Stream, go to the `Menu → Preferences → Streams` and enable it.
 
 ![](../.gitbook/assets/12_library_stream.png)
 
-| Library Stream | 内容 |
+| Library Stream | description |
 | :--- | :--- |
-| `Inbox` | アーカイブされていない全てのissue |
-| `Open` | アーカイブされていないオープン状態のissue |
-| `Unread` | アーカイブされていない未読issue |
-| `Bookmark` | アーカイブされていないブックマークされたissue |
-| `Archived` | アーカイブされたissue |
+| `Inbox` | All issues that are not archived |
+| `Open` | Open issues that are not archived |
+| `Unread` | Unread issues that are not archived |
+| `Bookmark` | Bookmarked issues that are not archived |
+| `Archived` | Archived issues |
 
-デフォルトではInbox, Bookmark, Archivedが有効になっています。
+`Inbox`, `Bookmark`, and `Archived` are enabled by default.
 
 ![](../.gitbook/assets/12_inbox.png)
 
