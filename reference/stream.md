@@ -20,7 +20,7 @@ Streamは`Add Stream`メニューから追加します。
 Streamに使用できるクエリはGitHub Searchのクエリと完全に互換性があります。GitHub Searchの全クエリとシンタックスについては「[Searching issues and pull requests - github.com](https://docs.github.com/en/github/searching-for-information-on-github/searching-issues-and-pull-requests)」と「[Understanding the search syntax - github.com](https://docs.github.com/en/github/searching-for-information-on-github/understanding-the-search-syntax)」を参照してください。
 {% endhint %}
 
-## issueの状態 <a id="is-query"></a>
+## issueの状態 <a id="state"></a>
 
 <table>
   <thead>
@@ -66,7 +66,7 @@ Streamに使用できるクエリはGitHub Searchのクエリと完全に互換�
 オープン状態、マージ状態、ドラフト状態のクエリは非推奨です。これらのクエリを使用する場合はFilter Streamをお使いください。詳しくは[こちら](../usecase/stream-query.md#open-issue)を参照してください。
 {% endhint %}
 
-## ユーザやチーム <a id="involves-query"></a>
+## ユーザやチーム <a id="involves"></a>
 
 | クエリ | 説明 |
 | :--- | :--- |
@@ -85,7 +85,7 @@ Streamに使用できるクエリはGitHub Searchのクエリと完全に互換�
 involvesはauthor, assignee, mentions, commenter, review-requestedをまとめて指定したものと同様になります。
 {% endhint %}
 
-## Pull requestレビュー <a id="review-query"></a>
+## Pull requestレビュー <a id="review"></a>
 
 <table>
   <thead>
@@ -128,7 +128,7 @@ involvesはauthor, assignee, mentions, commenter, review-requestedをまとめ�
 同じ種類のクエリを複数指定するとOR条件になります。例えば、`review-requested:defunkt review-requested:jlord`は`defunkt`もしくは`jlord`がレビューリクエストされたpull requestです。
 {% endhint %}
 
-## リポジトリやOrganization <a id="repo-query"></a>
+## リポジトリやOrganization <a id="repo"></a>
 
 | クエリ | 説明 |
 | :--- | :--- |
@@ -140,7 +140,7 @@ involvesはauthor, assignee, mentions, commenter, review-requestedをまとめ�
 同じ種類のクエリを複数指定するとOR条件になります。例えば、`repo:nodejs/node repo:electron/electron`は`nodejs/node`もしくは`electron/electron`のissueです。
 {% endhint %}
 
-## ラベルやマイルストーンなど <a id="label-query"></a>
+## ラベルやマイルストーンなど <a id="label"></a>
 
 | クエリ | 説明 |
 | :--- | :--- |
@@ -158,7 +158,7 @@ involvesはauthor, assignee, mentions, commenter, review-requestedをまとめ�
 スペースを含むラベルやマイルストーンの場合は`label:"foo bar"`のようにダブルクオーテーションで囲んでください。
 {% endhint %}
 
-## 任意のキーワード <a id="keyword-query"></a>
+## 任意のキーワード <a id="keyword"></a>
 
 | クエリ | 説明 |
 | :--- | :--- |
@@ -174,7 +174,7 @@ involvesはauthor, assignee, mentions, commenter, review-requestedをまとめ�
 AND, OR, NOTについては5つまでしか含まれることはできません。詳しくは「[Limitations on query length - github.com](https://docs.github.com/en/github/searching-for-information-on-github/troubleshooting-search-queries#limitations-on-query-length)」を参照してください。
 {% endhint %}
 
-## 除外・未設定 <a id="exclude-query"></a>
+## 除外・未設定 <a id="exclude"></a>
 
 | クエリ | 説明 |
 | :--- | :--- |
