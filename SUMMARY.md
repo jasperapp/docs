@@ -4,7 +4,7 @@
 * [クイックスタート](quick-start/README.md)
   * [セットアップ](quick-start/setup.md)
   * [基本的な使い方](quick-start/basic-usage.md)
-  * [データ移行](quick-start/data-transfer.md)
+  * [データ移行](quick-start/data-migration.md)
 * [ユースケース](usecase/README.md)
   * [Streamのクエリ](usecase/stream-query.md)
   * [Streamの見た目と通知設定](usecase/stream-detail.md)
