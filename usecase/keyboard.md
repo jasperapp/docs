@@ -4,7 +4,7 @@ description: Jasperには様々なキーボードショートカットがあり�
 
 # キーボード操作
 
-## よく使われるキーボードショートカット <a id="major"></a>
+## よく使われるキーボードショートカット <a id="shortcuts"></a>
 
 <table>
   <thead>
