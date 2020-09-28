@@ -45,7 +45,7 @@ description: Jasperの基本的な使い方を紹介します。基本の使い�
   </tbody>
 </table>
 
-## issue
+## issue <a id="issues"></a>
 
 ![](../.gitbook/assets/03_issues.png)
 
@@ -83,7 +83,7 @@ description: Jasperの基本的な使い方を紹介します。基本の使い�
 {% tab title="フローティングメニュー" %}
 {% endtabs %}
 
-## ブラウザ
+## ブラウザ <a id="browser"></a>
 
 ![](../.gitbook/assets/03_browser.png)
 
