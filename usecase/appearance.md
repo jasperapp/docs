@@ -24,12 +24,6 @@ Streamは詳細設定から色とアイコンを設定できます。これに�
 アイコンは[Material Design Icons](https://materialdesignicons.com/)に登録されている全種類のアイコンを使用できます。
 {% endhint %}
 
-## Streamを非表示にする <a id="disable"></a>
-
-不要なStreamを非表示にすることができます。例えば`Inbox`や`Archive`を使わない場合は、非表示にすることでJasperを見やすくすることができます。
-
-![](../.gitbook/assets/06_notification_all.png)
-
 ## 全体の通知設定
 
 集中してissueやpull requestを閲覧したい場合、全体の通知をオフにすることもできます。通知をオン/オフの切り替えは左上の🔔アイコンからできます。もしくは`⌘ + I`を押すことでもできます。
@@ -57,4 +51,10 @@ Streamは詳細設定から色とアイコンを設定できます。これに�
 ![](../.gitbook/assets/08_layout1.png)
 {% endtab %}
 {% endtabs %}
+
+## Streamを非表示にする <a id="disable"></a>
+
+不要なStreamを非表示にすることができます。例えば`Inbox`や`Archive`を使わない場合は、非表示にすることでJasperを見やすくすることができます。
+
+![](../.gitbook/assets/06_notification_all.png)
 
