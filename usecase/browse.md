@@ -6,7 +6,7 @@ description: >-
 
 # Browse issues
 
-## Unread issues
+## Unread issues <a id="unread"></a>
 
 To quickly display just the unread issues, use the issue's filter function - select `Filter by unread` from the filters at the top of the issue list. Alternatively, you can also display just the unread issues by pressing `U` on your keyboard.
 
@@ -30,13 +30,13 @@ The second way to bookmark an issue is to add it to your bookmarks. Select `Add 
 {% endtab %}
 {% endtabs %}
 
-## Exclude unwanted issues
+## Exclude unwanted issues <a id="archive"></a>
 
 You can use the archive feature to exclude issues that you do not need to view in the future. To archive, select `Move to Archive` from the floating menu. Alternatively, you may archive an issue in the selected state by pressing the `E` key on your keyboard.
 
 ![](../.gitbook/assets/hover_archive.png)
 
-## Check for unread comments.
+## Check unread comments <a id="unread-comment"></a>
 
 When viewing an issue in Jasper's built-in browser, Jasper will highlight the comments that have been added or updated since the last time you viewed the issue. You will also see a mini-map of the comments that have been added/updated on the left side of the issue. You can use this comment highlighting and minimap to quickly see which comments have not been read.
 
