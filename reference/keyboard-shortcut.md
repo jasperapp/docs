@@ -117,7 +117,7 @@ description: Keyboard shortcuts reference.
   </tbody>
 </table>
 
-## Customizing keyboard shortcuts \(Mac\)
+## Customizing keyboard shortcuts \(Mac\) <a id="customize"></a>
 
 {% hint style="warning" %}
 Here's a keyboard shortcut on the Mac Window/Linux is not covered in this page.
