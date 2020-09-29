@@ -79,8 +79,12 @@ description: Jasperの基本的な使い方を紹介します。基本の使い�
 
 {% tabs %}
 {% tab title="フィルターメニュー" %}
+![](../.gitbook/assets/filter_by_unread.png)
+{% endtab %}
 
 {% tab title="フローティングメニュー" %}
+![](../.gitbook/assets/hover_unread.png)
+{% endtab %}
 {% endtabs %}
 
 ## ブラウザ <a id="browser"></a>
