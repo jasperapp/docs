@@ -31,8 +31,12 @@ The following operations are particularly useful for viewing issues
 
 {% tabs %}
 {% tab title="Filter menu" %}
+![](../.gitbook/assets/filter_by_unread.png)
+{% endtab %}
 
 {% tab title="Floating menu" %}
+![](../.gitbook/assets/hover_unread.png)
+{% endtab %}
 {% endtabs %}
 
 ## Browser
