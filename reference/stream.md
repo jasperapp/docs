@@ -17,7 +17,7 @@ Streams can be added from the `Add Stream` menu.
 {% endtabs %}
 
 {% hint style="info" %}
-Streamに使用できるクエリはGitHub Searchのクエリと完全に互換性があります。  
+The queries available in Stream are fully compatible with GitHub Search queries.  
 See "[Searching issues and pull requests - github.com](https://docs.github.com/en/free-pro-team@latest/github/searching-for-information-on-github/searching-issues-and-pull-requests)"and "[Understanding the search syntax - github.com](https://docs.github.com/en/free-pro-team@latest/github/searching-for-information-on-github/understanding-the-search-syntax)" for all GitHub Search queries and syntax.
 {% endhint %}
 
