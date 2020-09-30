@@ -14,9 +14,9 @@ After setup, it will automatically create Streams.
 
 | Stream | description |
 | :--- | :--- |
-| `Me` | You can see the issues/pull requests that are relevant to you. Basically, you can look at this stream and you won't miss anything.  You will also see the Streams filtered by `My Issues`, `My PRs` and `Assign`. |
-| `Team` | Issues that are maintained by the team you are on. You will also see a Stream filtered by team. |
-| `Repo` | Issues from the repositories you have recently been active in. You can also see a filtered Stream for each repository. |
+| `Me` | You can see the issues/pull requests that are relevant to you. Basically, you can look at this stream and you won't miss anything.  You will also see issues filtered by `My Issues`, `My PRs` and `Assign`. |
+| `Team` | Issues that are maintained by the team you are on. You will also see issues filtered by team. |
+| `Repo` | Issues from the repositories you have recently been active in. You can also see a filtered issues for each repository. |
 
 ## issues
 
