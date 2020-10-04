@@ -8,7 +8,7 @@ Streams can be added from the `Add Stream` menu.
 
 {% tabs %}
 {% tab title="Add Stream" %}
-![](../.gitbook/assets/09_add_stream1.png)
+![](../.gitbook/assets/add-stream.png)
 {% endtab %}
 
 {% tab title="Stream setting" %}
