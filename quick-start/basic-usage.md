@@ -8,7 +8,7 @@ description: Jasperの基本的な使い方を紹介します。基本の使い�
 
 セットアップ後に自動的に次のようなStreamが作成されます。
 
-![](../.gitbook/assets/03_streams.png)
+![](../.gitbook/assets/initial-streams.png)
 
 <table>
   <thead>
