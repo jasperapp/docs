@@ -4,7 +4,7 @@ description: A flexible and powerful issue reader for GitHub
 
 # Jasperとは
 
-![](.gitbook/assets/01_top.png)
+![](.gitbook/assets/ss.png)
 
 [Jasper](https://jasperapp.io/)はGitHubのissueやpull requestを柔軟な条件で閲覧できるツールです。例えば「自分が作成したpull request」「nodejs/nodeのbugラベルがついたissue」などの条件でissueを閲覧したり更新通知を受け取ることができます。
 
