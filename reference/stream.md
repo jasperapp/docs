@@ -8,7 +8,7 @@ Streamは`Add Stream`メニューから追加します。
 
 {% tabs %}
 {% tab title="Streamの追加" %}
-![](../.gitbook/assets/09_add_stream1.png)
+![](../.gitbook/assets/add-stream.png)
 {% endtab %}
 
 {% tab title="Streamの設定" %}
