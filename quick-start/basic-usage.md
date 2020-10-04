@@ -10,7 +10,7 @@ description: >-
 
 After setup, it will automatically create Streams.
 
-![](../.gitbook/assets/03_streams.png)
+![](../.gitbook/assets/initial-streams.png)
 
 | Stream | description |
 | :--- | :--- |
