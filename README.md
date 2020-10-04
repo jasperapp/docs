@@ -4,7 +4,7 @@ description: A flexible and powerful issue reader for GitHub
 
 # What is Jasper
 
-![](.gitbook/assets/01_top.png)
+![](.gitbook/assets/ss.png)
 
 [Jasper](https://jasperapp.io/) is a tool that allows you to view GitHub issues and pull requests with flexible criteria. For example, you can browse issues and receive update notifications for issues with conditions such as "pull requests you create" or "issues with a nodejs/node bug label".
 
