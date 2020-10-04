@@ -18,5 +18,5 @@ The Library Stream is a cross-section of issues within Jasper. To use the Librar
 
 `Inbox`, `Bookmark`, and `Archived` are enabled by default.
 
-![](../.gitbook/assets/12_inbox.png)
+![](../.gitbook/assets/library-streams.png)
 
