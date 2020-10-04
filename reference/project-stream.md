@@ -8,7 +8,7 @@ Project StreamにはGitHub ProjectのURLを指定することができます。
 
 {% tabs %}
 {% tab title="Project Streamの追加" %}
-![](../.gitbook/assets/11_project_stream1.png)
+![](../.gitbook/assets/add-project-stream.png)
 {% endtab %}
 
 {% tab title="Project Streamの設定" %}
@@ -18,5 +18,5 @@ Project StreamにはGitHub ProjectのURLを指定することができます。
 
 Project Streamを選択すると、Project Boardが自動的に表示されます。Project Board上のissueはJasper内の未読・既読が反映されて表示されます。
 
-![](../.gitbook/assets/07_project_stream2.png)
+![](../.gitbook/assets/project-kanban.png)
 
