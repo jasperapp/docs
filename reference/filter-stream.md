@@ -10,7 +10,7 @@ Filter StreamはStreamのメニューにある`Add Filter Stream`から追加し
 
 {% tabs %}
 {% tab title="Filter Streamの追加" %}
-![](../.gitbook/assets/10_filter_stream1.png)
+![](../.gitbook/assets/add-filter-stream.png)
 {% endtab %}
 
 {% tab title="Filter Streamの設定" %}
@@ -18,7 +18,7 @@ Filter StreamはStreamのメニューにある`Add Filter Stream`から追加し
 {% endtab %}
 
 {% tab title="Top Levelへの追加" %}
-![](../.gitbook/assets/10_filter_stream3.png)
+![](../.gitbook/assets/add-filter-stream-top.png)
 {% endtab %}
 
 {% tab title="一時的" %}
