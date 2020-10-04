@@ -10,7 +10,7 @@ Filter Streams are added from the `Add Filter Stream` menu in the Stream menu. O
 
 {% tabs %}
 {% tab title="Add Filter Stream" %}
-![](../.gitbook/assets/10_filter_stream1.png)
+![](../.gitbook/assets/add-filter-stream.png)
 {% endtab %}
 
 {% tab title="Filter Stream setting" %}
@@ -18,7 +18,7 @@ Filter Streams are added from the `Add Filter Stream` menu in the Stream menu. O
 {% endtab %}
 
 {% tab title="Add Top Level Filter Stream" %}
-![](../.gitbook/assets/10_filter_stream3.png)
+![](../.gitbook/assets/add-filter-stream-top.png)
 {% endtab %}
 
 {% tab title="Temporarily" %}
