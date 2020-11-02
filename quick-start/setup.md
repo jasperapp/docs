@@ -24,7 +24,7 @@ Download the latest version of Jasper from [jasperapp.io](https://jasperapp.io/)
 
 When Jasper is launched, you will be presented with a choice of GitHub or GHE \(GitHub Enterprise\), for GHE enter the hostname `example ghe.example.com`.
 
-Next, you will need to enter an access token, which can be created from the [Personal access token](https://github.com/settings/tokens) screen on GitHub or by contacting the GHE administrator for assistance. The required scopes are `repo`, `read:org`, `notifications` and `user`.
+Next, you will need to enter an access token, which can be created from the [Personal access token](https://github.com/settings/tokens) screen on GitHub. If you are using GHE, you can create an  access token from `https://GHE_HOST/settings/tokens`. The required scopes are `repo`, `read:org`, `notifications` and `user`.
 
 ![](../.gitbook/assets/02_token.png)
 
