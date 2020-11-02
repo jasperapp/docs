@@ -16,7 +16,7 @@ Filterでの検索にはFilter Streamと同じフィルターが使用できま�
 
 ## 全体から検索 <a id="from-all"></a>
 
-Jasperが保持している全issueの中から検索を行うには`Jump Navigation`機能を使います。Jump Navigationは左上の🔍アイコンから開始します。もしくは`⌘ + E (Mac)`, `Ctrl + E (Window/Linux)`を押すことでも開始できます。
+Jasperが保持している全issueの中から検索を行うには`Jump Navigation`機能を使います。Jump Navigationは左上の🔍アイコンから開始します。もしくは`⌘ + K (Mac)`, `Ctrl + K (Window/Linux)`を押すことでも開始できます。
 
 ![](../.gitbook/assets/08_jump_navi.png)
 
