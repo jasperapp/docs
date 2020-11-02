@@ -24,7 +24,7 @@ description: Jasperをダウンロードして、GitHubのアクセストーク�
 
 Jasperを起動するとGitHub, GHE\(GitHub Enterprise\)の選択が表示されます。GHEの場合はホスト名`例 ghe.example.com`を入力してください。
 
-つぎにアクセストークンの入力が必要になります。GitHubの場合は[Personal access token](https://github.com/settings/tokens)の画面から作成できます。GHEの場合は管理者にお問い合わせください。必要なスコープは`repo`, `read:org`, `notifications`, `user`です。 
+つぎにアクセストークンの入力が必要になります。GitHubの場合は[Personal access token](https://github.com/settings/tokens)の画面から作成できます。GHEの場合は`https://GHEのホスト/settings/tokens`から作成できます。必要なスコープは`repo`, `read:org`, `notifications`, `user`です。 
 
 ![](../.gitbook/assets/02_token.png)
 
