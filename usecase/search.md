@@ -16,7 +16,7 @@ You can use the same filters as Filter Stream to search in Filter. See "[Filter 
 
 ## Search from All <a id="from-all"></a>
 
-To search through Jasper's holdings of issues, we use the `Jump Navigation` feature, starting with the 🔍 icon in the top left corner. You can also start by pressing `⌘ + E (Mac)`, `Ctrl + E (Window/Linux)`.
+To search through Jasper's holdings of issues, we use the `Jump Navigation` feature, starting with the 🔍 icon in the top left corner. You can also start by pressing `⌘ + K (Mac)`, `Ctrl + K (Window/Linux)`.
 
 ![](../.gitbook/assets/08_jump_navi.png)
 
