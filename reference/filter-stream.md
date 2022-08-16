@@ -116,7 +116,7 @@ Filter Streamで使用できるフィルターはStreamとほとんど同じ条�
 
 | フィルター                                  | 説明                                        |
 | -------------------------------------- | ----------------------------------------- |
-| `project-field:status/ToDo`, `project-field:sprint/@current_iteration`, `project-field:foo/bar` | <p>プロジェクトのフィールド名とフィールド値<br/>例えば`project-field:status/ToDo`はstatusフィールドがToDoのissueを表します。</p>      |
+| `project-field:status/ToDo`<br/>`project-field:sprint/@current_iteration`<br/>`project-field:foo/bar` | <p>プロジェクトのフィールド名とフィールド値<br/>例えば`project-field:status/ToDo`はstatusフィールドがToDoのissueを表します。</p>      |
 | `project-name:hello-pj` (classic project) | プロジェクトに紐付いたissue                          |
 | `project-column:now-doing` (classic project) | プロジェクトカラムに紐付いたissue                       |
 
