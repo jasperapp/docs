@@ -19,7 +19,6 @@ After setup, it will automatically create Streams.
 | `My PRs`           | Pull request you created                                                                                    |
 | `Assigned`         | Issue/pull request to which you are assigned                                                                         |
 | `Review Requested` | Review requested pull request                                                                               |
-                                                                                                       |
 
 In addition, the following notice will appear after a while. Follow the instructions to create other streams.
 
