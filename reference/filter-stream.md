@@ -91,8 +91,6 @@ Specifying multiple queries of the same type is an OR condition. For example, `r
 | `label:bug`, `label:bug-%`             | <p>Labeled issues<br>% matches any string</p>             |
 | `milestone:v1.0.0`, `milestone:v2.0.%` | <p>Milestone issues<br>% matches any string</p>           |
 | `title:test`, `title:%test%`           | <p>Issue with specified title<br>% matches any string</p> |
-| `project-name:hello-pj`                | Project issues                                            |
-| `project-column:now-doing`             | Project column issues                                     |
 | `number:123`                           | Issue number                                              |
 
 Labels can also specify dynamic dates as follows.
@@ -104,8 +102,6 @@ Labels can also specify dynamic dates as follows.
 | `label:release_@next_date`                                       | The `@next_date` is replaced by tomorrow's date. In other words, `label:release_2022%08%17` is executed as a filter.                                                         |
 | `label:release_@current_date+1`, `label:release_@current_date-1` | Following `@current_date` with `+1` or `-1` replaces the date relative to the current date. So the filter will run `label:release_2022%08%17` or `label:release_2022%08%15`. |
 
-
-
 {% hint style="info" %}
 Specifying multiple queries of the same type is an OR condition. For example, `milestone:v1.0.0.0 milestone:v2.0.0` is issues with a `v1.0.0` or `v2.0.0.0` milestone. However, this is an AND condition for labels.
 {% endhint %}
@@ -113,6 +109,22 @@ Specifying multiple queries of the same type is an OR condition. For example, `m
 {% hint style="info" %}
 A label or milestone containing spaces should be enclosed in double quotation marks, such as `label: "hello world"`.
 {% endhint %}
+
+## GitHub Project
+
+| Filter                                  | description                                        |
+| -------------------------------------- | ----------------------------------------- |
+| `project-field:status/ToDo` | Issue whose status field is ToDo      |
+| `project-field:sprint/@current_iteration` | Issue whose sprint field is the current iteration.      |
+| `project-field:foo/bar` | Issue where the foo field is bar      |
+
+Below are the filters for the classic project.
+
+| Filter                                  | description                                        |
+| -------------------------------------- | ----------------------------------------- |
+| `project-name:hello-pj` (classic project) | Issues tied to the project                          |
+| `project-column:now-doing` (classic project) | Issue tied to project column                       |
+
 
 ## Any keywords <a href="#keyword" id="keyword"></a>
 
