@@ -10,13 +10,17 @@ description: >-
 
 After setup, it will automatically create Streams.
 
-![](../.gitbook/assets/initial-streams.png)
+![](<../.gitbook/assets/スクリーンショット 2022-08-16 19.18.59.png>)
 
 | Stream | description                                                                                                                                                                                                                                             |
 | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `Me`   | <p>You can see the issues/pull requests that are relevant to you. Basically, you can look at this stream and you won't miss anything. <br>You will also see issues filtered by <code>My Issues</code>, <code>My PRs</code> and <code>Assign</code>.</p> |
 | `Team` | <p>Issues that are maintained by the team you are on.<br>You will also see issues filtered by team.</p>                                                                                                                                                 |
 | `Repo` | <p>Issues from the repositories you have recently been active in.<br>You can also see a filtered issues for each repository.</p>                                                                                                                        |
+
+In addition, the following notice will appear after a while. Follow the instructions to create other streams.
+
+![](<../.gitbook/assets/スクリーンショット 2022-08-16 19.19.49.png>)
 
 ## issues
 
