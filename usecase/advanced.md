@@ -53,7 +53,7 @@ JasperからGitHub Notificationへの反映は「issueを閲覧して既読に�
 {% tab title="Team Streamの内容" %}
 自分が所属するTeamからクエリが自動的に作成されます。
 
-![](../.gitbook/assets/07\_team\_stream2.png)
+![](<../.gitbook/assets/07\_team\_stream2 (1).png>)
 {% endtab %}
 {% endtabs %}
 

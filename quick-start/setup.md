@@ -30,11 +30,11 @@ Jasperを起動するとGitHub, GHE(GitHub Enterprise)の選択が表示され�
 {% tab title="GitHubの場合" %}
 GitHubの場合はOAuthによるアクセストークンの設定を推奨します。画面の指示に従って、OAuth認証を実施してください。
 
-![](<../.gitbook/assets/Screen Shot 2022-08-16 at 16.27.19.png>)
+![](<../.gitbook/assets/Screen Shot 2022-08-16 at 16.27.19 (1).png>)
 
 もしくは[Personal access token](https://github.com/settings/tokens)からアクセストークンを作成して使用することもできます。必要なスコープは`repo`, `read:org`, `notifications`, `user`です。&#x20;
 
-![](<../.gitbook/assets/Screen Shot 2022-08-16 at 16.31.19 (1).png>)
+![](<../.gitbook/assets/Screen Shot 2022-08-16 at 16.31.19.png>)
 {% endtab %}
 
 {% tab title="GHEの場合" %}
