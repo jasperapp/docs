@@ -14,9 +14,12 @@ After setup, it will automatically create Streams.
 
 | Stream | description                                                                                                                                                                                                                                             |
 | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Me`   | <p>You can see the issues/pull requests that are relevant to you. Basically, you can look at this stream and you won't miss anything. <br>You will also see issues filtered by <code>My Issues</code>, <code>My PRs</code> and <code>Assign</code>.</p> |
-| `Team` | <p>Issues that are maintained by the team you are on.<br>You will also see issues filtered by team.</p>                                                                                                                                                 |
-| `Repo` | <p>Issues from the repositories you have recently been active in.<br>You can also see a filtered issues for each repository.</p>                                                                                                                        |
+| `Me`               | You can see issues/pull requests that are relevant to you. Basically, you won't miss anything if you look at this Stream. You can also filter by `My Issues` or `My PRs`. |
+| `My Issues`        | Issue I was creating                                                                                           |
+| `My PRs`           | Pull request you created                                                                                    |
+| `Assigned`         | Issue/pull request to which you are assigned                                                                         |
+| `Review Requested` | Review requested pull request                                                                               |
+                                                                                                       |
 
 In addition, the following notice will appear after a while. Follow the instructions to create other streams.
 
