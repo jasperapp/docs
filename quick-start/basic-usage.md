@@ -12,40 +12,40 @@ After setup, it will automatically create Streams.
 
 ![](../.gitbook/assets/initial-streams.png)
 
-| Stream | description |
-| :--- | :--- |
-| `Me` | You can see the issues/pull requests that are relevant to you. Basically, you can look at this stream and you won't miss anything.  You will also see issues filtered by `My Issues`, `My PRs` and `Assign`. |
-| `Team` | Issues that are maintained by the team you are on. You will also see issues filtered by team. |
-| `Repo` | Issues from the repositories you have recently been active in. You can also see a filtered issues for each repository. |
+| Stream | description                                                                                                                                                                                                                                             |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Me`   | <p>You can see the issues/pull requests that are relevant to you. Basically, you can look at this stream and you won't miss anything. <br>You will also see issues filtered by <code>My Issues</code>, <code>My PRs</code> and <code>Assign</code>.</p> |
+| `Team` | <p>Issues that are maintained by the team you are on.<br>You will also see issues filtered by team.</p>                                                                                                                                                 |
+| `Repo` | <p>Issues from the repositories you have recently been active in.<br>You can also see a filtered issues for each repository.</p>                                                                                                                        |
 
 ## issues
 
-![](../.gitbook/assets/03_issues.png)
+![](../.gitbook/assets/03\_issues.png)
 
 The following operations are particularly useful for viewing issues
 
-| action | How to operate |
-| :--- | :--- |
-| Show only unread issues | Select `Filter by unread` in the filter menu. Or press  `U`  on the keyboard. |
-| Set the issue back to unread | Click the unread icon on the floating menu. Or press  `I`  on the keyboard. |
+| action                       | How to operate                                                                                              |
+| ---------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Show only unread issues      | <p>Select <code>Filter by unread</code> in the filter menu.<br>Or press <code>U</code> on the keyboard.</p> |
+| Set the issue back to unread | <p>Click the unread icon on the floating menu.<br>Or press <code>I</code> on the keyboard.</p>              |
 
 {% tabs %}
 {% tab title="Filter menu" %}
-![](../.gitbook/assets/filter_by_unread.png)
+![](../.gitbook/assets/filter\_by\_unread.png)
 {% endtab %}
 
 {% tab title="Floating menu" %}
-![](../.gitbook/assets/hover_unread.png)
+![](../.gitbook/assets/hover\_unread.png)
 {% endtab %}
 {% endtabs %}
 
 ## Browser
 
-![](../.gitbook/assets/03_browser.png)
+![](../.gitbook/assets/03\_browser.png)
 
 Comments that have been added or updated since the last time you viewed the site will be highlighted.
 
-![](../.gitbook/assets/03_highlight_comment.png)
+![](../.gitbook/assets/03\_highlight\_comment.png)
 
 
 
@@ -54,4 +54,3 @@ Comments that have been added or updated since the last time you viewed the site
 {% hint style="info" %}
 For more information on how to use it, please refer to "[Use cases](../usecase/)" and "[Reference](../reference/)".
 {% endhint %}
-
