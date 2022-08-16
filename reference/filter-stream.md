@@ -112,6 +112,15 @@ Filter Streamで使用できるフィルターはStreamとほとんど同じ条�
 スペースを含むラベルやマイルストーンの場合は`label:"`hello `world"`のようにダブルクオーテーションで囲んでください。‌
 {% endhint %}
 
+## プロジェクト
+
+| フィルター                                  | 説明                                        |
+| -------------------------------------- | ----------------------------------------- |
+| `project-field:status/ToDo`, `project-field:sprint/@current_iteration`, `project-field:foo/bar` | <p>プロジェクトのフィールド名とフィールド値<br/>例えば`project-field:status/ToDo`はstatusフィールドがToDoのissueを表します。</p>      |
+| `project-name:hello-pj` (classic project) | プロジェクトに紐付いたissue                          |
+| `project-column:now-doing` (classic project) | プロジェクトカラムに紐付いたissue                       |
+
+
 ## 任意のキーワード <a href="#keyword" id="keyword"></a>
 
 | フィルター            | 説明                     |
