@@ -32,15 +32,15 @@ For GitHub, we recommend setting up an access token using OAuth. Please follow t
 
 ![](<../.gitbook/assets/Screen Shot 2022-08-16 at 16.27.19.png>)
 
-Alternatively, an access token can be created and used from a [Personal access token](https://github.com/settings/tokens). The required scopes are `repo`, `read:org`, `notifications`, and `user`.
+Alternatively, an access token can be created and used from a [Personal access token](https://github.com/settings/tokens). The required scopes are `repo`, `read:org`, `notifications`, `user` and `read:project` .
 
-![](<../.gitbook/assets/Screen Shot 2022-08-16 at 16.31.19.png>)
+![](<../.gitbook/assets/Screen Shot 2022-08-17 at 12.15.06.png>)
 {% endtab %}
 
 {% tab title="For GHE" %}
-For GHE, you can create an access token from `https://GHE_HOST/settings/tokens`. The required scopes are `repo`, `read:org`, `notifications` and `user`.
+For GHE, you can create an access token from `https://GHE_HOST/settings/tokens`. The required scopes are `repo`, `read:org`, `notifications`, `user` and `read:project` .
 
-![](<../.gitbook/assets/Screen Shot 2022-08-16 at 16.34.08.png>)
+![](<../.gitbook/assets/Screen Shot 2022-08-17 at 12.15.14.png>)
 {% endtab %}
 {% endtabs %}
 
