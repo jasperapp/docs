@@ -89,8 +89,8 @@ Filter Streamで使用できるフィルターはStreamとほとんど同じ条�
 | フィルター                                  | 説明                                        |
 | -------------------------------------- | ----------------------------------------- |
 | `label:bug`, `label:bug-%`             | <p>ラベルがついたissue<br>%は任意の文字列にマッチ</p>       |
-| `milestone:v1.0.0`, `milestone:v2.0.%` | <p>マイルストーンがついたissue<br>%は任意の文字列いマッチ</p>   |
-| `title:テスト`, `title:%テスト%`             | <p>指定されたタイトルがついたissue<br>%は任意の文字列いマッチ</p> |
+| `milestone:v1.0.0`, `milestone:v2.0.%` | <p>マイルストーンがついたissue<br>%は任意の文字列にマッチ</p>   |
+| `title:テスト`, `title:%テスト%`             | <p>指定されたタイトルがついたissue<br>%は任意の文字列にマッチ</p> |
 | `project-name:hello-pj`                | プロジェクトに紐付いたissue                          |
 | `project-column:now-doing`             | プロジェクトカラムに紐付いたissue                       |
 | `number:123`                           | 特定のissue番号                                |
