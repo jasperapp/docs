@@ -13,8 +13,8 @@ description: Jasperの基本的な使い方を紹介します。基本の使い�
 | Stream             | 説明                                                                                                     |
 | ------------------ | ------------------------------------------------------------------------------------------------------ |
 | `Me`               | 自分に関係するissue/pull requestを見ることができます。基本的にはこのStreamを見れば見落としはありません。`My Issues`や`My PRs`でフィルターしてみることもできます。 |
-| `My Issues`        | 自分が作成いたissue                                                                                           |
-| `My PRs`           | 自分が作成いたpull request                                                                                    |
+| `My Issues`        | 自分が作成したissue                                                                                           |
+| `My PRs`           | 自分が作成したpull request                                                                                    |
 | `Assigned`         | 自分がアサインされているissue/pull request                                                                         |
 | `Review Requested` | 自分がレビュー依頼されたpull request                                                                               |
 
